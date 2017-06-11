@@ -37,7 +37,9 @@ a {
     box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); }
 
 .section-footer {
+  margin: 0 auto;
   position: absolute;
+  left: 0px;
   bottom: 10px;
   width: 100%;
   z-index: 999; }
@@ -149,7 +151,83 @@ a {
 
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Enter your style for screens between 768px and 991px bellow this line  */ }
+  /* Enter your style for screens between 768px and 991px bellow this line  */
+  .section-header h1 {
+    font-size: 30px;
+    padding: 10px 0px 15px 0px; }
+  .section-header p {
+    padding: 0px 150px 0px 0px; }
+  #services-section, #contact-section, #portfolio-section {
+    position: relative;
+    padding: 10px 0px 150px; }
+  .section-footer ul li {
+    padding-left: 20px; }
+  #introduction-section #intro {
+    padding: 80px 0px; }
+    #introduction-section #intro .container {
+      padding-left: 70px; }
+      #introduction-section #intro .container #intro-header {
+        padding: 20px 0px; }
+        #introduction-section #intro .container #intro-header input {
+          width: 220px; }
+        #introduction-section #intro .container #intro-header span {
+          padding-left: 8px; }
+      #introduction-section #intro .container #intro-content h1 {
+        font-size: 42px;
+        padding: 10px 0px; }
+      #introduction-section #intro .container #intro-content p {
+        font-size: 12px;
+        padding: 0px 200px 20px 0px; }
+      #introduction-section #intro .container #intro-footer {
+        padding: 20px 0px; }
+  #introduction-section #avatar img {
+    width: 320px;
+    height: 580px; }
+  #services-section .service {
+    padding: 5px 15px;
+    margin-left: 50px; }
+    #services-section .service h2 {
+      font-size: 20px;
+      margin-bottom: 20px; }
+    #services-section .service img {
+      margin-bottom: 20px; }
+    #services-section .service p {
+      font-size: 13px;
+      margin-bottom: 20px; } }
+
+#portfolio-section .slideShow_container {
+  max-width: 90%; }
+  #portfolio-section .slideShow_container .next, #portfolio-section .slideShow_container .prev {
+    top: 35%; }
+  #portfolio-section .slideShow_container .prev:hover {
+    -webkit-transform: translate(-10px, 0px);
+    -ms-transform: translate(-10px, 0px);
+    transform: translate(-10px, 0px); }
+  #portfolio-section .slideShow_container .next:hover {
+    -webkit-transform: translate(10px, 0px);
+    -ms-transform: translate(10px, 0px);
+    transform: translate(10px, 0px); }
+  #portfolio-section .slideShow_container .text {
+    margin-top: 15px; }
+    #portfolio-section .slideShow_container .text button {
+      margin: 30px 0px; }
+  #portfolio-section .slideShow_container .numberText {
+    right: 20px;
+    bottom: 130px;
+    width: 40px;
+    height: 40px;
+    font-size: 18px;
+    padding-top: 9px; }
+    #portfolio-section .slideShow_container .numberText:hover {
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      -ms-transform: scale(1.25, 1.25);
+      -webkit-transform: scale(1.25, 1.25);
+      transform: scale(1.25, 1.25); }
+
+#contact-section {
+  padding: 40px 0px; }
+  #contact-section .form-horizontal {
+    margin-bottom: 45px; }
 
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {

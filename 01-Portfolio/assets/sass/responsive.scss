@@ -15,11 +15,141 @@
 @media (min-width:768px) and (max-width: 991px) {
 
 	/* Enter your style for screens between 768px and 991px bellow this line  */
+	.section-header{
+		h1{
+			font-size: 30px;
+			padding: 10px 0px 15px 0px;
+		}
+		p{
+			padding: 0px 150px 0px 0px;
 
+		}
+	}
+	#services-section, #contact-section, #portfolio-section{
+		position: relative;
+		padding: 10px 0px 150px ;
+	}
+	.section-footer{
+		ul{
+			li{
+				padding-left: 20px;
+			}
+		}
+	}
 
+	// introduction section
+	#introduction-section{
+	#intro{
+		padding: 80px 0px;
+		.container{
+			padding-left: 70px;
+			#intro-header{
+				padding:20px 0px;
+				input{
+					width: 220px;
+				}
+				span{
+					padding-left: 8px;
+				}
+			}
+			#intro-content{
+				h1{
+					font-size: 42px;
+					padding: 10px 0px;
+				}
+				p{
+					font-size: 12px;
+					padding: 0px 200px 20px 0px;
+				}
+			}
+			#intro-footer{
+				padding: 20px 0px;
+			}
+		}
+	}
+	#avatar{
+		img{
+			width: 320px;
+			height: 580px;
 
+		}
+	}
 
 }
+
+	#services-section{
+		.service{
+			padding:5px 15px;
+			margin-left: 50px;
+			h2{
+				font-size: 20px;
+				margin-bottom: 20px;
+
+			}
+			img{
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 13px;
+				margin-bottom: 20px;
+
+			}
+		}
+	}
+
+}
+
+	// portfonlio section
+	#portfolio-section{
+		.slideShow_container{
+			max-width: 90%;
+			.next, .prev{
+				top:35%;
+			}
+			.prev{
+			   	&:hover{
+					-webkit-transform: translate(-10px, 0px);
+					    -ms-transform: translate(-10px, 0px);
+				   		    transform: translate(-10px, 0px);
+				}
+			}
+			.next {
+				&:hover{
+					-webkit-transform: translate(10px, 0px);
+					    -ms-transform: translate(10px, 0px);
+				   		    transform: translate(10px, 0px);
+				}
+			}
+			.text{
+				margin-top: 15px;
+
+				button{
+					margin: 30px 0px;
+				}
+			}
+			.numberText{
+				right: 20px;
+				bottom: 130px;
+				width: 40px;
+				height: 40px;
+				font-size: 18px;
+				padding-top: 9px;
+				&:hover{
+					box-shadow: $shadowHover;
+					-ms-transform: scale(1.25, 1.25);
+					   -webkit-transform: scale(1.25, 1.25);
+							   transform: scale(1.25, 1.25);
+				}
+			}
+		}
+	}
+
+	#contact-section{
+		padding: 40px 0px;
+		.form-horizontal{
+			margin-bottom: 45px;
+		}
+	}
 
 
 /* Medium Screen */
