@@ -1,0 +1,211 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Noto+Serif:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900");
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  outline: none; }
+
+body {
+  overflow-x: hidden; }
+
+body::-webkit-scrollbar {
+  width: 0.5em; }
+
+body::-webkit-scrollbar-thumb {
+  background-color: #5b4a9e;
+  outline: 1px solid #fafafa; }
+
+a {
+  text-decoration: none; }
+
+.custom_button {
+  width: 255px;
+  height: 45px;
+  background-color: white;
+  border: 0px;
+  text-transform: capitalize;
+  box-shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
+  transition: all 0.3s ease-in-out; }
+  .custom_button a {
+    font-family: "Noto Sans", sans-serif;
+    font-weight: bold;
+    font-size: 20px;
+    color: #1a1a1a; }
+    .custom_button a:hover, .custom_button a:active, .custom_button a:focus {
+      text-decoration: none; }
+  .custom_button:hover, .custom_button:active, .custom_button:focus {
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15); }
+
+.section-footer {
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+  z-index: 999; }
+  .section-footer ul {
+    list-style: none; }
+    .section-footer ul li {
+      display: inline-block;
+      padding-left: 50px; }
+      .section-footer ul li a {
+        color: #1a1a1a;
+        font-weight: bold;
+        font-family: "Playfair Display", serif;
+        font-size: 14px; }
+        .section-footer ul li a:hover {
+          color: #5b4a9e;
+          text-decoration: none; }
+  .section-footer .mouse {
+    margin: 0px auto;
+    text-align: center;
+    padding-left: 15px; }
+    .section-footer .mouse .mouse-icon {
+      width: 15px;
+      height: 25px;
+      border: 2px solid #1a1a1a;
+      border-radius: 15px;
+      cursor: pointer;
+      position: relative;
+      text-align: center;
+      margin: 0 auto; }
+      .section-footer .mouse .mouse-icon .mouse-wheel {
+        height: 6px;
+        margin: 0px auto 0;
+        display: block;
+        width: 3px;
+        background-color: #1a1a1a;
+        border-radius: 50%;
+        -webkit-animation: 1.6s ease infinite wheel-up-down;
+        -moz-animation: 1.6s ease infinite wheel-up-down;
+        animation: 1.6s ease infinite wheel-up-down; }
+
+@-webkit-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    margin-top: 20px;
+    opacity: 0; } }
+
+@-moz-keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    margin-top: 20px;
+    opacity: 0; } }
+
+@keyframes wheel-up-down {
+  0% {
+    margin-top: 2px;
+    opacity: 0; }
+  30% {
+    opacity: 1; }
+  100% {
+    margin-top: 10px;
+    opacity: 0; } }
+  .section-footer .email {
+    color: white;
+    font-family: "Playfair Display", serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold; }
+
+.section-header {
+  padding: 10px 0px; }
+  .section-header h1 {
+    font-family: "Playfair Display", serif;
+    font-weight: bold;
+    font-size: 40px;
+    color: white;
+    padding: 25px 0px;
+    text-transform: uppercase; }
+    .section-header h1::selection {
+      color: white;
+      background-color: #5b4a9e; }
+  .section-header p {
+    font-size: 16px;
+    font-family: "Playfair Display", serif;
+    font-weight: lighter;
+    color: white;
+    padding: 0px 500px 0px 0px; }
+    .section-header p::selection {
+      color: white;
+      background-color: #5b4a9e; }
+
+#services-section, #contact-section, #portfolio-section {
+  position: relative;
+  padding: 15px 0px 150px; }
+
+#services-section, #contact-section {
+  background-color: #1a1a1a; }
+
+/* Extra Small Screen - Smart Phones and Tablets */
+@media (max-width: 767px) {
+  /* Enter your style for screens under 767px bellow this line  */ }
+
+/* Small Screen */
+@media (min-width: 768px) and (max-width: 991px) {
+  /* Enter your style for screens between 768px and 991px bellow this line  */ }
+
+/* Medium Screen */
+@media (min-width: 992px) and (max-width: 1199px) {
+  /* Enter your style for screens between 992px and 1199px bellow this line  */
+  .section-header h1 {
+    font-size: 38px;
+    padding: 10px 0px 15px 0px; }
+  .section-header p {
+    padding: 0px 300px 0px 0px; }
+  #services-section, #contact-section, #portfolio-section {
+    position: relative;
+    padding: 10px 0px 150px; }
+  #introduction-section #intro {
+    padding: 60px 0px; }
+    #introduction-section #intro .container {
+      padding-left: 100px; }
+      #introduction-section #intro .container #intro-header {
+        padding: 30px 0px; }
+      #introduction-section #intro .container #intro-content h1 {
+        font-size: 48px;
+        padding: 20px 0px; }
+      #introduction-section #intro .container #intro-content p {
+        padding: 0px 300px 10px 0px; }
+  #introduction-section #avatar img {
+    width: 350px; }
+  #services-section .service {
+    margin-left: 60px; }
+    #services-section .service h2 {
+      font-size: 24px;
+      margin-bottom: 30px; }
+    #services-section .service img {
+      margin-bottom: 30px; }
+    #services-section .service p {
+      margin-bottom: 25px; }
+  #portfolio-section .slideShow_container .next, #portfolio-section .slideShow_container .prev {
+    top: 30%; }
+  #portfolio-section .slideShow_container .text {
+    margin-top: 15px; }
+    #portfolio-section .slideShow_container .text button {
+      margin: 30px 0px; }
+  #portfolio-section .slideShow_container .numberText {
+    right: 20px;
+    bottom: 130px;
+    width: 45px;
+    height: 45px;
+    font-size: 18px; }
+    #portfolio-section .slideShow_container .numberText:hover {
+      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+      -ms-transform: scale(1.25, 1.25);
+      -webkit-transform: scale(1.25, 1.25);
+      transform: scale(1.25, 1.25); }
+  #contact-section {
+    padding: 40px 0px; }
+    #contact-section .form-horizontal {
+      margin-bottom: 45px; } }
+
+/* Large Screen */
+@media (min-width: 1200px) {
+  /* Enter your style for screens above 1200px bellow this line  */ }

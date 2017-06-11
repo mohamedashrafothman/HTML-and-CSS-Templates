@@ -1,0 +1,195 @@
+// import fonts
+@import url('https://fonts.googleapis.com/css?family=Noto+Sans:400,400i,700,700i|Noto+Serif:400,400i,700,700i|Playfair+Display:400,400i,700,700i,900');
+// colors
+$black : #1a1a1a;
+$lightBlack: #262626;
+$white: rgb(255, 255, 255);
+$lightGray: #fafafa;
+$darkGray: #c6c6c6;
+$purpColor: #5b4a9e;
+$shadow: 0px 0px 50px 0px rgba(0, 0, 0, 0.15);
+$shadowHover: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+// fonts
+$notoSans: 'Noto Sans', sans-serif;
+$notoSerif: 'Noto Serif', serif;
+$playFair:  'Playfair Display', serif;
+
+
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	outline: none;
+}
+body{
+	overflow-x: hidden;
+}
+//scroll bar
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: $purpColor;
+  outline: 1px solid $lightGray;
+}
+a{
+	text-decoration: none;
+}
+
+// buttons
+.custom_button{
+	width: 255px;
+    height: 45px;
+
+	background-color: $white;
+	border: 0px;
+
+	text-transform: capitalize;
+
+	box-shadow: $shadow;
+	transition: all 0.3s ease-in-out;
+	a{
+		font-family: $notoSans;
+		font-weight: bold;
+		font-size: 20px;
+		color: $black;
+		&:hover, &:active, &:focus{
+			text-decoration: none;
+		}
+	}
+	&:hover, &:active, &:focus{
+		box-shadow: $shadowHover;
+	}
+}
+
+.section-footer{
+	position: absolute;
+	bottom: 10px;
+	width: 100%;
+	z-index: 999;
+	ul{
+		list-style: none;
+		li{
+			display: inline-block;
+			padding-left: 50px;
+			a{
+				color: $black;
+				font-weight: bold;
+				font-family: $playFair;
+				font-size: 14px;
+				&:hover{
+					color: $purpColor;
+					text-decoration: none;
+				}
+			}
+		}
+	}
+	.mouse{
+		margin: 0px auto;
+		text-align: center;
+		padding-left: 15px;
+	  	.mouse-icon{
+			width: 15px;
+			height: 25px;
+			border: 2px solid $black;
+			border-radius: 15px;
+			cursor: pointer;
+			position: relative;
+			text-align: center;
+			margin: 0 auto;
+		    .mouse-wheel{
+				height: 6px;
+				margin: 0px auto 0;
+				display: block;
+				width: 3px;
+				background-color: $black;
+				border-radius: 50%;
+				-webkit-animation: 1.6s ease infinite wheel-up-down;
+				   -moz-animation: 1.6s ease infinite wheel-up-down;
+					    animation: 1.6s ease infinite wheel-up-down;
+	     	}
+			@-webkit-keyframes wheel-up-down {
+		  		0% {
+		  		    margin-top: 2px;
+		  		    opacity: 0;
+		  		}
+		  		30% {
+		  		    opacity: 1;
+		  		}
+		  		100% {
+		  		    margin-top: 20px;
+		  		    opacity: 0;
+		  		}
+		  	}
+			@-moz-keyframes wheel-up-down {
+		  		0% {
+		  		    margin-top: 2px;
+		  		    opacity: 0;
+		  		}
+		  		30% {
+		  		    opacity: 1;
+		  		}
+		  		100% {
+		  		    margin-top: 20px;
+		  		    opacity: 0;
+		  		}
+		  	}
+			@keyframes wheel-up-down {
+		  		0% {
+		  		    margin-top: 2px;
+		  		    opacity: 0;
+		  		}
+		  		30% {
+		  		    opacity: 1;
+		  		}
+		  		100% {
+		  		    margin-top: 10px;
+		  		    opacity: 0;
+		  		}
+		  	}
+	  	}
+	}
+	.email{
+		color: $white;
+		font-family: $playFair;
+		text-align: center;
+		font-size: 14px;
+		font-weight: bold;
+
+	}
+}
+.section-header{
+	padding: 10px 0px;
+	h1{
+		font-family: $playFair;
+		font-weight: bold;
+		font-size: 40px;
+		color: $white;
+		padding: 25px 0px;
+		text-transform: uppercase;
+		&::selection{
+			color: $white;
+			background-color: $purpColor;
+		}
+	}
+	p{
+		font-size: 16px;
+		font-family: $playFair;
+		font-weight: lighter;
+		color: $white;
+		padding: 0px 500px 0px 0px;
+		&::selection{
+			color: $white;
+			background-color: $purpColor;
+		}
+	}
+}
+#services-section, #contact-section, #portfolio-section{
+	position: relative;
+	padding: 15px 0px 150px ;
+}
+#services-section, #contact-section{
+	background-color: $black;
+
+}

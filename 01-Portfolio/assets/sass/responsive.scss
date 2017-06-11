@@ -1,0 +1,141 @@
+@import "lib.scss";
+
+/* Extra Small Screen - Smart Phones and Tablets */
+@media (max-width:767px) {
+
+	/* Enter your style for screens under 767px bellow this line  */
+
+
+
+
+}
+
+
+/* Small Screen */
+@media (min-width:768px) and (max-width: 991px) {
+
+	/* Enter your style for screens between 768px and 991px bellow this line  */
+
+
+
+
+}
+
+
+/* Medium Screen */
+@media (min-width:992px) and (max-width: 1199px) {
+
+	/* Enter your style for screens between 992px and 1199px bellow this line  */
+
+	.section-header{
+		h1{
+			font-size: 38px;
+			padding: 10px 0px 15px 0px;
+		}
+		p{
+			padding: 0px 300px 0px 0px;
+
+		}
+	}
+	#services-section, #contact-section, #portfolio-section{
+		position: relative;
+		padding: 10px 0px 150px ;
+	}
+
+
+	// introduction section
+	#introduction-section{
+		#intro{
+			padding: 60px 0px;
+			.container{
+				padding-left: 100px;
+				#intro-header{
+					padding:30px 0px;
+				}
+				#intro-content{
+					h1{
+						font-size: 48px;
+						padding: 20px 0px;
+					}
+					p{
+						padding: 0px 300px 10px 0px;
+					}
+				}
+			}
+		}
+		#avatar{
+			img{
+				width: 350px;
+
+			}
+		}
+	}
+
+	// Services Section
+	#services-section{
+		.service{
+			margin-left: 60px;
+			h2{
+				font-size: 24px;
+				margin-bottom: 30px;
+			}
+			img{
+				margin-bottom: 30px;
+			}
+			p{
+				margin-bottom: 25px;
+			}
+		}
+	}
+
+
+	// portfonlio section
+	#portfolio-section{
+		.slideShow_container{
+			.next, .prev{
+				top:30%;
+			}
+			.text{
+				margin-top: 15px;
+
+				button{
+					margin: 30px 0px;
+				}
+			}
+			.numberText{
+				right: 20px;
+				bottom: 130px;
+				width: 45px;
+				height: 45px;
+				font-size: 18px;
+				&:hover{
+					box-shadow: $shadowHover;
+					-ms-transform: scale(1.25, 1.25);
+					   -webkit-transform: scale(1.25, 1.25);
+							   transform: scale(1.25, 1.25);
+				}
+			}
+		}
+	}
+
+	#contact-section{
+		padding: 40px 0px;
+		.form-horizontal{
+			margin-bottom: 45px;
+		}
+	}
+
+
+
+}
+
+
+/* Large Screen */
+@media (min-width:1200px) {
+
+	/* Enter your style for screens above 1200px bellow this line  */
+
+
+
+
+}
