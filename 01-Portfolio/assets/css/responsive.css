@@ -42,7 +42,7 @@ a {
   left: 0px;
   bottom: 10px;
   width: 100%;
-  z-index: 999; }
+  z-index: 99; }
   .section-footer ul {
     list-style: none; }
     .section-footer ul li {
@@ -145,9 +145,115 @@ a {
 #services-section, #contact-section {
   background-color: #1a1a1a; }
 
+#loading-page {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 999 !important;
+  background-color: #1a1a1a;
+  font-family: "Playfair Display", serif; }
+  #loading-page .counter {
+    text-align: center; }
+    #loading-page .counter p {
+      font-size: 40px;
+      font-weight: 100;
+      color: #5b4a9e; }
+    #loading-page .counter h1 {
+      color: white;
+      font-size: 60px;
+      margin-top: -10px; }
+
 /* Extra Small Screen - Smart Phones and Tablets */
 @media (max-width: 767px) {
-  /* Enter your style for screens under 767px bellow this line  */ }
+  /* Enter your style for screens under 767px bellow this line  */
+  .section-header h1 {
+    font-size: 32px;
+    padding: 10px 0px 15px 0px; }
+  .section-header p {
+    padding: 0px 100px 0px 0px;
+    font-size: 14px; }
+  #services-section, #contact-section, #portfolio-section {
+    position: relative;
+    padding: 10px 0px 150px; }
+  .section-footer ul li {
+    padding-left: 5px; }
+    .section-footer ul li a {
+      font-size: 10px; }
+  .section-footer .email {
+    font-size: 10px; }
+  #introduction-section #intro {
+    padding: 50px 0px 100px 0px; }
+    #introduction-section #intro .container {
+      padding-left: 80px; }
+      #introduction-section #intro .container #intro-header {
+        padding: 20px 0px; }
+        #introduction-section #intro .container #intro-header input {
+          width: 260px; }
+        #introduction-section #intro .container #intro-header span {
+          font-size: 12px;
+          padding-left: 8px; }
+      #introduction-section #intro .container #intro-content h1 {
+        font-size: 36px;
+        padding: 10px 0px; }
+      #introduction-section #intro .container #intro-content p {
+        padding: 0px 100px 20px 0px; }
+      #introduction-section #intro .container #intro-footer {
+        padding: 30px 0px; }
+  #introduction-section .section-footer .email {
+    color: #1a1a1a; }
+  #services-section .service {
+    padding: 5px 15px;
+    margin: 15px auto; }
+    #services-section .service h2 {
+      font-size: 26px;
+      margin-bottom: 20px;
+      font-weight: bold; }
+    #services-section .service img {
+      margin-bottom: 20px; }
+    #services-section .service p {
+      font-size: 13px;
+      margin-bottom: 20px; }
+  #portfolio-section .slideShow_container {
+    max-width: 90%; }
+    #portfolio-section .slideShow_container .next, #portfolio-section .slideShow_container .prev {
+      top: 30%; }
+    #portfolio-section .slideShow_container .prev {
+      left: -50px; }
+      #portfolio-section .slideShow_container .prev:hover {
+        -webkit-transform: translate(-10px, 0px);
+        -ms-transform: translate(-10px, 0px);
+        transform: translate(-10px, 0px); }
+    #portfolio-section .slideShow_container .next {
+      right: -50px; }
+      #portfolio-section .slideShow_container .next:hover {
+        -webkit-transform: translate(10px, 0px);
+        -ms-transform: translate(10px, 0px);
+        transform: translate(10px, 0px); }
+    #portfolio-section .slideShow_container .text {
+      margin-top: 15px; }
+      #portfolio-section .slideShow_container .text button {
+        margin: 30px 0px; }
+    #portfolio-section .slideShow_container .numberText {
+      right: 20px;
+      bottom: 130px;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      padding-top: 9px; }
+      #portfolio-section .slideShow_container .numberText:hover {
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+        -ms-transform: scale(1.25, 1.25);
+        -webkit-transform: scale(1.25, 1.25);
+        transform: scale(1.25, 1.25); }
+  #contact-section {
+    padding: 40px 0px; }
+    #contact-section .form-horizontal {
+      padding: 50px 0px; } }
 
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
@@ -162,6 +268,10 @@ a {
     padding: 10px 0px 150px; }
   .section-footer ul li {
     padding-left: 20px; }
+    .section-footer ul li a {
+      font-size: 12px; }
+  .section-footer .email {
+    font-size: 12px; }
   #introduction-section #intro {
     padding: 80px 0px; }
     #introduction-section #intro .container {
@@ -169,7 +279,7 @@ a {
       #introduction-section #intro .container #intro-header {
         padding: 20px 0px; }
         #introduction-section #intro .container #intro-header input {
-          width: 220px; }
+          width: 260px; }
         #introduction-section #intro .container #intro-header span {
           padding-left: 8px; }
       #introduction-section #intro .container #intro-content h1 {
@@ -193,45 +303,45 @@ a {
       margin-bottom: 20px; }
     #services-section .service p {
       font-size: 13px;
-      margin-bottom: 20px; } }
-
-#portfolio-section .slideShow_container {
-  max-width: 90%; }
-  #portfolio-section .slideShow_container .next, #portfolio-section .slideShow_container .prev {
-    top: 35%; }
-  #portfolio-section .slideShow_container .prev:hover {
-    -webkit-transform: translate(-10px, 0px);
-    -ms-transform: translate(-10px, 0px);
-    transform: translate(-10px, 0px); }
-  #portfolio-section .slideShow_container .next:hover {
-    -webkit-transform: translate(10px, 0px);
-    -ms-transform: translate(10px, 0px);
-    transform: translate(10px, 0px); }
-  #portfolio-section .slideShow_container .text {
-    margin-top: 15px; }
-    #portfolio-section .slideShow_container .text button {
-      margin: 30px 0px; }
-  #portfolio-section .slideShow_container .numberText {
-    right: 20px;
-    bottom: 130px;
-    width: 40px;
-    height: 40px;
-    font-size: 18px;
-    padding-top: 9px; }
-    #portfolio-section .slideShow_container .numberText:hover {
-      box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
-      -ms-transform: scale(1.25, 1.25);
-      -webkit-transform: scale(1.25, 1.25);
-      transform: scale(1.25, 1.25); }
-
-#contact-section {
-  padding: 40px 0px; }
-  #contact-section .form-horizontal {
-    margin-bottom: 45px; }
+      margin-bottom: 20px; }
+  #portfolio-section .slideShow_container {
+    max-width: 90%; }
+    #portfolio-section .slideShow_container .next, #portfolio-section .slideShow_container .prev {
+      top: 35%; }
+    #portfolio-section .slideShow_container .prev:hover {
+      -webkit-transform: translate(-10px, 0px);
+      -ms-transform: translate(-10px, 0px);
+      transform: translate(-10px, 0px); }
+    #portfolio-section .slideShow_container .next:hover {
+      -webkit-transform: translate(10px, 0px);
+      -ms-transform: translate(10px, 0px);
+      transform: translate(10px, 0px); }
+    #portfolio-section .slideShow_container .text {
+      margin-top: 15px; }
+      #portfolio-section .slideShow_container .text button {
+        margin: 30px 0px; }
+    #portfolio-section .slideShow_container .numberText {
+      right: 20px;
+      bottom: 130px;
+      width: 40px;
+      height: 40px;
+      font-size: 18px;
+      padding-top: 9px; }
+      #portfolio-section .slideShow_container .numberText:hover {
+        box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.15);
+        -ms-transform: scale(1.25, 1.25);
+        -webkit-transform: scale(1.25, 1.25);
+        transform: scale(1.25, 1.25); }
+  #contact-section {
+    padding: 40px 0px; }
+    #contact-section .form-horizontal {
+      margin-bottom: 45px; } }
 
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {
   /* Enter your style for screens between 992px and 1199px bellow this line  */
+  .section-footer ul li {
+    padding-left: 20px; }
   .section-header h1 {
     font-size: 38px;
     padding: 10px 0px 15px 0px; }

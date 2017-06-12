@@ -4,7 +4,147 @@
 @media (max-width:767px) {
 
 	/* Enter your style for screens under 767px bellow this line  */
+	.section-header{
+		h1{
+			font-size: 32px;
+			padding: 10px 0px 15px 0px;
+		}
+		p{
+			padding: 0px 100px 0px 0px;
+			font-size: 14px;
+		}
+	}
+	#services-section, #contact-section, #portfolio-section{
+		position: relative;
+		padding: 10px 0px 150px ;
+	}
+	.section-footer{
+		ul{
+			li{
+				padding-left: 5px;
+				a{
+					font-size: 10px;
+				}
+			}
+		}
+		.email{
+			font-size: 10px;
+		}
+	}
+	// introduction section
+	#introduction-section{
+		#intro{
+			padding: 50px 0px 100px 0px;
+			.container{
+				padding-left: 80px;
+				#intro-header{
+					padding:20px 0px;
+					input{
+						width: 260px;
+					}
+					span{
+					font-size: 12px;
+					padding-left: 8px;
 
+				}
+				}
+				#intro-content{
+					h1{
+						font-size: 36px;
+						padding: 10px 0px;
+					}
+					p{
+						padding: 0px 100px 20px 0px;
+					}
+				}
+				#intro-footer{
+					padding: 30px 0px;
+					
+				}
+			}
+		}
+		.section-footer{
+			.email{
+				color: $black;
+			}
+		}
+	}
+
+
+	#services-section{
+		.service{
+			padding:5px 15px;
+			margin: 15px auto;
+			h2{
+				font-size: 26px;
+				margin-bottom: 20px;
+				font-weight: bold;
+
+			}
+			img{
+				margin-bottom: 20px;
+			}
+			p{
+				font-size: 13px;
+				margin-bottom: 20px;
+
+			}
+		}
+	}
+
+	// portfonlio section
+	#portfolio-section{
+		.slideShow_container{
+			max-width: 90%;
+			.next, .prev{
+				top:30%;
+			}
+			.prev{
+				left: -50px;
+			   	&:hover{
+					-webkit-transform: translate(-10px, 0px);
+					    -ms-transform: translate(-10px, 0px);
+				   		    transform: translate(-10px, 0px);
+				}
+			}
+			.next {
+				right: -50px;
+				&:hover{
+					-webkit-transform: translate(10px, 0px);
+					    -ms-transform: translate(10px, 0px);
+				   		    transform: translate(10px, 0px);
+				}
+			}
+			.text{
+				margin-top: 15px;
+
+				button{
+					margin: 30px 0px;
+				}
+			}
+			.numberText{
+				right: 20px;
+				bottom: 130px;
+				width: 40px;
+				height: 40px;
+				font-size: 18px;
+				padding-top: 9px;
+				&:hover{
+					box-shadow: $shadowHover;
+					-ms-transform: scale(1.25, 1.25);
+					   -webkit-transform: scale(1.25, 1.25);
+							   transform: scale(1.25, 1.25);
+				}
+			}
+		}
+	}
+
+	#contact-section{
+		padding: 40px 0px;
+		.form-horizontal{
+			padding: 50px 0px;
+		}
+	}
 
 
 
@@ -33,7 +173,14 @@
 		ul{
 			li{
 				padding-left: 20px;
+				a{
+					font-size: 12px;
+				}
 			}
+		}
+
+		.email{
+			font-size: 12px;
 		}
 	}
 
@@ -46,7 +193,7 @@
 			#intro-header{
 				padding:20px 0px;
 				input{
-					width: 220px;
+					width: 260px;
 				}
 				span{
 					padding-left: 8px;
@@ -97,7 +244,6 @@
 		}
 	}
 
-}
 
 	// portfonlio section
 	#portfolio-section{
@@ -150,13 +296,20 @@
 			margin-bottom: 45px;
 		}
 	}
+}
 
 
 /* Medium Screen */
 @media (min-width:992px) and (max-width: 1199px) {
 
 	/* Enter your style for screens between 992px and 1199px bellow this line  */
-
+	.section-footer{
+		ul{
+			li{
+				padding-left: 20px;
+			}
+		}
+	}
 	.section-header{
 		h1{
 			font-size: 38px;
@@ -264,8 +417,6 @@
 @media (min-width:1200px) {
 
 	/* Enter your style for screens above 1200px bellow this line  */
-
-
 
 
 }
