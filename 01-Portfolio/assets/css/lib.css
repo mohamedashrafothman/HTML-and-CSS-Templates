@@ -97,31 +97,31 @@ a {
   width: 3px;
   background-color: #1a1a1a;
   border-radius: 50%;
-  -webkit-animation: 1.6s ease infinite wheel-up-down;
-  animation: 1.6s ease infinite wheel-up-down;
+  -webkit-animation: 1.6s ease-in-out infinite wheel-up-down;
+  animation: 1.6s ease-in-out infinite wheel-up-down;
 }
 @-webkit-keyframes wheel-up-down {
-  .section-footer .mouse .mouse-icon 0%  {
+  .section-footer .mouse .mouse-icon .mouse-wheel 0%  {
     margin-top: 2px;
     opacity: 0;
   }
-  .section-footer .mouse .mouse-icon 30%  {
+  .section-footer .mouse .mouse-icon .mouse-wheel 30%  {
     opacity: 1;
   }
-  .section-footer .mouse .mouse-icon 100%  {
+  .section-footer .mouse .mouse-icon .mouse-wheel 100%  {
     margin-top: 20px;
     opacity: 0;
   }
 }
 @keyframes wheel-up-down {
-  .section-footer .mouse .mouse-icon 0%  {
+  .section-footer .mouse .mouse-icon .mouse-wheel 0%  {
     margin-top: 2px;
     opacity: 0;
   }
-  .section-footer .mouse .mouse-icon 30%  {
+  .section-footer .mouse .mouse-icon .mouse-wheel 30%  {
     opacity: 1;
   }
-  .section-footer .mouse .mouse-icon 100%  {
+  .section-footer .mouse .mouse-icon .mouse-wheel 100%  {
     margin-top: 10px;
     opacity: 0;
   }

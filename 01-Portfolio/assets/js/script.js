@@ -1,44 +1,94 @@
-// Loading Screen
+/*
+	===================== On Load Screen =====================
+*/
 $(window).on('load',function() {
+
+	/*
+		===================== Animation and scroll =====================
+	*/
 	var counter = 0;
   	var c = 0;
   	var i = setInterval(function(){
-  		
     	$("#loading-page .counter h1").html(c + "%");
     	counter++;
     	c++;
      	if(counter == 101) {
         	clearInterval(i);
         	$("#loading-page").animate({'opacity':'0'}, 1000, function(){
-        		$(this).css({'display':'none'});
+        		$(this).css({'display':'none'});    		
+					//animatin works
+	        		var introSecFun = function(){
+	        			$('#intro').animate({'opacity':'1'}, 'slow');
+	        		};
+	        		var servicesSecFun = function(){
+	        			$('.service').each(function(){
+	        				$(this).delay(500).animate({'opacity':'1'},'fast');
+	        			});
+	        		};
+				  	introSecFun();
+
+				$(window).on('scroll', function(){
+					var windowWidth = $(this).width();
+					var windowHeight = $(this).height();
+					var windowScrollTop = $(this).scrollTop();
+	        		if(windowWidth<=549){
+					    if(windowScrollTop<10){
+					    	alert(3);
+					  		introSecFun();
+					  	}
+					    if(windowScrollTop>400){
+					    	alert(4);
+					       servicesSecFun();
+					    }
+					  }else if(windowWidth>549 && windowWidth<=991){
+					    if(windowScrollTop<10){
+					  		introSecFun();
+					  	}
+					  	if(windowScrollTop>143){
+					       servicesSecFun();
+					    }
+					  }else{
+					     if(windowScrollTop<10){
+					  		introSecFun();
+					  	}
+					  	if(windowScrollTop>147){
+					       servicesSecFun();
+					    }
+					  }
+				});
         	});
     	}
   	}, 50);
-});
+}); // End anumation and scroll section
 
 
-
+/*
+	===================== When Document Get Ready =====================
+*/
 $(document).ready(function(){
 
+	/*
+		===================== Introduction Input =====================
+	*/
 	$('#enterName').on('keydown', function(e){
 		$value = $(this).val();
 		$(this).animate({'font-size':'28px'},500);
 		if(e.keyCode === 13){
-			alert(`Welcome ${$value}`);
+			alert('Welcome ' + $value);
 		}
 	});
 	$('#enterName').on('focusout', function(){
-		$(this).animate({'font-size':'26px'}, 500).attr("placeholder", `${$value}`);;
+		$(this).animate({'font-size':'26px'}, 500).attr("placeholder", '$value');;
 	});
 
 	/*
-	========== Tool Tip ================
-	*/
+	===================== Bootstrap Tool Tip =====================
+*/
 	 $('[data-toggle="tooltip"]').tooltip();
 
 
 	/*
-	========== Smoth Scroll =============
+		===================== Scroll Smothy =====================
 	*/
 
 	// Select all links with hashes
@@ -79,6 +129,9 @@ $(document).ready(function(){
 	});
 
 
+	/*
+		===================== Portfolio Slider =====================
+	*/
 	var slider = {
 		init: function(auto){
 			slider.renderHTML();
@@ -105,21 +158,14 @@ $(document).ready(function(){
 				slider.pauseAutomatic();
 				slider.MoveSlide(1);
 			});
-
-
-
 		},
 		ShowSlide: function(n){
 			var i;
 			if(n>slider.$slides.length){slider.$slideIndex = 1;}
 			if(n<1){slider.$slideIndex = slider.$slides.length;}
-
-
 			slider.$slides.each(function(){
 				slider.$slides.css({display:'none'});
 			});
-
-
 			slider.$slides.eq(slider.$slideIndex-1).css({display:'block'});
 		},
 		MoveSlide: function(n){
@@ -132,22 +178,14 @@ $(document).ready(function(){
 			slider.$slides.each(function(){
 				slider.$slides.css({display:'none'});
 			});
-
-
 			slider.$slideIndex++;
-
 			if(slider.$slideIndex>slider.$slides.length){slider.$slideIndex = 1;}
 			slider.$slides.eq(slider.$slideIndex-1).css({display:'block'});
-
 			slider.$timeOut = setTimeout(slider.AutomaticSlide, 5000);
 		},
 		pauseAutomatic: function(){
 			clearTimeout(slider.$timeOut);
 		}
-
 	};
 	slider.init(true); // set automatic by True to enable automatic slideshow
-
-	
-
 });

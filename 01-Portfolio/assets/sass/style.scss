@@ -8,7 +8,10 @@
 	position: relative;
 	#intro{
 		position: relative;
+		left: 0;
+		top: 0;
 		padding: 100px 0px;
+		opacity: 0;
 		.container{
 			padding-left: 200px;
 			#intro-header{
@@ -85,6 +88,7 @@
 		color: $white;
 		cursor: pointer;
 		transition: all 0.3s ease-in-out;
+		opacity: 0;
 		&:hover{
 			background-color: $lightBlack;
 			box-shadow: 12px 12px 15px 0px #1a1a1a;
@@ -385,5 +389,3 @@
 
 	}
 }
-
-@import "responsive.scss";
