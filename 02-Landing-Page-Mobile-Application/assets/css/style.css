@@ -20,7 +20,6 @@
 body {
   font-family: "Roboto", sans-serif;
   -webkit-font-smoothing: antialiased;
-  height: 1000px;
 }
 
 .cf:before,
@@ -146,10 +145,10 @@ ul > li {
 }
 
 .btn-video {
-  border: 1px solid #8c8f94;
+  border: 1px solid #d7d7d7;
   background-color: transparent;
   color: #26272d;
-  margin: 50px 0px 35px;
+  text-transform: capitalize;
 }
 .btn-video i {
   margin-right: 15px;
@@ -165,7 +164,7 @@ ul > li {
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 .active #nav-icon {
-  top: 35% !important;
+  top: 38% !important;
 }
 
 .open {
@@ -189,10 +188,10 @@ ul > li {
 }
 #nav #nav-icon {
   color: #26272d;
-  font-size: 26px;
+  font-size: 14px;
   padding: 0px;
   position: absolute;
-  top: 40%;
+  top: 42%;
   z-index: 2;
   text-decoration: none;
   cursor: pointer !important;
@@ -310,7 +309,7 @@ ul > li {
 #nav .row #nav-left {
   float: left;
   margin-left: 60px;
-  padding-top: 20px;
+  padding-top: 15px;
 }
 #nav .row #nav-center {
   padding-top: 15px;
@@ -342,11 +341,95 @@ ul > li {
   font-family: "Roboto", sans-serif;
   font-size: 20px;
 }
+#header .btn-video {
+  margin-top: 48px;
+}
 #header img {
   position: absolute;
   bottom: -310px;
   left: 50%;
   margin-left: -185px;
+}
+
+/*=============================
+		   Features
+=============================*/
+#features {
+  padding: 120px 0;
+}
+#features .feature {
+  padding: 0 38px;
+}
+#features .feature .feature-icon {
+  margin-bottom: 48px;
+}
+#features .feature .feature-icon span {
+  color: #267df4;
+  font-size: 42px;
+}
+#features .feature .feature-description h4 {
+  font-weight: bold;
+}
+#features .feature .feature-description p {
+  color: #8c8f94;
+}
+
+/*=============================
+		Iphone Features
+=============================*/
+#iphone-feature {
+  position: relative;
+  padding: 200px 0 300px;
+}
+#iphone-feature #iphone-feature-description .button-container {
+  margin-top: 62px;
+}
+#iphone-feature #iphone-feature-description .button-container a {
+  margin-right: 20px;
+  margin-bottom: 18px;
+}
+#iphone-feature #iphone-feature-description .button-container a i {
+  margin-left: 50px;
+  font-size: 14px;
+}
+#iphone-feature #iphone-showcase {
+  position: absolute;
+  bottom: 110px;
+  right: 50%;
+}
+
+/*=============================
+		  Map Features
+=============================*/
+#map-feature {
+  padding: 100px 0px 120px;
+  position: relative;
+  overflow: hidden;
+}
+#map-feature #partner {
+  margin-top: 52px;
+}
+#map-feature #partner h5 {
+  font-size: 14px;
+  font-weight: bold;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+#map-feature #partner ul {
+  margin-top: 35px;
+}
+#map-feature #partner ul li {
+  display: inline-block;
+  margin-right: 30px;
+  margin-bottom: 15px;
+}
+#map-feature #partner ul li:last-child {
+  margin-right: 0px;
+}
+#map-feature #map-showcase {
+  position: absolute;
+  bottom: 110px;
+  left: 50%;
 }
 
 /* Extra Small Screen - Smart Phones and Tablets */

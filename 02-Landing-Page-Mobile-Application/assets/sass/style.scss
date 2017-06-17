@@ -16,10 +16,10 @@
 	z-index: 10;
 	#nav-icon{
 		color: $black;
-		font-size: 26px;
+		font-size: 14px;
 		padding:0px;
 		position: absolute;
-		top: 40%;
+		top: 42%;
 		z-index: 2;
 		text-decoration: none;
 		cursor: pointer !important;
@@ -147,7 +147,7 @@
 			#nav-left{
 				float: left;
 				margin-left: 60px;
-				padding-top: 20px;
+				padding-top: 15px;
 			}
 			#nav-center{
 				padding-top: 15px;
@@ -180,6 +180,10 @@
 		font-family: $RoboFont;
 		font-size: 20px;
 	}
+	.btn-video{
+		margin-top: 48px;
+
+	}
 	img{
 		position: absolute;
 		bottom: -310px;
@@ -188,4 +192,88 @@
 	}
 }
 
+/*=============================
+		   Features
+=============================*/
+#features{
+	padding: 120px 0;
+	.feature{
+		padding: 0 38px;
+		.feature-icon{
+			margin-bottom: 48px;
+			span{
+				color: $blue;
+				font-size: 42px;
+			}
+		}
+		.feature-description{
+			h4{
+				font-weight: bold;
+			}
+			p{
+				color: $gray;
+			}
+		}
+	}
+}
+/*=============================
+		Iphone Features
+=============================*/
+#iphone-feature{
+	position: relative;
+	padding: 200px 0 300px;
+	#iphone-feature-description{
+		.button-container{
+			margin-top: 62px;
+			a{
+				margin-right: 20px;
+				margin-bottom: 18px;
+				i{
+					margin-left: 50px;
+					font-size: 14px;
+				}
+			}
+		}
+	}
+	#iphone-showcase{
+		position: absolute;
+		bottom: 110px;
+		right: 50%;
+	}
+}
+
+
+/*=============================
+		  Map Features
+=============================*/
+#map-feature{
+	padding: 100px 0px 120px;
+	position: relative;
+	overflow: hidden;
+	#partner{
+		margin-top: 52px;
+		h5{
+			font-size: 14px;
+			font-weight: bold;
+			letter-spacing: 0.1em;
+			text-transform: uppercase;
+		}
+		ul{
+			margin-top: 35px;
+			li{
+				display: inline-block;
+				margin-right: 30px;
+				margin-bottom: 15px;
+			}
+			li:last-child{
+				margin-right: 0px;
+			}
+		}
+	}
+	#map-showcase{
+		position: absolute;
+		bottom: 110px;
+		left: 50%;
+	}
+}
 @import "responsive.scss";
