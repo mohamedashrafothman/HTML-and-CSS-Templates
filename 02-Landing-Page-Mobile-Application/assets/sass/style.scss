@@ -173,11 +173,12 @@
 	position: relative;
 	h1{
 		color: $black;
-		font-size: 62px;
+		font-size: 60px;
+		font-family: $varelaFont;
 	}
 	p{
 		color: $gray;
-		font-family: $RoboFont;
+		font-family: $latoFont;
 		font-size: 20px;
 	}
 	.btn-video{
@@ -223,6 +224,9 @@
 	position: relative;
 	padding: 200px 0 300px;
 	#iphone-feature-description{
+		h2{
+			font-family: $varelaFont;
+		}
 		.button-container{
 			margin-top: 62px;
 			a{
@@ -250,6 +254,10 @@
 	padding: 100px 0px 120px;
 	position: relative;
 	overflow: hidden;
+	h2{
+		font-family: $varelaFont;
+
+	}
 	#partner{
 		margin-top: 52px;
 		h5{
@@ -274,6 +282,113 @@
 		position: absolute;
 		bottom: 110px;
 		left: 50%;
+	}
+}
+
+/*=============================
+		Iphone Screens
+=============================*/
+#iphone-screens{
+	background-color: #f5f5f8;
+	padding: 140px 0px 80px;
+	position: relative;
+	overflow: hidden;
+	h2{
+		margin-bottom: 0px;
+		font-family: $varelaFont;
+	}
+	hr{
+		width: 50px;
+		height: 2px;
+		background-color: $blue;
+		margin: 40px auto;
+	}
+	p{
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		font-weight: 700;
+		text-transform: uppercase;
+	}
+	#images-showcase{
+		margin-top: 50px;
+		#images-list{
+			display: block;
+			li{
+				display: inline-block;
+				margin: 0px 10px;
+				img{
+					max-width: 100%;
+				}
+			}
+			li:first-child{
+				margin-left: -140px;
+			}
+			li:last-child{
+				margin-right: -140px;
+			}
+			li:nth-child(1), li:nth-child(2), li:nth-child(4), li:nth-child(5){
+				box-shadow: $shadow;
+			}
+
+		}
+	}
+}
+
+/*=============================
+		Ready To Buy
+=============================*/
+#ready-to-buy{
+	padding: 120px 0 130px;
+	background-color: #f5f5f8;
+	h2{
+		font-family: $varelaFont;
+	}
+	form{
+		margin-bottom: 66px;
+		a{
+			i{
+				margin-left: 5px;
+			}
+		}
+	}
+	p{
+		font-size: 12px;
+		letter-spacing: 0.1em;
+		font-weight: 700;
+		text-transform: uppercase;
+		span{
+			font-weight: bolder;
+			color: $black;
+		}
+	}
+	.download-btn{
+		.btn{
+			font-size: 12px;
+			margin-left: 18px;
+		}
+		.btn-dark{
+			padding: 9px 28px;
+			&:hover{
+				background-color: #f5f5f8;
+				color: $black;
+				border: 1px solid $black;
+			}
+			i{
+				font-size: 32px;
+				display: inline-block;
+				margin-left: 0;
+				margin-right: 18px;
+			}
+			span{
+				font-size: 12px;
+				display: inline-block;
+				text-align: left;
+				b{
+					font-size: 22px;
+					line-height: 18px;
+				}
+			}
+		}
 	}
 }
 @import "responsive.scss";
