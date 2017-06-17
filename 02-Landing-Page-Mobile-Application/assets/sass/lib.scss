@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900');
+
+/*=============================
+	 Fonts and Transitions
+=============================*/
+$RoboFont: 'Roboto', sans-serif;
+$transition-1: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+$transition-2: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+$shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+
+/*=============================
+			colors
+=============================*/
+$blue: #267df4;
+$green: #6fc754;
+$black: #26272d;
+$gray: #8c8f94;
+
+/*=============================
+		Reset Styles
+=============================*/
+*{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+	outline: 0;
+}
+body{
+	font-family: $RoboFont;
+	-webkit-font-smoothing: antialiased;
+	height: 1000px;
+}
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 62px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 52px;
+  line-height: 52px;
+  margin-bottom: 64px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  margin-bottom: 46px;
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+p.subtitle {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  line-height: 28px;
+  color: #8c8f94;
+}
+
+a {
+	color: #267df4;
+	text-decoration: underline;
+	outline: 0;
+	&:focus {
+		outline: none !important;
+	}
+}
+
+.f-w-300 {
+  font-weight: 300;
+}
+
+.f-w-400 {
+  font-weight: 400;
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ul > li {
+  list-style: none;
+}
+
+/*=============================
+		    Buttons
+=============================*/
+
+.btn{
+	font-family: $RoboFont;
+	font-weight: 400px;
+	font-size: 16px;
+	border-radius: 30px;
+	padding: 9px 16px;
+	text-transform: capitalize;
+	border: 1px solid transition;
+	text-decoration: none;
+	transition: $transition-1;
+	&:hover, &:focus{
+		color: $black !important;
+	}
+}
+.btn-blue{
+	background-color: $blue;
+	color: #fff;
+
+	&:hover, &:focus{
+		background-color: #fff;
+		border: 1px solid $blue;
+	}
+}
+.btn-green{
+	background-color: $green;
+	color: #fff;
+
+	&:hover, &:focus{
+		background-color: #fff;
+	}
+}
+.btn-lg{
+	padding: 14px 48px;
+}
+.btn-video{
+	border: 1px solid $gray;
+	background-color: transparent;
+	color: $black;
+	margin: 50px 0px 35px;
+	i{
+		margin-right: 15px;
+	}
+}
+/*=============================
+		Nav Bar
+=============================*/
+.active{
+	background-color: #fff !important;
+	padding: 20px 0px !important;
+	box-shadow: $shadow;
+	#nav-icon{
+		top: 35% !important;
+	}
+}
+.open{
+	left: 0px !important;
+}

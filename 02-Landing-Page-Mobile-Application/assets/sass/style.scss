@@ -1,0 +1,191 @@
+@import "lib.scss";
+
+
+/*=============================
+		    Nav
+=============================*/
+#nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: transparent;
+	color: $black;
+	padding: 40px 0px;
+	transition: all 0.5s ease-in-out;
+	z-index: 10;
+	#nav-icon{
+		color: $black;
+		font-size: 26px;
+		padding:0px;
+		position: absolute;
+		top: 40%;
+		z-index: 2;
+		text-decoration: none;
+		cursor: pointer !important;
+		transition: $transition-1;
+		&:hover, &:focus{
+			color: $blue;
+		}
+	}
+
+	// Side Menu
+	#side-menu{
+		display: block;
+		position: fixed;
+		top: 0px;
+		left: -380px;
+		height: 100%;
+		width: 380px;
+		max-width: 650px;
+		padding: 40px;
+		z-index: 50;
+		background-color: $black;
+		transition: $transition-2;
+		#close-side-menu{
+			position: absolute;
+			color: #ffffff;
+			right: 20px;
+			top: 52px;
+			font-size: 24px;
+			text-decoration: none;
+		}
+		.logo{
+			img{
+				margin-top: 20px;
+			}
+		}
+		ul{
+			margin-top: 40px;
+			li{
+				display: block;
+				margin: 10px 0;
+				a{
+					text-transform: capitalize;
+					text-decoration: none;
+					font-size: 16px;
+					color: #fff;
+					&:hover, &:focus{
+						color: $blue;
+					}
+				}
+				.btn-blue{
+					&:hover, &:focus{
+						color: #fff !important;
+						border: 1px solid #fff;
+						background-color: transparent;
+					}
+				}
+			}
+			li:last-child{
+				margin-top: 20px;
+
+			}
+		}
+
+		#slide-menu-footer{
+			position: absolute;
+			display: block;
+			width: 100%;
+			left: 0;
+			bottom: 0;
+			padding: 20px 40px 25px;
+			#more-info{
+				p{
+					font-size: 14px;
+					line-height: 24px;
+					color: rgba(255, 255, 255, 0.8);
+					margin: 0;
+				}
+			}
+			#socials{
+				 margin: 18px 0 0;
+				li{
+					display: inline-block;
+					margin: 0 20px 0 0;
+				}
+				li:last-child{
+					margin-right: 0px;
+				}
+			}
+		}
+	}
+	.row{
+			ul{
+				padding: 0px;
+				li{
+					display: inline-block;
+					margin-right: 40px;
+					a{
+						font-size: 16px;
+						font-weight: 600px;
+						color: $black;
+						text-decoration: none;
+						text-transform: capitalize;
+						&:hover, &:focus{
+							color: $blue;
+						}
+					}
+					.help{
+						color: $gray;
+					}
+					.btn-blue{
+						color: #fff;
+						i{
+							margin-right: 10px;
+						}
+						&:hover, &:active{
+							color: $black;
+						}
+					}
+				}
+				li:last-child{
+					margin-right: 0px;
+				}
+			}
+
+			#nav-left{
+				float: left;
+				margin-left: 60px;
+				padding-top: 20px;
+			}
+			#nav-center{
+				padding-top: 15px;
+			}
+			#nav-right{
+				float: right;
+				padding-top: 10px;
+			}
+
+	}
+}
+
+/*=============================
+		    Header
+=============================*/
+#header{
+	background-image: url('../images/banner_background.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding: 200px 0px 510px;
+	overflow: hidden;
+	position: relative;
+	h1{
+		color: $black;
+		font-size: 62px;
+	}
+	p{
+		color: $gray;
+		font-family: $RoboFont;
+		font-size: 20px;
+	}
+	img{
+		position: absolute;
+		bottom: -310px;
+		left: 50%;
+		margin-left: -185px;
+	}
+}
+
+@import "responsive.scss";
