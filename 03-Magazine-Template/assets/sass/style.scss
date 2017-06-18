@@ -1,0 +1,159 @@
+@import "lib.scss";
+
+/*=============================
+		    Nav
+=============================*/
+#nav{
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	background-color: transparent;
+	color: $black;
+	padding: 50px;
+	transition: $transition-1;
+	z-index: 10;
+	#nav-icon{
+		color: $black;
+		font-size: 28px;
+		padding:0px;
+		position: absolute;
+		top: 45%;
+		z-index: 2;
+		text-decoration: none;
+		cursor: pointer !important;
+		transition: $transition-2;
+	}
+
+	// Side Menu
+	#side-menu{
+		display: block;
+		position: fixed;
+		top: 0px;
+		left: -700px;
+		height: 100%;
+		width: 700px;
+		max-width: 650px;
+		padding: 40px;
+		z-index: 50;
+		background-color: #fff;
+		transition: $transition-2;
+		#close-side-menu{
+			position: absolute;
+			color: $black;
+			right: 20px;
+			top: 52px;
+			font-size: 24px;
+			text-decoration: none;
+		}
+	}
+	.row{
+		#nav-center{
+			a{
+				position: relative;
+				text-decoration: none;
+				color: $black;
+				font-size: 40px;
+				font-family: $PlayFireFont;
+				text-transform: capitalize;
+				sup{
+					font-size: 14px;
+					text-transform: capitalize;
+					position: absolute;
+					top: 15px;
+
+				}
+			}
+		}
+		#socials-nav-right{
+			display: block;
+			float: right;
+			margin-top: 20px;
+			li{
+				display: inline-block;
+				margin-right: 15px;
+				a{
+					color: $black;
+					font-size: 20px;
+				}
+			}
+			li:last-child{
+				margin-right: 0px;
+			}
+		}
+
+	}
+
+}
+/*=============================
+		  articlss
+=============================*/
+#articles{
+	padding-top: 200px;
+	.article{
+		text-align: center;
+		margin-bottom: 70px;
+		a{
+			text-decoration: none;
+		}
+		img{
+			height: auto;
+			max-width: 100%;
+			display: block;
+			margin-bottom: 20px;
+			opacity: 1;
+			transition: $transition-1;
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+		.tag{
+			font-size: 18px;
+			color: $yellow;
+			text-transform: capitalize;
+			margin-bottom: 20px;
+		}
+		.article-heading{
+			font-family: $PlayFireFont;
+			font-size: 2.5em;
+			text-transform: capitalize;
+			padding: 0px 15px;
+			margin-bottom: 20px;
+			height: 150px;
+			color: $black;
+		}
+		.date{
+			letter-spacing: 2px;
+			color: $gray;
+			font-weight: 300;
+			font-size: 16px;
+			font-family: $RobotoFont;
+		}
+	}
+}
+
+/*=============================
+		  Footer
+=============================*/
+#footer{
+	padding: 70px 0px;
+	.text-center{
+		text-align: center;
+		p{
+			font-size: 18px;
+			color: $black;
+			font-weight: 200;
+			a{
+				text-decoration: none;
+				font-weight: 300;
+				color: $black;
+				text-transform: capitalize;
+				background-color: rgba(247, 200, 115, 0.5);
+			}
+		}
+	}
+}
+
+
+
+@import "responsive.scss";
