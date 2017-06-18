@@ -1,43 +1,236 @@
+@media only screen and (max-width: 992px) {
+  /*** Nav ***/
+  #nav{
+	  .col-md-4:first-child,
+	  .col-md-4:last-child{
+		  display: none;
+	  }
+	  .logo {
+	    padding-top: 0px;
+	  }
+	  #slide_out_menu {
+	    position: fixed;
+	    display: block;
+	    width: 300px;
+	    height: 100%;
+	    left: -300px;
+		.menu-close {
+	      top: 41px;
+	    }
+	  }
+  }
 
-/* Extra Small Screen - Smart Phones and Tablets */
-@media (max-width:767px) {
+  /*** Features ***/
+  #features {
+    padding: 100px 0;
+	.feature-item {
+      margin-bottom: 80px;
+    }
+	.feature-item:last-child {
+      margin-bottom: 0;
+    }
+	.feature {
+      padding: 0px 0px;
+	  .feature-icon {
+	    margin-bottom: 48px;
+		i {
+	      font-size: 42px;
+	      color: #267df4;
+	    }
+	  }
+    }
+  }
+  /*** iPhone Feature ***/
+  #iphone-feature {
+    padding: 80px 0 60px;
+	#iphone-showcase {
+      position: relative;
+      bottom: auto;
+      right: auto;
+      padding: 0 15px;
+      margin-top: 64px;
+	  img {
+	    width: 100%;
+	  }
+    }
+  }
+  /*** Map Feature ***/
+  #map-feature {
+    padding: 80px 0 100px;
+	#map-showcase {
+      position: relative;
+      bottom: auto;
+      left: auto;
+      padding: 0 15px;
+      margin-top: 64px;
+	  img {
+	    width: 100%;
+	  }
+    }
+  }
 
-	/* Enter your style for screens under 767px bellow this line  */
+  /*** iPhone Screens ***/
+  #iphone-screens {
+    padding: 120px 0 80px;
+	#images-showcase{
+		#images-list {
+			display: block;
+			li {
+			  width: 240px;
+			  display: inline-block;
+			  margin: 0px 5px;
 
+			  img {
+				max-width: 100%;
+			  }
+			  .main-img{
+				  width: 295px;
+			  }
+			}
 
+		}
+	}
+  }
 
+  /*** Customers ***/
+  #customers{
+	  .carousel-control.left, .carousel-control.right{
+		  display: none;
+	  }
+  }
+
+  /*** Plan ***/
+  #plan {
+    padding: 120px 0 150px;
+	#price_tables{
+		.individual.active, .company.active{
+			margin-top: 80px;
+		}
+	}
+	.toggle-container{
+		.switch-toggles{
+			.individual, .company{
+				margin-top: 0px;
+			}
+		}
+	}
+  }
+
+  /*** Footer ***/
+  #footer {
+	  .socials {
+	    margin-bottom: 60px;
+	  }
+	  .footer-links {
+	    margin-bottom: 30px;
+	  }
+	  .footer-links:last-child {
+	    margin-bottom: 0;
+	  }
+	  .copyright-container {
+		  .text-right {
+		    text-align: left;
+		    margin-top: 22px;
+		  }
+	  }
+  }
 
 }
 
+@media only screen and (max-width: 768px) {
+  /*** iPhone Screens ***/
+  #iphone-screens {
+    padding: 120px 0 80px;
+	#images-showcase{
+		#images-list {
+			display: block;
+			li {
+			  width: 180px;
+			  display: inline-block;
+			  margin: 0px 10px;
 
-/* Small Screen */
-@media (min-width:768px) and (max-width: 991px) {
+			  img {
+				max-width: 100%;
+			  }
 
-	/* Enter your style for screens between 768px and 991px bellow this line  */
+			}
 
-
-
-
+		}
+	}
+  }
 }
 
+@media only screen and (max-width: 575px) {
+  input[type="text"],
+  input[type="email"] {
+    padding: 16px 26px;
+  }
+  /*** Header ***/
+  #header {
+    padding: 160px 0 460px;
+	.header_iphone {
+      bottom: -220px;
+      margin-left: -140px;
+      width: 280px;
+    }
+  }
+  /*** iPhone Screens ***/
+  #iphone-screens {
+	padding: 120px 0 80px;
+	  #images-showcase{
+		  #images-list {
+			  display: block;
+			  margin: 0 auto;
+			  li {
+				width: 160px;
+				display: inline-block;
+				margin: 0px 2px;
+				img {
+				  max-width: 100%;
+				}
 
-/* Medium Screen */
-@media (min-width:992px) and (max-width: 1199px) {
-
-	/* Enter your style for screens between 992px and 1199px bellow this line  */
-
-
-
-
-}
-
-
-/* Large Screen */
-@media (min-width:1200px) {
-
-	/* Enter your style for screens above 1200px bellow this line  */
-
-
-
-
+			  }
+			  li:first-child, li:last-child{
+				  display: none;
+			  }
+		  }
+	  }
+  }
+  /*** Ready to Buy  ***/
+  #ready-to-buy .form-group .btn,
+  #subscribe .form-group .btn {
+    position: relative;
+    margin-top: 14px;
+  }
+  /*** Customers ***/
+  #customers {
+    padding: 120px 0;
+	.carousel-indicators {
+		li {
+	      width: 90px;
+	      height: 90px;
+	    }
+	}
+  }
+  /*** Plan ***/
+  #plan {
+    padding: 120px 0 100px;
+	.price-table {
+      width: 340px;
+      max-width: 100%;
+      padding: 0px 15px;
+      margin: 0 auto;
+      float: none;
+    }
+  }
+  /*** Footer ***/
+  #footer {
+	  .footer-container {
+	    padding-top: 80px;
+	    padding-bottom: 80px;
+	  }
+	  .footer-links {
+	    width: 100%;
+	  }
+  }
 }

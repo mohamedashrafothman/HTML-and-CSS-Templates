@@ -206,8 +206,8 @@ input[type="email"]:focus {
 .header-active {
   background-color: #fff !important;
   padding: 20px 0px !important;
-  -webkit-box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
-  box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
+  -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
 }
 .header-active #nav-icon {
   top: 38% !important;
