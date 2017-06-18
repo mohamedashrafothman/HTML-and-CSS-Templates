@@ -38,10 +38,10 @@
 						<ul>
 							<li><a href="#">tour</a></li>
 							<li><a href="#features">features</a></li>
-							<li><a href="#">Pricing</a></li>
+							<li><a href="#plan">Pricing</a></li>
 							<li><a href="#">Help</a></li>
 							<li><a href="#">Contacts</a></li>
-							<li><a href="#" class="btn btn-blue"><i class="fa fa-apple" aria-hidden="true"></i>Get App</a></li>
+							<li><a href="#ready-to-buy" class="btn btn-blue"><i class="fa fa-apple" aria-hidden="true"></i>Get App</a></li>
 						</ul>
 
 						<div id="slide-menu-footer">
@@ -66,7 +66,7 @@
 							<ul id="nav-left">
 								<li><a href="#">tour</a></li>
 								<li><a href="#features">features</a></li>
-								<li><a href="#">Pricing</a></li>
+								<li><a href="#plan">Pricing</a></li>
 							</ul>
 						</div>
 						<div class="col-md-4 text-center" id="nav-center">
@@ -76,7 +76,7 @@
 							<ul id="nav-right">
 								<li><a href="#" class="help">Help</a></li>
 								<li><a href="#">Contacts</a></li>
-								<li><a href="#" class="btn btn-blue"><i class="fa fa-apple" aria-hidden="true"></i>Get App</a></li>
+								<li><a href="#ready-to-buy" class="btn btn-blue"><i class="fa fa-apple" aria-hidden="true"></i>Get App</a></li>
 							</ul>
 						</div>
 					</div>
@@ -251,10 +251,10 @@
 			              <div class="carousel-inner text-center">
 			                <!-- Bottom Carousel Indicators -->
 			                <ol class="carousel-indicators">
-			                    <li data-target="#quote-carousel" data-slide-to="0" class="active">
+			                    <li data-target="#quote-carousel" data-slide-to="0">
 			                      <img class="img-responsive " src="assets/images/user1.jpg" alt="">
 			                    </li>
-			                    <li data-target="#quote-carousel" data-slide-to="1">
+			                    <li data-target="#quote-carousel" data-slide-to="1"  class="active">
 			                      <img class="img-responsive" src="assets/images/user2.jpg" alt="">
 			                      <div class="shadow"></div>
 			                    </li>
@@ -274,7 +274,7 @@
 			                        <i class="fa fa-star gold-star"></i>
 			                        <i class="fa fa-star gold-star"></i>
 			                        <i class="fa fa-star gold-star"></i>
-			                        <i class="fa fa-star"></i>
+			                        <i class="fa fa-star gold-star"></i>
 			                      </div>
 			                      <p class="customer-name">Cameron Downman</p>
 			                    </div>
@@ -311,18 +311,93 @@
 			                  </div>
 			              </div>
 
+
 			              <!-- Carousel Buttons Next/Prev -->
-			              <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><i class="fa fa-chevron-left"></i></a>
-			              <a data-slide="next" href="#quote-carousel" class="right carousel-control"><i class="fa fa-chevron-right"></i></a>
+			              <a data-slide="prev" href="#quote-carousel" class="left carousel-control"><span class="lnr lnr-chevron-left"></span></a>
+			              <a data-slide="next" href="#quote-carousel" class="right carousel-control"><span class="lnr lnr-chevron-right"></span></a>
 			            </div>
 			          </div>
 			        </div>
 			      </div>
 			    </div>
 			  </section>
-			<section>
-				<div class="container"></div>
-			</section>
+
+  			<section id="plan">
+  			  <div class="container">
+  				<div class="row">
+  				  <div class="col-md-4">
+  					<h2>Choose your perfect plan</h2>
+  					<p>You are</p>
+  					<div class="toggle-container cf">
+  					  <div class="switch-toggles">
+  						<div class="individual">Individual</div> <!-- active -->
+  						<div class="company">Company</div>
+  					  </div>
+  					</div>
+  					<p>
+  					  Thus much I thought proper to tell you in relation to yourself, and to the trust I reposed in you.
+  					</p>
+  					<p class="info">Have a bigger team? <a href="#">Let‘s talk</a></p>
+  				  </div>
+  				  <div id="price_tables" class="col-md-7 col-md-offset-1">
+  					<div class="individual cf">
+  					  <div class="price-table highlighted">
+  						<div class="table-inner text-center">
+  						  <h3>Starter</h3>
+  						  <span class="price">Free</span>
+  						  <p class="phrase">Build your schedule<br> every day</p>
+  						  <ul class="feature-list">
+  							<li><i class="fa fa-check"></i> Unlimeted events</li>
+  							<li><i class="fa fa-check"></i> Connect Dropbox & Evernote</li>
+  							<li>&nbsp;</li>
+  						  </ul>
+  						  <a href="" class="btn btn-blue">Get Started</a>
+  						</div>
+  					  </div>
+  					  <div class="price-table">
+  						<div class="table-inner text-center">
+  						  <h3>Pro</h3>
+  						  <span class="price">$4.99</span>
+  						  <p class="phrase">Make your life<br> better</p>
+  						  <ul class="feature-list">
+  							<li><i class="fa fa-check"></i> Unlimeted events</li>
+  							<li><i class="fa fa-check"></i> Connect Dropbox & Evernote</li>
+  							<li><i class="fa fa-check"></i> Personal assistant</li>
+  						  </ul>
+  						  <a href="" class="btn btn-blue">Make me a pro</a>
+  						</div>
+  					  </div>
+  					</div>
+
+					<div class="company cf">
+						<div class="price-table">
+						  <div class="table-inner text-center">
+						    <h3>Starter</h3>
+						    <span class="price">Free</span>
+						    <p class="phrase">Build your schedule<br> every day</p>
+						    <ul class="feature-list">
+						      <li><i class="fa fa-check"></i> Unlimeted events</li>
+						      <li><i class="fa fa-check"></i> Connect Dropbox & Evernote</li>
+						      <li>&nbsp;</li>
+						    </ul>
+						    <a href="" class="btn btn-blue">Get Started</a>
+						  </div>
+						</div>
+						<div class="price-table highlighted">
+						  <div class="table-inner text-center">
+						    <h3>Pro</h3>
+						    <span class="price">$4.99</span>
+						    <p class="phrase">Make your life<br> better</p>
+						    <ul class="feature-list">
+						      <li><i class="fa fa-check"></i> Unlimeted events</li>
+						      <li><i class="fa fa-check"></i> Connect Dropbox & Evernote</li>
+						      <li><i class="fa fa-check"></i> Personal assistant</li>
+						    </ul>
+						    <a href="" class="btn btn-blue">Make me a pro</a>
+						  </div>
+						</div>
+					</div><!-- /Company -->
+
 			<footer id="footer">
 				<div class="container"></div>
 			</footer>

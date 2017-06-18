@@ -203,14 +203,14 @@ input[type="email"]:focus {
 /*=============================
 		Nav Bar
 =============================*/
-.active {
+.header-active {
   background-color: #fff !important;
-  padding: 20px 0px !important;
+  padding: 20px 0px;
   -webkit-box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
   box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
 }
-.active #nav-icon {
-  top: 38% !important;
+.header-active #nav-icon {
+  top: 38%;
 }
 
 .open {
