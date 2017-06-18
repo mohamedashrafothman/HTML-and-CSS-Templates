@@ -205,12 +205,12 @@ input[type="email"]:focus {
 =============================*/
 .header-active {
   background-color: #fff !important;
-  padding: 20px 0px;
+  padding: 20px 0px !important;
   -webkit-box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
   box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
 }
 .header-active #nav-icon {
-  top: 38%;
+  top: 38% !important;
 }
 
 .open {
@@ -857,6 +857,103 @@ input[type="email"]:focus {
 }
 #plan #price_tables .individual.active .price-table, #plan #price_tables .company.active .price-table {
   display: block;
+}
+
+/*=============================
+		   subscripe
+=============================*/
+#subscribe {
+  padding: 90px 0px 50px;
+}
+#subscribe .btn {
+  padding-left: 34px;
+  padding-right: 34px;
+}
+#subscribe .btn-green:hover, #subscribe .btn-green:focus {
+  background-color: #6fc754;
+  border: 1px solid transparent;
+  color: white !important;
+}
+#subscribe p {
+  font-size: 14px;
+  margin-top: 10px;
+  margin-bottom: 0px;
+}
+
+/*=============================
+		   Footer
+=============================*/
+#footer {
+  color: #8c8f94;
+  font-size: 16px;
+}
+#footer .footer-container {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+#footer .copyright-container {
+  padding-top: 20px;
+  padding-bottom: 25px;
+}
+#footer .logo {
+  margin-bottom: 36px;
+}
+#footer p {
+  font-size: 14px;
+  line-height: 24px;
+}
+#footer .app_download img {
+  margin-top: 6px;
+}
+#footer ul li .title {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #26272d;
+  font-size: 12px;
+}
+#footer ul li a {
+  color: #8c8f94;
+  text-decoration: none;
+  line-height: 36px;
+}
+#footer ul li a:hover {
+  color: #267df4;
+}
+#footer .socials {
+  margin-top: 20px;
+}
+#footer .socials li {
+  display: inline-block;
+  font-size: 20px;
+  margin-right: 20px;
+}
+#footer .socials li a {
+  color: #8c8f94;
+  -webkit-transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+  transition: all 0.37s cubic-bezier(0, 0, 0.58, 1);
+}
+#footer .socials li a:hover {
+  color: #26272d;
+}
+#footer .socials li:last-child {
+  margin-right: 0px;
+}
+#footer .more-info {
+  line-height: 24px;
+  font-size: 14px;
+}
+#footer .made-by {
+  font-size: 9px;
+  font-weight: 700;
+  line-height: 22px;
+  color: #26272d;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+#footer .made-by a img {
+  margin-top: -8px;
+  margin-left: 8px;
 }
 
 /* Extra Small Screen - Smart Phones and Tablets */
