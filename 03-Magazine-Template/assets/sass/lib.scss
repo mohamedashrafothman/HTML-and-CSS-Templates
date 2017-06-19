@@ -40,8 +40,10 @@ h6::selection,
 p::selection,
 a::selection,
 span::selection,
-img::selection  {
-    background: rgba(247, 200, 115, 0.5);
+img::selection,
+sup::selection  {
+    background: rgba(247, 200, 115,0.75);
+    color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {

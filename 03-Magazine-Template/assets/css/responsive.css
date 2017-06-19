@@ -1,7 +1,11 @@
 /* Extra Small Screen - Smart Phones and Tablets */
 @media (max-width: 767px) {
   #nav #side-menu {
-    width: 350px;
+    width: 400px;
+    overflow: auto;
+  }
+  #nav #about-me {
+    margin-top: 50px;
   }
 
   #articles .article .article-heading {
@@ -13,7 +17,11 @@
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
   #nav #side-menu {
-    width: 350px;
+    width: 400px;
+    overflow: auto;
+  }
+  #nav #about-me {
+    margin-top: 50px;
   }
 
   #articles .article .article-heading {
@@ -25,7 +33,11 @@
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {
   #nav #side-menu {
-    width: 350px;
+    width: 400px;
+    overflow: auto;
+  }
+  #nav #about-me {
+    margin-top: 50px;
   }
 
   #articles .article .article-heading {

@@ -31,8 +31,10 @@ h6::-moz-selection,
 p::-moz-selection,
 a::-moz-selection,
 span::-moz-selection,
-img::-moz-selection {
-  background: rgba(247, 200, 115, 0.5);
+img::-moz-selection,
+sup::-moz-selection {
+  background: rgba(247, 200, 115, 0.75);
+  color: #fff;
 }
 
 h1::selection,
@@ -44,8 +46,10 @@ h6::selection,
 p::selection,
 a::selection,
 span::selection,
-img::selection {
-  background: rgba(247, 200, 115, 0.5);
+img::selection,
+sup::selection {
+  background: rgba(247, 200, 115, 0.75);
+  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -173,6 +177,92 @@ ul > li {
   font-size: 24px;
   text-decoration: none;
 }
+#nav #side-menu #about-me {
+  text-align: center !important;
+}
+#nav #side-menu #about-me .avatar {
+  border-radius: 50%;
+  width: 180px;
+  margin: 0 auto;
+}
+#nav #side-menu #about-me h5 {
+  font-size: 16px;
+  color: #999999;
+  text-align: center;
+  margin: 20px 0px;
+  text-transform: uppercase;
+}
+#nav #side-menu #about-me h3 {
+  color: black;
+  font-weight: 600;
+  font-family: "Playfair Display", serif;
+  margin: 20px 0px 15px;
+  text-align: center;
+  text-transform: capitalize;
+  font-size: 32px;
+}
+#nav #side-menu #about-me p {
+  font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #999999;
+  text-align: center;
+  text-transform: capitalize;
+  padding: 0px;
+}
+#nav #side-menu #about-me #socials-nav-right {
+  display: block;
+  float: none !important;
+  margin: 20 auto;
+}
+#nav #side-menu #search-and-links {
+  margin-top: 50px;
+}
+#nav #side-menu #search-and-links h4 {
+  font-family: "Playfair Display", serif;
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: lightgray;
+  opacity: 0.75;
+  margin-bottom: 20px;
+  letter-spacing: 3px;
+}
+#nav #side-menu #search-and-links ul {
+  display: block;
+  margin-bottom: 50px;
+}
+#nav #side-menu #search-and-links ul li {
+  margin: 20px 0px;
+  text-transform: capitalize;
+}
+#nav #side-menu #search-and-links ul li a {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+#nav #side-menu #search-and-links form input {
+  border: 2px solid lightgray;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-size: 20px;
+  color: #999999;
+  text-transform: capitalize;
+}
+#nav #side-menu #search-and-links form input::-webkit-input-placeholder {
+  color: lightgray;
+}
+#nav #side-menu #search-and-links form input::-moz-placeholder {
+  color: lightgray;
+}
+#nav #side-menu #search-and-links form input:-ms-input-placeholder {
+  color: lightgray;
+}
+#nav #side-menu #search-and-links form input::placeholder {
+  color: lightgray;
+}
 #nav .row #nav-center a {
   position: relative;
   text-decoration: none;
@@ -277,7 +367,11 @@ ul > li {
 /* Extra Small Screen - Smart Phones and Tablets */
 @media (max-width: 767px) {
   #nav #side-menu {
-    width: 350px;
+    width: 400px;
+    overflow: auto;
+  }
+  #nav #about-me {
+    margin-top: 50px;
   }
 
   #articles .article .article-heading {
@@ -289,7 +383,11 @@ ul > li {
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
   #nav #side-menu {
-    width: 350px;
+    width: 400px;
+    overflow: auto;
+  }
+  #nav #about-me {
+    margin-top: 50px;
   }
 
   #articles .article .article-heading {
@@ -301,7 +399,11 @@ ul > li {
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {
   #nav #side-menu {
-    width: 350px;
+    width: 400px;
+    overflow: auto;
+  }
+  #nav #about-me {
+    margin-top: 50px;
   }
 
   #articles .article .article-heading {
