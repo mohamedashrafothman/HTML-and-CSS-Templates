@@ -127,3 +127,28 @@ ul > li {
 .open {
   left: 0px !important;
 }
+
+.tag {
+  font-size: 18px;
+  color: #f7c873;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.article-heading {
+  font-family: "Playfair Display", serif;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  padding: 0px 15px;
+  margin-bottom: 20px;
+  height: 150px;
+  color: black;
+}
+
+.date {
+  letter-spacing: 2px;
+  color: #999999;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
