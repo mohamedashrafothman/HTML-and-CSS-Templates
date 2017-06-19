@@ -1,4 +1,4 @@
-
+@import "lib.scss";
 /* Extra Small Screen - Smart Phones and Tablets */
 @media (max-width:767px) {
 
@@ -20,6 +20,15 @@
 			}
 		}
 	}
+		#article-head {
+        img {
+            width: 100%;
+        }
+ 		.article-heading {
+            font-size: 38px !important;
+            padding: 0px !important;
+        }
+    }
 
 
 
@@ -49,6 +58,15 @@
 			}
 		}
 	}
+	#article-head {
+        img {
+            width: 100%;
+        }
+ 		.article-heading {
+            font-size: 46px !important;
+            padding: 0px 60px !important;
+        }
+    }
 
 
 
@@ -78,6 +96,15 @@
 			}
 		}
 	}
+	#article-head {
+        img {
+            width: 100%;
+        }
+      .article-heading {
+            font-size: 54px !important;
+            padding: 0px 60px !important;
+        }
+    }
 
 
 

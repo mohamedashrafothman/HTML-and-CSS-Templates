@@ -1,12 +1,12 @@
 @import url("https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900|Roboto:100,300,400,400i,500,500i,700,900");
 /*=========================
-		  Fonts
+      Fonts
 =========================*/
 /*=========================
-		  Colors
+      Colors
 =========================*/
 /*=============================
-		Reset Styles
+    Reset Styles
 =============================*/
 * {
   padding: 0px;
@@ -90,12 +90,10 @@ p.subtitle {
 
 p {
   font-size: 18px;
-  line-height: 28px;
-  color: #8c8f94;
+  line-height: 1.8;
 }
 
 a {
-  color: #267df4;
   text-decoration: underline;
   outline: 0;
 }
@@ -112,7 +110,7 @@ ul > li {
 }
 
 /*=============================
-		Nav Bar
+    Nav Bar
 =============================*/
 .header-active {
   background-color: #fff !important;
