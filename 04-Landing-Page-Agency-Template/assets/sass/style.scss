@@ -1,0 +1,189 @@
+@import "lib.scss";
+
+/*=============================
+            NavBar
+=============================*/
+#navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    padding: 50px 0px;
+    z-index: 10;
+    background: transparent;
+    transition: $transition-1;
+    .logo{
+        width: 105px;
+        height: 45px;
+        padding-left: 30px;
+    }
+    .navbar-links, .social-links{
+        padding-top: 10px;
+        text-transform: capitalize;
+        ul{
+            display: block;
+            li{
+                display: inline-block;
+                margin-right: 25px;
+                a{
+                    text-decoration: none;
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: bold;
+                    transition: $transition-1;
+                    &:hover, &:focus, &:active{
+                        color: #fd3e4f;
+                    }
+                }
+            }
+            li:last-child{
+                margin-left: 0px;
+            }
+        }
+    }
+    .navbar-links{
+        text-align: center;
+    }
+    .social-links{
+        text-align: right;
+
+    }
+}
+
+/*=============================
+            Header
+=============================*/
+
+#header{
+    background: url('../images/header-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: $white;
+    h4{
+        margin-top: 50px;
+        font-size: 25px;
+        font-weight: 400;
+    }
+    h1{
+        font-size: 50px;
+        font-weight: bolder;
+        letter-spacing: -3px;
+        margin-bottom: 70px;
+    }
+}
+
+/*=============================
+            About
+=============================*/
+#about{
+    background: $background-gradient;
+    padding: 80px 0px;
+    color: $white;
+    p{
+        font-family: $popFont;
+        font-size: 35px;
+        font-weight: lighter;
+        line-height: 35pt;
+        letter-spacing: -1pt;
+        margin: 15px 0px;
+    }
+    button{
+        position: relative;
+        padding-left: 0px;
+        span{
+            position: absolute;
+            right: 25px;
+            top: 18px;
+            font-weight: bolder;
+            transition: $transition-1;
+        }
+        &:hover{
+            span{
+                right: 10px;
+            }
+        }
+    }
+}
+
+#processes{
+    padding: 0px;
+    background: $white;
+    .process{
+        position: relative;
+        padding: 60px 40px;
+        background: $white;
+        font-family: $popFont;
+        h3{
+            color: $black;
+            line-height: 35pt;
+            letter-spacing: -1pt;
+            font-size: 20px;
+            font-weight: bold;
+            text-transform: capitalize;
+            margin: 0px 0px 20px 0px;
+
+        }
+        p{
+            color: $black;
+            font-size: 14px;
+
+        }
+        .process-number{
+            position: absolute;
+            top: 15%;
+            left: 30px;
+            font-size: 120px;
+            font-weight: bolder;
+            padding: 25px 0px;
+            background: $background-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            opacity: 0.25;
+            z-index: 1;
+            transition: $transition-2;
+        }
+        &:hover{
+            background: linear-gradient(210deg, #fd3f81, #fd3e4f);
+            padding: 33px 40px;
+            .process-number{
+                position: relative;
+                top: 0;
+                left: 0px;
+                font-size: 60px;
+                font-weight: bolder;
+                padding: 0px 0px;
+                margin: 0px;
+                color: $white;
+                background: transparent;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: $white;
+                opacity: 1;
+            }
+            h3{
+                color: $white;
+                line-height: 35pt;
+                letter-spacing: -1pt;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: capitalize;
+                margin: 0px 0px 20px 0px;
+            }
+            p{
+                color: $white;
+                font-size: 14px;
+            }
+        }
+    }
+}
+
+
+
+
+@import "responsive.scss"
