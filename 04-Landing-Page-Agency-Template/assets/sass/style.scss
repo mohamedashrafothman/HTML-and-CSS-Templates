@@ -183,7 +183,292 @@
     }
 }
 
+/*=============================
+            Team
+=============================*/
+#team{
+    padding: 80px;
+    .item{
+        .team-member-info{
+            text-align: center;
+            margin-top: 40px;
+            h3{
+                font-family: $popFont;
+                -webkit-text-shadow: $shadow;
+                -moz-text-shadow:$shadow;
+                text-shadow: $shadow;
+                line-height: 0;
+                font-size: 20px;
+                font-weight: bold;
+                text-transform: capitalize;
+                -webkit-transform: scale(1.25);
+                -moz-transform: scale(1.25);
+                -ms-transform: scale(1.25);
+                transform: scale(1.25);
+                position: relative;
+                -webkit-transition: $transition-1;
+                -moz-transition:$transition-1;
+                transition: $transition-1;
+                color: $black;
+                opacity: 1;
+            }
+            p{
+                font-family: $popFont;
+                -webkit-text-shadow: $shadow;
+                -moz-text-shadow:$shadow;
+                text-shadow: $shadow;
+                font-size: 16px;
+                font-weight: lighter;
+                line-height: 0;
+                text-transform: uppercase;
+                -webkit-transform: scale(1.25);
+                -moz-transform: scale(1.25);
+                -ms-transform: scale(1.25);
+                transform: scale(1.25);
+                position: relative;
+                -webkit-transition: $transition-1;
+                -moz-transition:$transition-1;
+                transition: $transition-1;
+                color: $black;
+                opacity: 1;
+            }
+        }
+        .btn07 {
+            width: 100%;
+            overflow: hidden;
+            position: relative;
+            border-radius: 5px;
+            img {
+                -webkit-box-shadow: $shadow_2;
+                -moz-box-shadow: $shadow_2;
+                box-shadow: $shadow_2;
+                width: 100%;
+                position: relative;
+                top: 0;
+                left: 0;
+            }
+            .ovrly {
+                background: $background-gradient;
+                height: 100%;
+                left: 0;
+                position: absolute;
+                top: 0;
+                width: 100%;
+                opacity: 0;
+                border-radius: 5px;
+                -webkit-transition: all 0.3s;
+                -moz-transition: all 0.3s;
+                transition: all 0.3s;
+            }
+            .buttons {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                -webkit-transform: translate(-50%, -50%);
+                -moz-transform: translate(-50%, -50%);
+                -ms-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%);
+                h3{
+                    font-family: $popFont;
+                    -webkit-text-shadow: $shadow;
+                    -moz-text-shadow:$shadow;
+                    text-shadow: $shadow;
+                    line-height: 5px;
+                    font-size: 20px;
+                    font-weight: bold;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: capitalize;
+                    opacity: 0;
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    transform: scale(1.5);
+                    position: relative;
+                    -webkit-transition: $transition-1;
+                    -moz-transition:$transition-1;
+                    transition: $transition-1;
+                    color: transparent;
+                }
+                p{
+                    font-family: $popFont;
+                    -webkit-text-shadow: $shadow;
+                    -moz-text-shadow:$shadow;
+                    text-shadow: $shadow;
+                    line-height: 5px;
+                    font-size: 16px;
+                    font-weight: lighter;
+                    text-align: center;
+                    text-decoration: none;
+                    text-transform: uppercase;
+                    opacity: 0;
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    transform: scale(1.5);
+                    position: relative;
+                    -webkit-transition: $transition-1;
+                    -moz-transition:$transition-1;
+                    transition: $transition-1;
+                    color: transparent;
+                }
+                .fa {
+                    -webkit-text-shadow: $shadow;
+                    -moz-text-shadow:$shadow;
+                    text-shadow: $shadow;
+                    display: inline-block;
+                    line-height: 5px;
+                    font-size: 20px;
+                    text-align: center;
+                    text-decoration: none;
+                    margin-top: 50px;
+                    width: 40px;
+                    height: 40px;
+                    opacity: 0;
+                    -webkit-transform: scale(1.5);
+                    -moz-transform: scale(1.5);
+                    -ms-transform: scale(1.5);
+                    transform: scale(1.5);
+                    position: relative;
+                    -webkit-transition: $transition-1;
+                    -moz-transition:$transition-1;
+                    transition: $transition-1;
+                    color: transparent;
+                }
+            }
+            &:hover{
+                .buttons {
+                    .fa, h3, p {
+                        opacity: 1;
+                        -webkit-transform: scale(1);
+                        -moz-transform: scale(1);
+                        -ms-transform: scale(1);
+                        transform: scale(1);
+                        color: $white;
+                    }
+                }
+                .ovrly {
+                   opacity: 0.75;
+               }
+            }
+        }
+        &:hover{
+            .team-member-info{
+                h3, p{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}
+
+/*=============================
+            CTA1
+=============================*/
+
+#cta1{
+    position: relative;
+    padding: 180px 0px;
+    #device-feature-description{
+        h2{
+            font-size: 40px;
+            color: $black;
+            font-weight: bolder;
+            padding: 0px;
+            margin-bottom: 60px;
+            span{
+                background: $background-gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        p{
+            font-size: 16px;
+            color: $gray;
+            padding: 0px;
+            margin-bottom: 60px;
+
+        }
+    }
+    #device-showcase{
+        position: absolute;
+        bottom: 160px;
+        left: 0px;
+        width: 740px;
+        height: 500px;
+    }
+}
 
 
+/*=============================
+            CTA2
+=============================*/
+#cta2{
+    padding: 200px 0px;
+    position: relative;
+    background: $lightGray;
+    #websites-feature-description{
+        h2{
+            font-size: 40px;
+            color: $black;
+            font-weight: bolder;
+            padding: 0px;
+            margin-bottom: 60px;
+            span{
+                background: $background-gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        p{
+            font-size: 16px;
+            color: $gray;
+            padding: 0px;
+            margin-bottom: 60px;
+
+        }
+    }
+    #websites-showcase{
+        .website{
+            position: absolute;
+            right: 0;
+            bottom: 0;
+            border-radius: 10px;
+        }
+        .website:first-child{
+            right: 500px;
+            bottom: 30px;
+            z-index: 5;
+        }
+        .website:nth-child(2){
+            right: 180px;
+            bottom: 140px;
+            z-index: 4;
+        }
+        .website:nth-child(3){
+            right: 0;
+            bottom: -100px;
+            z-index: 3;
+        }
+        .website:nth-child(4){
+            right: 250px;
+            bottom: 290px;
+            z-index: 2;
+        }
+        .website:nth-child(5){
+            right: 80px;
+            bottom: 60px;
+            z-index: 1;
+        }
+    }
+}
+
+/*=============================
+            Services
+=============================*/
+#service{
+    padding: 80px 0px;
+    background: $black;
+}
 
 @import "responsive.scss"

@@ -47,7 +47,7 @@
 body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
-  height: 2000px;
+  overflow-x: hidden;
 }
 
 h1::-moz-selection,
@@ -135,10 +135,10 @@ ul > li {
   background: -webkit-linear-gradient(0deg, #fd3f81, #fd3e4f) !important;
   background: linear-gradient(90deg, #fd3f81, #fd3e4f) !important;
   padding: 20px 0px !important;
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 .header-active a:hover, .header-active a:active, .header-active a:focus {
   color: #000 !important;

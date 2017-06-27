@@ -4,7 +4,9 @@
             Color
 =============================*/
 $white: #fff;
-$black: #000;
+$black: #222222;
+$gray: #717171;
+$lightGray: #f4f4f4;
 $background-gradient: linear-gradient(90deg, #fd3f81, #fd3e4f);
 $transition-1: all 0.75s ease-in-out;
 $transition-2: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
@@ -52,7 +54,7 @@ $popFont: 'Poppins', sans-serif;
 body{
   font-family: $popFont;
   -webkit-font-smoothing: antialiased;
-  height: 2000px;
+  overflow-x: hidden;
 }
 h1::-moz-selection,
 h2::-moz-selection,
@@ -143,9 +145,9 @@ ul > li {
 .header-active{
     background: $background-gradient !important;
     padding: 20px 0px !important;
-    transition: $transition-1;
     -webkit-box-shadow: $shadow;
             box-shadow: $shadow;
+    transition: $transition-1;
     a{
         &:hover, &:active, &:focus{
             color: #000 !important;

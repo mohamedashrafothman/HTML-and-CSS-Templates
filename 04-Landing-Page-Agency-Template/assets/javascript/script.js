@@ -2,10 +2,10 @@ $(document).ready(function(){
 
     // NavBar Scroll Effect
     $(window).scroll(function() {
-        if ($(this).scrollTop() > 20) {
-            $('#navbar').addClass('header-active');
-        } else {
+        if ($(this).scrollTop() < 20) {
             $('#navbar').removeClass('header-active');
+        } else {
+            $('#navbar').addClass('header-active');
         }
     });
 

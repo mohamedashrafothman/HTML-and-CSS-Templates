@@ -47,7 +47,7 @@
 body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
-  height: 2000px;
+  overflow-x: hidden;
 }
 
 h1::-moz-selection,
@@ -135,10 +135,10 @@ ul > li {
   background: -webkit-linear-gradient(0deg, #fd3f81, #fd3e4f) !important;
   background: linear-gradient(90deg, #fd3f81, #fd3e4f) !important;
   padding: 20px 0px !important;
-  -webkit-transition: all 0.75s ease-in-out;
-  transition: all 0.75s ease-in-out;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
 }
 .header-active a:hover, .header-active a:active, .header-active a:focus {
   color: #000 !important;
@@ -335,7 +335,7 @@ ul > li {
   font-family: "Poppins", sans-serif;
 }
 #processes .process h3 {
-  color: black;
+  color: #222222;
   line-height: 35pt;
   letter-spacing: -1pt;
   font-size: 20px;
@@ -344,7 +344,7 @@ ul > li {
   margin: 0px 0px 20px 0px;
 }
 #processes .process p {
-  color: black;
+  color: #222222;
   font-size: 14px;
 }
 #processes .process .process-number {
@@ -394,6 +394,263 @@ ul > li {
 #processes .process:hover p {
   color: white;
   font-size: 14px;
+}
+
+/*=============================
+            Team
+=============================*/
+#team {
+  padding: 80px;
+}
+#team .item .team-member-info {
+  text-align: center;
+  margin-top: 40px;
+}
+#team .item .team-member-info h3 {
+  font-family: "Poppins", sans-serif;
+  -webkit-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -moz-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  line-height: 0;
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+  position: relative;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  color: #222222;
+  opacity: 1;
+}
+#team .item .team-member-info p {
+  font-family: "Poppins", sans-serif;
+  -webkit-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -moz-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  font-size: 16px;
+  font-weight: lighter;
+  line-height: 0;
+  text-transform: uppercase;
+  -webkit-transform: scale(1.25);
+  -ms-transform: scale(1.25);
+  transform: scale(1.25);
+  position: relative;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  color: #222222;
+  opacity: 1;
+}
+#team .item .btn07 {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  border-radius: 5px;
+}
+#team .item .btn07 img {
+  -webkit-box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
+  box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
+  width: 100%;
+  position: relative;
+  top: 0;
+  left: 0;
+}
+#team .item .btn07 .ovrly {
+  background: -webkit-linear-gradient(0deg, #fd3f81, #fd3e4f);
+  background: linear-gradient(90deg, #fd3f81, #fd3e4f);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+  border-radius: 5px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+#team .item .btn07 .buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+#team .item .btn07 .buttons h3 {
+  font-family: "Poppins", sans-serif;
+  -webkit-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -moz-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  line-height: 5px;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  text-decoration: none;
+  text-transform: capitalize;
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  position: relative;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  color: transparent;
+}
+#team .item .btn07 .buttons p {
+  font-family: "Poppins", sans-serif;
+  -webkit-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -moz-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  line-height: 5px;
+  font-size: 16px;
+  font-weight: lighter;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  position: relative;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  color: transparent;
+}
+#team .item .btn07 .buttons .fa {
+  -webkit-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  -moz-text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  text-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+  display: inline-block;
+  line-height: 5px;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: none;
+  margin-top: 50px;
+  width: 40px;
+  height: 40px;
+  opacity: 0;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  position: relative;
+  -webkit-transition: all 0.75s ease-in-out;
+  transition: all 0.75s ease-in-out;
+  color: transparent;
+}
+#team .item .btn07:hover .buttons .fa, #team .item .btn07:hover .buttons h3, #team .item .btn07:hover .buttons p {
+  opacity: 1;
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  color: white;
+}
+#team .item .btn07:hover .ovrly {
+  opacity: 0.75;
+}
+#team .item:hover .team-member-info h3, #team .item:hover .team-member-info p {
+  opacity: 0;
+}
+
+/*=============================
+            CTA1
+=============================*/
+#cta1 {
+  position: relative;
+  padding: 180px 0px;
+}
+#cta1 #device-feature-description h2 {
+  font-size: 40px;
+  color: #222222;
+  font-weight: bolder;
+  padding: 0px;
+  margin-bottom: 60px;
+}
+#cta1 #device-feature-description h2 span {
+  background: -webkit-linear-gradient(0deg, #fd3f81, #fd3e4f);
+  background: linear-gradient(90deg, #fd3f81, #fd3e4f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#cta1 #device-feature-description p {
+  font-size: 16px;
+  color: #717171;
+  padding: 0px;
+  margin-bottom: 60px;
+}
+#cta1 #device-showcase {
+  position: absolute;
+  bottom: 160px;
+  left: 0px;
+  width: 740px;
+  height: 500px;
+}
+
+/*=============================
+            CTA2
+=============================*/
+#cta2 {
+  padding: 200px 0px;
+  position: relative;
+  background: #f4f4f4;
+}
+#cta2 #websites-feature-description h2 {
+  font-size: 40px;
+  color: #222222;
+  font-weight: bolder;
+  padding: 0px;
+  margin-bottom: 60px;
+}
+#cta2 #websites-feature-description h2 span {
+  background: -webkit-linear-gradient(0deg, #fd3f81, #fd3e4f);
+  background: linear-gradient(90deg, #fd3f81, #fd3e4f);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#cta2 #websites-feature-description p {
+  font-size: 16px;
+  color: #717171;
+  padding: 0px;
+  margin-bottom: 60px;
+}
+#cta2 #websites-showcase .website {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border-radius: 10px;
+}
+#cta2 #websites-showcase .website:first-child {
+  right: 500px;
+  bottom: 30px;
+  z-index: 5;
+}
+#cta2 #websites-showcase .website:nth-child(2) {
+  right: 180px;
+  bottom: 140px;
+  z-index: 4;
+}
+#cta2 #websites-showcase .website:nth-child(3) {
+  right: 0;
+  bottom: -100px;
+  z-index: 3;
+}
+#cta2 #websites-showcase .website:nth-child(4) {
+  right: 250px;
+  bottom: 290px;
+  z-index: 2;
+}
+#cta2 #websites-showcase .website:nth-child(5) {
+  right: 80px;
+  bottom: 60px;
+  z-index: 1;
+}
+
+/*=============================
+            Services
+=============================*/
+#service {
+  padding: 80px 0px;
+  background: #222222;
 }
 
 /* Extra Small Screen - Smart Phones and Tablets */
