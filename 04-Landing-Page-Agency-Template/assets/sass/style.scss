@@ -49,6 +49,54 @@
         text-align: right;
 
     }
+
+    .sidebar-icon{
+        position: absolute;
+        right: 50px;
+        top: 40%;
+        display: none;
+        span{
+            color: $white !important;
+            font-size: 22px;
+        }
+    }
+    .sidebar{
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        background: $background-gradient;
+        z-index: 20;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: $transition-2;
+        .navbar-close-icon{
+            position: absolute;
+            top: 50px;
+            right: 50px;
+            color: $white;
+            font-size: 26px;
+            font-weight: bolder;
+            cursor: pointer;
+        }
+        .sidebar-menu-items{
+            text-align: center;
+            li{
+                a{
+                    color: $white;
+                    font-size: 40px;
+                    text-transform: capitalize;
+                    transition: $transition-1;
+                    &:hover{
+                        color: $black;
+                    }
+                }
+            }
+        }
+    }
 }
 
 /*=============================
@@ -77,6 +125,7 @@
         letter-spacing: -3px;
         margin-bottom: 70px;
     }
+
 }
 
 /*=============================
@@ -97,6 +146,7 @@
     button{
         position: relative;
         padding-left: 0px;
+        padding-right: 30px;
         span{
             position: absolute;
             right: 25px;
@@ -112,6 +162,10 @@
     }
 }
 
+
+/*=============================
+            Process
+=============================*/
 #processes{
     padding: 0px;
     background: $white;
@@ -128,12 +182,10 @@
             font-weight: bold;
             text-transform: capitalize;
             margin: 0px 0px 20px 0px;
-
         }
         p{
             color: $black;
             font-size: 14px;
-
         }
         .process-number{
             position: absolute;
@@ -466,9 +518,170 @@
 /*=============================
             Services
 =============================*/
-#service{
-    padding: 80px 0px;
+#services{
+    padding: 120px 0px;
     background: $black;
+    #services-feature-description{
+        h2{
+            font-size: 40px;
+            color: $white;
+            font-weight: bolder;
+            padding: 0px;
+            span{
+                background: $background-gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+        }
+        p{
+            font-size: 18px;
+            color: $white;
+            padding: 0px;
+        }
+    }
+    .service{
+        padding-left:20px;
+        margin-bottom: 50px;
+        span{
+            font-size: 50px;
+            background: $background-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        h4{
+            font-size: 24px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: $white;
+            margin: 15px 0px;
+        }
+        p{
+            font-size: 14px;
+            color: $white;
+            font-weight: lighter;
+            padding: 0px;
+        }
+    }
+    .service:nth-child(3), .service:nth-child(4){
+        margin-bottom: 0px;
+    }
 }
+
+
+#footer{
+    padding: 85px 0px 0px 0px;
+    background: url('../images/footer-bg.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    #footer-logo{
+        h2{
+            a{
+                font-size: 25px;
+                color: $black;
+                text-transform: capitalize;
+                margin-bottom: 32px !important;
+                span{
+                    font-size: 80px;
+                    font-weight: bolder;
+                    color: $black !important;
+                    background: $background-gradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        p{
+            font-size: 14px;
+            font-weight: lighter;
+            color: $black;
+        }
+    }
+    #who-we-are, #footer-twitter{
+        padding: 0px 20px;
+        h3{
+            font-size: 18px;
+            font-weight: bold;
+            text-transform: capitalize;
+            color: $black;
+            margin-bottom: 40px;
+        }
+        p{
+            font-size: 14px;
+            color: $black;
+        }
+    }
+    #footer-twitter{
+        #tweet{
+            h4{
+                font-size: 16px;
+                font-weight: bold;
+                background: $background-gradient;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+            }
+
+            p:last-child{
+                margin-top: 30px;
+            }
+        }
+    }
+    #who-we-are{
+        #contact-info{
+            margin: 30px 0px;
+            li{
+                padding: 5px 0px;
+                span{
+                    font-size: 24px;
+                    font-weight: bold;
+                    margin-right: 10px;
+                    background: $background-gradient;
+                    -webkit-background-clip: text;
+                    -webkit-text-fill-color: transparent;
+                }
+            }
+        }
+        #social-contact{
+            display: block;
+            li{
+                display: inline-block;
+                margin-right: 40px;
+                a{
+                    i{
+                        font-size: 24px;
+                        background: $background-gradient;
+                        -webkit-background-clip: text;
+                        -webkit-text-fill-color: transparent;
+                    }
+
+                }
+                &:hover{
+                    a{
+                        i{
+                            background: $black;
+                            -webkit-background-clip: text;
+                            -webkit-text-fill-color: transparent;
+                        }
+                    }
+                }
+            }
+            li:last-child{
+                margin-right: 0px;
+            }
+        }
+    }
+    #footer-lic{
+        text-align: center;
+        padding: 60px 0px;
+        p{
+            font-size: 16px;
+            font-weight: bold;
+            background: $background-gradient;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+    }
+}
+
 
 @import "responsive.scss"

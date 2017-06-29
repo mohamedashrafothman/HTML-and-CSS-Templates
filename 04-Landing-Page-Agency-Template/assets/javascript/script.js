@@ -45,11 +45,29 @@ $(document).ready(function(){
                         } else {
                             $target.attr('tabindex', '-1'); // Adding tabindex for elements not focusable
                             $target.focus(); // Set focus again
-                        };
+                        }
                     });
                 }
             }
         });
+
+
+    // license year
+    $('#license-year').html(new Date().getFullYear());
+
+
+    // side Nav Bar
+	$('.sidebar-icon').on('click', function(e){
+		e.preventDefault();
+		$('.sidebar').addClass('open');
+		if($('.sidebar').hasClass('open')){
+			$('.navbar-close-icon, .sidebar-menu-items>ul>li').on('click', function(e){
+				e.preventDefault();
+				$('.sidebar').removeClass('open');
+			});
+		}
+	});
+
 
     // Wow Animations
     wow = new WOW({
