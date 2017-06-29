@@ -19,6 +19,79 @@
   .navbar-links, .right-align {
     display: none;
   }
+
+  .section-head {
+    padding: 15px 50px;
+  }
+
+  #header h4 {
+    margin-top: 100px;
+    font-size: 22px;
+  }
+  #header h1 {
+    font-size: 36px;
+  }
+
+  #about p {
+    font-size: 22px;
+    margin: 15px 0px;
+    padding: 0px 50px;
+  }
+  #about button {
+    margin-right: 50px;
+  }
+
+  #team {
+    padding: 80px 0px;
+  }
+  #team .item {
+    width: 80%;
+    margin: 50px auto;
+  }
+  #team .item .btn07 .buttons p {
+    line-height: 20px !important;
+  }
+
+  #cta1 {
+    padding: 80px 0px;
+  }
+  #cta1 #device-feature-description h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  #cta1 #device-feature-description p {
+    margin-bottom: 40px;
+  }
+  #cta1 #device-showcase {
+    display: none;
+  }
+
+  #cta2 {
+    padding: 150px 0px;
+  }
+  #cta2 #websites-feature-description h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  #cta2 #websites-feature-description p {
+    margin-bottom: 40px;
+  }
+  #cta2 #websites-showcase {
+    display: none;
+  }
+
+  #services {
+    padding: 80px 0px;
+  }
+  #services #services-feature-description h2 {
+    font-size: 36px;
+  }
+  #services #services-feature-description p {
+    font-size: 16px;
+  }
+  #services .service {
+    margin-top: 50px;
+  }
 }
 /* Medium Screen */
 @media (min-width: 992px) and (max-width: 1199px) {

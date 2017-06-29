@@ -6,7 +6,7 @@
             Fonts
 =============================*/
 /*=============================
-    Buttons
+            Buttons
 =============================*/
 .btn {
   padding: 15px;
@@ -33,7 +33,7 @@
 }
 
 /*=============================
-    Reset Styles
+        Reset Styles
 =============================*/
 * {
   padding: 0px;
@@ -48,37 +48,6 @@ body {
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
-}
-
-h1::-moz-selection,
-h2::-moz-selection,
-h3::-moz-selection,
-h4::-moz-selection,
-h5::-moz-selection,
-h6::-moz-selection,
-p::-moz-selection,
-a::-moz-selection,
-span::-moz-selection,
-img::-moz-selection,
-sup::-moz-selection {
-  background: linear-gradient(90deg, #fd3fb3, #fd3e4f);
-  color: #fff;
-}
-
-h1::selection,
-h2::selection,
-h3::selection,
-h4::selection,
-h5::selection,
-h6::selection,
-p::selection,
-a::selection,
-span::selection,
-img::selection,
-sup::selection {
-  background: -webkit-linear-gradient(0deg, #fd3fb3, #fd3e4f);
-  background: linear-gradient(90deg, #fd3fb3, #fd3e4f);
-  color: #fff;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -147,39 +116,6 @@ ul > li {
   margin: 15px 0px;
 }
 
-.process-active {
-  background: -webkit-linear-gradient(240deg, #fd3f81, #fd3e4f) !important;
-  background: linear-gradient(210deg, #fd3f81, #fd3e4f) !important;
-  padding: 33px 40px !important;
-}
-.process-active .process-number {
-  position: relative !important;
-  top: 0 !important;
-  left: 0px !important;
-  font-size: 60px !important;
-  font-weight: bolder !important;
-  padding: 0px 0px !important;
-  margin: 0px !important;
-  color: white !important;
-  background: transparent !important;
-  -webkit-background-clip: text !important;
-  -webkit-text-fill-color: white !important;
-  opacity: 1 !important;
-}
-.process-active h3 {
-  color: white !important;
-  line-height: 35pt !important;
-  letter-spacing: -1pt !important;
-  font-size: 20px !important;
-  font-weight: bold !important;
-  text-transform: capitalize !important;
-  margin: 0px 0px 20px 0px !important;
-}
-.process-active p {
-  color: white !important;
-  font-size: 14px !important;
-}
-
 .left-align {
   text-align: left;
 }
@@ -196,6 +132,135 @@ ul > li {
   left: 0px !important;
 }
 
+/*=============================
+          Animations
+=============================*/
+.tracking-in-expand {
+  -webkit-animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+  animation: tracking-in-expand 0.7s cubic-bezier(0.215, 0.61, 0.355, 1) both;
+}
+
+@-webkit-keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes tracking-in-expand {
+  0% {
+    letter-spacing: -0.5em;
+    opacity: 0;
+  }
+
+  40% {
+    opacity: 0.6;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+.text-focus-in {
+  -webkit-animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+  animation: text-focus-in 1s cubic-bezier(0.55, 0.085, 0.68, 0.53) both;
+}
+
+@-webkit-keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+@keyframes text-focus-in {
+  0% {
+    -webkit-filter: blur(12px);
+    filter: blur(12px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-filter: blur(0px);
+    filter: blur(0px);
+    opacity: 1;
+  }
+}
+.fade-in-bottom {
+  -webkit-animation: fade-in-bottom 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+  animation: fade-in-bottom 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955) both;
+}
+
+@-webkit-keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-bottom {
+  0% {
+    -webkit-transform: translateY(50px);
+    transform: translateY(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.fade-in-right {
+  -webkit-animation: fade-in-right 0.6s cubic-bezier(0.86, 0, 0.07, 1) both;
+  animation: fade-in-right 0.6s cubic-bezier(0.86, 0, 0.07, 1) both;
+}
+
+@-webkit-keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+@keyframes fade-in-right {
+  0% {
+    -webkit-transform: translateX(50px);
+    transform: translateX(50px);
+    opacity: 0;
+  }
+
+  100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
 /*=============================
             NavBar
 =============================*/
@@ -760,6 +825,9 @@ ul > li {
   margin-bottom: 0px;
 }
 
+/*=============================
+            Footer
+=============================*/
 #footer {
   padding: 85px 0px 0px 0px;
   background: url("../images/footer-bg.jpg");
@@ -865,24 +933,170 @@ ul > li {
 
 /* Extra Small Screen - Smart Phones and Tablets */
 @media (max-width: 767px) {
-  /* Enter your style for screens under 767px bellow this line  */
   .sidebar-icon {
     display: block !important;
   }
 
   .navbar-links, .right-align {
     display: none;
+  }
+
+  .section-head {
+    padding: 15px 50px;
+  }
+
+  #header h4 {
+    margin-top: 100px;
+    font-size: 22px;
+  }
+  #header h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  #about p {
+    font-size: 22px;
+    margin: 15px 0px;
+    padding: 0px 50px;
+  }
+  #about button {
+    margin-right: 50px;
+  }
+
+  #team {
+    padding: 80px 0px;
+  }
+  #team .item {
+    width: 80%;
+    margin: 50px auto;
+  }
+  #team .item .btn07 .buttons p {
+    line-height: 20px !important;
+  }
+
+  #cta1 {
+    padding: 80px 0px;
+  }
+  #cta1 #device-feature-description h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  #cta1 #device-feature-description p {
+    margin-bottom: 40px;
+  }
+  #cta1 #device-showcase {
+    display: none;
+  }
+
+  #cta2 {
+    padding: 150px 0px;
+  }
+  #cta2 #websites-feature-description h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  #cta2 #websites-feature-description p {
+    margin-bottom: 40px;
+  }
+  #cta2 #websites-showcase {
+    display: none;
+  }
+
+  #services {
+    padding: 80px 0px;
+  }
+  #services #services-feature-description h2 {
+    font-size: 36px;
+  }
+  #services #services-feature-description p {
+    font-size: 16px;
+  }
+  #services .service {
+    margin-top: 50px;
   }
 }
 /* Small Screen */
 @media (min-width: 768px) and (max-width: 991px) {
-  /* Enter your style for screens between 768px and 991px bellow this line  */
   .sidebar-icon {
     display: block !important;
   }
 
   .navbar-links, .right-align {
     display: none;
+  }
+
+  .section-head {
+    padding: 15px 50px;
+  }
+
+  #header h4 {
+    margin-top: 100px;
+    font-size: 22px;
+  }
+  #header h1 {
+    font-size: 36px;
+    line-height: 48px;
+  }
+
+  #about p {
+    font-size: 22px;
+    margin: 15px 0px;
+    padding: 0px 50px;
+  }
+  #about button {
+    margin-right: 50px;
+  }
+
+  #team {
+    padding: 80px 0px;
+  }
+  #team .item {
+    width: 80%;
+    margin: 50px auto;
+  }
+  #team .item .btn07 .buttons p {
+    line-height: 20px !important;
+  }
+
+  #cta1 {
+    padding: 80px 0px;
+  }
+  #cta1 #device-feature-description h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  #cta1 #device-feature-description p {
+    margin-bottom: 40px;
+  }
+  #cta1 #device-showcase {
+    display: none;
+  }
+
+  #cta2 {
+    padding: 150px 0px;
+  }
+  #cta2 #websites-feature-description h2 {
+    font-size: 34px;
+    margin-bottom: 40px;
+  }
+  #cta2 #websites-feature-description p {
+    margin-bottom: 40px;
+  }
+  #cta2 #websites-showcase {
+    display: none;
+  }
+
+  #services {
+    padding: 80px 0px;
+  }
+  #services #services-feature-description h2 {
+    font-size: 36px;
+  }
+  #services #services-feature-description p {
+    font-size: 16px;
+  }
+  #services .service {
+    margin-top: 50px;
   }
 }
 /* Medium Screen */
@@ -978,5 +1192,36 @@ ul > li {
 }
 /* Large Screen */
 @media (min-width: 1200px) {
-  /* Enter your style for screens above 1200px bellow this line  */
+  .process-active {
+    background: -webkit-linear-gradient(240deg, #fd3f81, #fd3e4f) !important;
+    background: linear-gradient(210deg, #fd3f81, #fd3e4f) !important;
+    padding: 33px 40px !important;
+  }
+  .process-active .process-number {
+    position: relative !important;
+    top: 0 !important;
+    left: 0px !important;
+    font-size: 60px !important;
+    font-weight: bolder !important;
+    padding: 0px 0px !important;
+    margin: 0px !important;
+    color: white !important;
+    background: transparent !important;
+    -webkit-background-clip: text !important;
+    -webkit-text-fill-color: white !important;
+    opacity: 1 !important;
+  }
+  .process-active h3 {
+    color: white !important;
+    line-height: 35pt !important;
+    letter-spacing: -1pt !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    text-transform: capitalize !important;
+    margin: 0px 0px 20px 0px !important;
+  }
+  .process-active p {
+    color: white !important;
+    font-size: 14px !important;
+  }
 }
