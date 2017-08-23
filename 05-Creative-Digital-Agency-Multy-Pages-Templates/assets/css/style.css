@@ -1,0 +1,145 @@
+/*===================
+        Colors
+===================*/
+/*===================
+        fonts
+===================*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Open+Sans");
+/*===================
+         Main
+===================*/
+* {
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  outline: 0; }
+
+body {
+  background-color: #fff; }
+
+.cf:before,
+.cf:after {
+  content: "";
+  display: table; }
+
+.cf:after {
+  clear: both; }
+
+.cf {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */ }
+
+/*===================
+       Headers
+===================*/
+h1,
+h3,
+h4,
+h6 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  color: #60606e;
+  text-transform: uppercase; }
+
+h1 {
+  font-size: 48px;
+  line-height: 1em; }
+
+h3 {
+  font-size: 30px;
+  line-height: 1.5em; }
+
+h4 {
+  font-size: 18px;
+  line-height: 2.5em; }
+
+h6 {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif; }
+
+p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  color: #60606e;
+  line-height: 1.5em; }
+
+a {
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 3.5em;
+  color: #60606e;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out; }
+  a:hover {
+    text-decoration: none;
+    color: #7beec7; }
+
+/*===================
+       Buttons
+===================*/
+button {
+  padding: 5px 50px;
+  text-transform: uppercase;
+  border: 0px;
+  font-weight: bolder;
+  font-size: 14px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden; }
+
+.main-btn {
+  background-color: #7beec7; }
+  .main-btn a {
+    color: #fff; }
+    .main-btn a:hover {
+      color: #fff; }
+  .main-btn:hover a {
+    color: #fff; }
+
+.primary-btn {
+  background-color: #fff; }
+  .primary-btn a {
+    color: #7beec7; }
+    .primary-btn a:hover {
+      color: #7beec7; }
+
+/* Underline Reveal */
+.hvr-btn {
+  -webkit-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-box-shadow: 0 0 1px transparent;
+  box-shadow: 0 0 1px transparent;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  position: relative;
+  overflow: hidden; }
+  .hvr-btn:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 4px;
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+    -webkit-transition-property: -webkit-transform;
+    transition-property: -webkit-transform;
+    transition-property: transform;
+    transition-property: transform, -webkit-transform;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out; }
+  .hvr-btn:hover:before, .hvr-btn:focus:before, .hvr-btn:active:before {
+    -webkit-transform: translateY(0);
+    transform: translateY(0); }
+
+.hvr-btn-main:before,
+.hvr-btn-primary:before {
+  background: #60606e; }
+
+/*===================
+      Animation
+===================*/

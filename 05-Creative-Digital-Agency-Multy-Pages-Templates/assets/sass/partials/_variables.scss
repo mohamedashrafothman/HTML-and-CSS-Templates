@@ -1,0 +1,172 @@
+/*===================
+        Colors
+===================*/
+$main-color: #7beec7; // light green color
+$primary-color: #60606e; // dark gray color
+$white-color: #fff; // white color
+
+
+/*===================
+        fonts
+===================*/
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Open+Sans');
+$montserrat-font: 'Montserrat', sans-serif;
+$open-sans-font: 'Open Sans', sans-serif;
+
+/*===================
+         Main
+===================*/
+*{
+    padding: 0px;
+    margin: 0px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    outline: 0;
+}
+body{
+    background-color: $white-color;
+}
+.cf:before,
+.cf:after {
+  content: "";
+  display: table;
+}
+.cf:after {
+  clear: both;
+}
+.cf {
+  zoom: 1;
+  /* For IE 6/7 (trigger hasLayout) */
+}
+
+/*===================
+       Headers
+===================*/
+h1,
+h3,
+h4,
+h6{
+    font-family: $montserrat-font;
+    font-weight: bold;
+    color: $primary-color;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 48px;
+    line-height: 1em;
+}
+h3{
+    font-size: 30px;
+    line-height: 1.5em;
+}
+h4{
+    font-size: 18px;
+    line-height: 2.5em;
+}
+h6{
+    font-size: 16px;
+    font-family: $open-sans-font;
+}
+p{
+    font-family: $open-sans-font;
+    font-size: 16px;
+    color: $primary-color;
+    line-height: 1.5em;
+    // text-transform: capitalize;
+}
+a{
+    font-family: $open-sans-font;
+    font-size: 16px;
+    line-height: 3.5em;
+    color: $primary-color;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    &:hover{
+        text-decoration: none;
+        color: $main-color;
+    }
+}
+
+/*===================
+       Buttons
+===================*/
+button{
+    padding: 5px 50px;
+    text-transform: uppercase;
+    border: 0px;
+    font-weight: bolder;
+    font-size: 14px;
+    display: inline-block;
+    vertical-align: middle;
+    overflow: hidden;
+}
+.main-btn{
+    background-color: $main-color;
+    a{
+        color: $white-color;
+        &:hover{
+            color: $white-color;
+        }
+    }
+    &:hover{
+        a{
+            color: $white-color;
+        }
+    }
+}
+.primary-btn{
+    background-color: $white-color;
+    a{
+        color: $main-color;
+        &:hover{
+            color: $main-color;
+        }
+    }
+}
+
+
+/* Underline Reveal */
+.hvr-btn {
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+            box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    position: relative;
+    overflow: hidden;
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 4px;
+        -webkit-transform: translateY(4px);
+                transform: translateY(4px);
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transition-duration: 0.3s;
+                transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+                transition-timing-function: ease-out;
+    }
+    &:hover:before, &:focus:before, &:active:before{
+        -webkit-transform: translateY(0);
+                transform: translateY(0);
+    }
+}
+
+.hvr-btn-main, 
+.hvr-btn-primary{
+    &:before{
+        background: $primary-color;
+    }
+}
+
+/*===================
+      Animation
+===================*/
