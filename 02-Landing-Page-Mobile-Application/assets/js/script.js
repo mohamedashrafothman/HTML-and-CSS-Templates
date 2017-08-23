@@ -9,7 +9,7 @@ $(document).ready(function(){
 		}
 	});
 
-
+	
 	// side Nav Bar
 	$('#nav-icon').on('click', function(e){
 		e.preventDefault();

@@ -12,6 +12,7 @@
 	background-color: transparent;
 	color: $black;
 	padding: 40px 0px;
+	-webkit-transition: all 0.5s ease-in-out;
 	transition: all 0.5s ease-in-out;
 	z-index: 10;
 	#nav-icon{
@@ -23,6 +24,7 @@
 		z-index: 2;
 		text-decoration: none;
 		cursor: pointer !important;
+		-webkit-transition: $transition-1;
 		transition: $transition-1;
 		&:hover, &:focus{
 			color: $blue;
@@ -41,6 +43,7 @@
 		padding: 40px;
 		z-index: 50;
 		background-color: $black;
+		-webkit-transition: $transition-2;
 		transition: $transition-2;
 		#close-side-menu{
 			position: absolute;
@@ -328,7 +331,8 @@
 				margin-right: -140px;
 			}
 			li:nth-child(1), li:nth-child(2), li:nth-child(4), li:nth-child(5){
-				box-shadow: $shadow_2;
+				-webkit-box-shadow: $shadow_2;
+				        box-shadow: $shadow_2;
 			}
 
 		}
@@ -420,13 +424,15 @@
 			transform: scale(0.7);
 			-ms-transform: scale(0.7);
 			-webkit-transform: scale(0.7);
+			-webkit-transition: all 0.97s cubic-bezier(0.545, 0, 0.05, 1);
 			transition: all 0.97s cubic-bezier(0.545, 0, 0.05, 1);
 			img{
 				margin-top: -20px;
 				position: relative;
 				border-radius: 100%;
 				z-index: 22;
-				box-shadow: 0px 12px 30px 0px rgba(92, 95, 101, 0.18);
+				-webkit-box-shadow: 0px 12px 30px 0px rgba(92, 95, 101, 0.18);
+				        box-shadow: 0px 12px 30px 0px rgba(92, 95, 101, 0.18);
 			}
 		}
 		li.active{
@@ -441,21 +447,24 @@
 			float: left;
 			margin-left: 30px;
 			img {
-				box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
+				-webkit-box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
+				        box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
 			}
 		}
 		li:last-child {
 			float: right;
 			margin-right: 30px;
 			img {
-				box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
+				-webkit-box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
+				        box-shadow: 10px 12px 30px 0px rgba(92, 95, 101, 0.18);
 			}
 		}
 	}
 
 	.item.active{
 		background-color: #fff !important;
-		box-shadow: 0px 0px 0px 0px;
+		-webkit-box-shadow: 0px 0px 0px 0px;
+		        box-shadow: 0px 0px 0px 0px;
 	}
 	.testimonial {
 		padding-top: 174px;
@@ -518,6 +527,7 @@
 				cursor: pointer;
 				font-size: 16px;
 				color: #8c8f94;
+				-webkit-transition: color 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 				transition: color 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 
 			}
@@ -543,6 +553,7 @@
 				box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
 				-moz-box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
 				-webkit-box-shadow: 2.5px 4.33px 20px 0px rgba(61, 61, 62, 0.059);
+				-webkit-transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 				transition: all 0.7s cubic-bezier(0.545, 0, 0.05, 1);
 			}
 		}
@@ -620,7 +631,8 @@
 	.price-table.highlighted {
 		z-index: 2;
 		padding: 0;
-		box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+		-webkit-box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
+		        box-shadow: 15px 25px 50px 0px rgba(92, 95, 101, 0.2);
 		.table-inner {
 		  background-color: #fff;
 		  padding: 60px 15px 70px;
@@ -643,16 +655,19 @@
 			-webkit-transform: scale(0.95);
 				  transform: scale(0.95);
 			transition: opacity 0.97s, -webkit-transform 0.97s;
+			-webkit-transition: opacity 0.97s, -webkit-transform 0.97s;
 			transition: opacity 0.97s, transform 0.97s;
 			transition: opacity 0.97s, transform 0.97s, -webkit-transform 0.97s;
-			transition-timing-function: cubic-bezier(0.545, 0, 0.05, 1);
+			-webkit-transition-timing-function: cubic-bezier(0.545, 0, 0.05, 1);
+			        transition-timing-function: cubic-bezier(0.545, 0, 0.05, 1);
 			.price-table{
 				display: none;
 			}
 		}
 		.individual.active, .company.active{
 			opacity: 1;
-			transform: scale(1);
+			-webkit-transform: scale(1);
+			        transform: scale(1);
 			.price-table{
 				display: block;
 			}
@@ -736,6 +751,7 @@
 			margin-right: 20px;
 			a{
 				color: $gray;
+				-webkit-transition: $transition-1;
 				transition: $transition-1;
 				&:hover{
 					color: $black;
