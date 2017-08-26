@@ -1,0 +1,24 @@
+#why-choose-us-sec{
+    background-color: $white-color;
+    padding: 200px 0 100px 0 !important;
+    text-align: center;
+    #features{
+        .feature{
+            padding: 20px 0;
+            span{
+                font-size: 36px;
+                font-weight: bold;
+            }
+            .p{
+                font-size: 14px;
+                font-weight: lighter;
+            }
+        }
+        .feature:nth-child(3), .feature:nth-child(4){
+            margin-top: 20px;
+        }
+    }
+    div.row:last-child{
+        margin-top: 100px !important;
+    }
+}

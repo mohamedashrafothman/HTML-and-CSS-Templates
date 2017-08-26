@@ -43,18 +43,17 @@ module.exports = function (grunt) {
             uglify: {
                 files: 'assets/javascript/script.js',
                 tasks: ['concat' ,'uglify']
+                // tasks: ['concat']
             }
         }
     });
 
-    // Load the plugin that provides the "uglify" task.
+    // Load the plugins that provides the tasks.
     grunt.loadNpmTasks('grunt-contrib-concat');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-sass');
-
-
 
     // Default task(s).
     grunt.registerTask('default', ['watch']);

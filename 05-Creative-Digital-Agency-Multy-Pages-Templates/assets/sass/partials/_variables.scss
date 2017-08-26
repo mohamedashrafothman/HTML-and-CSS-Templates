@@ -25,7 +25,80 @@ $open-sans-font: 'Open Sans', sans-serif;
 }
 body{
     background-color: $white-color;
+//position: relative;
 }
+/*===================
+       Headers
+===================*/
+h1,
+h3,
+h4,
+h6,
+.h1,
+.h3,
+.h4,
+.h6{
+    font-family: $montserrat-font;
+    font-weight: bold;
+    color: $primary-color;
+    text-transform: uppercase;
+}
+h1,
+.h1{
+    font-size: 48px;
+    line-height: 1em;
+}
+h3,
+.h3{
+    font-size: 30px;
+    line-height: 1.5em;
+}
+h4,
+.h4{
+    font-size: 18px;
+    line-height: 2.5em;
+}
+h6,
+.h6{
+    font-size: 16px;
+    font-family: $open-sans-font;
+}
+p,
+.p{
+    font-family: $open-sans-font;
+    font-size: 16px;
+    color: $primary-color;
+    line-height: 1.5em;
+}
+a,
+.a{
+    font-family: $open-sans-font;
+    font-size: 16px;
+    line-height: 3.5em;
+    color: $primary-color;
+    -webkit-transition: all 0.25s ease-in-out;
+    transition: all 0.25s ease-in-out;
+    &:hover{
+        text-decoration: none;
+        color: $main-color;
+    }
+}
+span.main-header{
+    z-index: 1;
+    display: inline-block;
+    position: relative;
+    font-family: $montserrat-font;
+}
+img{
+    width: 100%;
+    vertical-align: middle;
+    padding: 0px !important;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+}
+/*===================
+    Helper classes
+===================*/
 .cf:before,
 .cf:after {
   content: "";
@@ -38,60 +111,69 @@ body{
   zoom: 1;
   /* For IE 6/7 (trigger hasLayout) */
 }
-
-/*===================
-       Headers
-===================*/
-h1,
-h3,
-h4,
-h6{
-    font-family: $montserrat-font;
-    font-weight: bold;
-    color: $primary-color;
-    text-transform: uppercase;
+.float-right{
+    float: right;
 }
-h1{
-    font-size: 48px;
-    line-height: 1em;
+.float-left{
+    float: left;
 }
-h3{
-    font-size: 30px;
-    line-height: 1.5em;
+.align-left{
+    text-align: left;
 }
-h4{
-    font-size: 18px;
-    line-height: 2.5em;
+.align-right{
+    text-align: right;
 }
-h6{
-    font-size: 16px;
-    font-family: $open-sans-font;
+.align-center{
+    text-align: center;
 }
-p{
-    font-family: $open-sans-font;
-    font-size: 16px;
-    color: $primary-color;
-    line-height: 1.5em;
-    // text-transform: capitalize;
-}
-a{
-    font-family: $open-sans-font;
-    font-size: 16px;
-    line-height: 3.5em;
-    color: $primary-color;
-    -webkit-transition: all 0.25s ease-in-out;
-    transition: all 0.25s ease-in-out;
-    &:hover{
-        text-decoration: none;
-        color: $main-color;
+.header-active{
+    padding: 5px 0px !important;
+    background-color: $white-color !important;
+    -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+    .logo{
+        a{
+            font-size: 26px !important;
+        }
+    }
+    #menu{
+        padding: 22px 0px !important;
     }
 }
-
+.open {
+  left: 0px !important;
+}
+.big-borderd-title{
+    border: 10px solid $primary-color;
+    padding: 10px 20px;
+    margin: 0 auto;
+    width: 550px;
+}
+.main-header{
+    &:after{
+        content:"";
+        background-color: $main-color;
+        width: 60px;
+        height: 20px;
+        position: absolute;
+        top: 20px;
+        left: 0px;
+        z-index: -1;
+    }
+}
+.section-title{
+    margin-bottom: 50px;
+    p{
+        padding: 0px 200px;
+        font-weight: lighter;
+    }
+}
 /*===================
        Buttons
 ===================*/
 button{
-    padding: 5px 50px;
+    color: $white-color;
+    padding: 15px 40px;
     text-transform: uppercase;
     border: 0px;
     font-weight: bolder;
@@ -126,7 +208,7 @@ button{
 
 
 /* Underline Reveal */
-.hvr-btn {
+.hvr-btn-down {
     -webkit-transform: translateZ(0);
     transform: translateZ(0);
     -webkit-box-shadow: 0 0 1px rgba(0, 0, 0, 0);
@@ -167,6 +249,44 @@ button{
     }
 }
 
-/*===================
-      Animation
-===================*/
+.hvr-btn-up {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -moz-osx-font-smoothing: grayscale;
+    position: relative;
+    overflow: hidden;
+    &:before{
+        content: "";
+        position: absolute;
+        z-index: -1;
+        left: 0;
+        right: 0;
+        top: 0;
+        width: 50%;
+        background: $primary-color;
+        height: 1px;
+        -webkit-transform: translateY(20px);
+        transform: translateY(20px);
+        opacity: 0;
+        -webkit-transition-property: transform;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transition-duration: 0.3s;
+        transition-duration: 0.3s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+    }
+    &:hover:before, &:focus:before, &:active:before{
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
