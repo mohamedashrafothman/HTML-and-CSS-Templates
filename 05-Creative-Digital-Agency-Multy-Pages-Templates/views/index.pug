@@ -1,0 +1,169 @@
+doctype html
+html(lang='en')
+    head
+        meta(charset='UTF-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1.0')
+        meta(http-equiv='X-UA-Compatible', content='ie=edge')
+        title AKAD.
+        //- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        link(rel='stylesheet', href='http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css')
+        //- all custom styles and libs are concatenated in this custom file
+        link(rel='stylesheet', href='assets/build/min/styles.min.css')
+    body
+        include partials/header.pug
+        
+        section#bg-hero-sec.align-center
+            .container
+                #main-header.row.col-md-6.col-md-offset-3
+                    h6 we’re
+                    h1.big-borderd-title creative agency
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                #sec-section.row.align-left
+                    img.col-md-5.img-responsive(src='assets/images/image-1.jpg', alt='image')
+                    .col-md-6.col-md-offset-1
+                        span.main-header.h3 HISTORY OF AGENCY
+                        p
+                            | Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                            | incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                            | exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt
+                            | ut labore.
+                        button.main-btn.hvr-btn-down.hvr-btn-main.float-right read more
+        section#why-choose-us-sec
+            .container
+                .row.section-title
+                    span.main-header.h3 HISTORY OF AGENCY
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                .row
+                    #features.align-left.col-md-6
+                        .feature.col-md-6
+                            span.ion-ios-infinite-outline
+                            h4.feature-heading unlimited options
+                            ul.feature-items
+                                li.p Branding
+                                li.p Design & Copywriting
+                                li.p Concept development
+                                li.p User Experience
+                        .feature.col-md-6
+                            span.ion-ios-shuffle
+                            h4.feature-heading DESIGN & DEVELOPMENT
+                            ul.feature-items
+                                li.p Information architecture
+                                li.p Interface design
+                                li.p Product Design
+                                li.p Integrated ad Companies
+                        .feature.col-md-6
+                            span.ion-ios-cart-outline
+                            h4.feature-heading e-commerce
+                            ul.feature-items
+                                li.p Prototyping
+                                li.p Technical Consulting
+                                li.p Web applications
+                                li.p Quality testing
+                        .feature.col-md-6
+                            span.ion-ios-settings
+                            h4.feature-heading CUSTOMIZABLE DESIGN
+                            ul.feature-items
+                                li.p Information architecture
+                                li.p Interface design
+                                li.p Product Design
+                                li.p Integrated ad Companies
+                    img.img-responsive.col-md-5.col-md-offset-1(src='assets/images/image-2.jpg', alt='image')
+        section#portfolio
+            .container
+                .row.section-title.align-center
+                    span.main-header.h3 our portfolio
+                    p
+                        | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                        | et dolore magna aliqua.
+                .row
+                    .col-md-3
+                        span.main-header.h3 choose category
+                        nav.categories
+                            ul.portfolio_filter
+                                li
+                                    a.p.active-portfolio(href='#', data-filter='*') all
+                                li
+                                    a.p(href='#', data-filter='.photography') photography
+                                li
+                                    a.p(href='#', data-filter='.web') webdesign
+                                li
+                                    a.p(href='#', data-filter='.logo') logo
+                                li
+                                    a.p(href='#', data-filter='.graphics') graphics
+                                li
+                                    a.p(href='#', data-filter='.ads') advertising
+                                li
+                                    a.p(href='#', data-filter='.fashion') fashion
+                    .col-md-9
+                        .row.portfolio_container
+                            .col-md-4.photography
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-1.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span iron man
+                                            em photography
+                            .col-md-4.fashion.logo
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-2.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span Super man
+                                            em photography
+                            .col-md-4.ads.graphics
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-3.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span Bat man
+                                            em photography
+                            br
+                            .col-md-4.fashion.ads
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-4.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span Spider man
+                                            em photography
+                            .col-md-4.graphics.ads
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-5.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span iron man
+                                            em photography
+                            .col-md-4.logo.web.photography
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-6.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span iron man
+                                            em photography
+                            .col-md-4.ads.graphics
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-7.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span iron man
+                                            em photography
+                            .col-md-4.web.fashion.graphics
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-8.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span iron man
+                                            em photography
+                            .col-md-4.fashon.logo
+                                a.portfolio-item(href='#')
+                                    img(src='assets/images/portfolio-9.jpg', alt='')
+                                    .portfolio_item_hover
+                                        .item_info
+                                            span iron man
+                                            em photography
+
+
+                                            
+        //- all javascripts code and libs concatenated in this custom file
+        script(src='assets/build/scripts.js', type='text/javascript')

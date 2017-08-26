@@ -12,6 +12,20 @@ module.exports = function (grunt) {
                 dest: 'assets/build/styles.css'
             }
         },
+        pug: {
+            compile: {
+                options: {
+                    client: false,
+                    pretty: true,
+                    data: {
+                        debug: false
+                    }
+                },
+                files: {
+                    'index.html': ['views/*.pug']
+                }
+            }
+        },
         sass: {
             build: {
                 files: [{
@@ -43,7 +57,10 @@ module.exports = function (grunt) {
             uglify: {
                 files: 'assets/javascript/script.js',
                 tasks: ['concat' ,'uglify']
-                // tasks: ['concat']
+            },
+            pug: {
+                files: ['views/*.pug', 'views/partials/*.pug'],
+                tasks: ['pug']
             }
         }
     });
@@ -53,6 +70,7 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-cssmin');
     grunt.loadNpmTasks('grunt-contrib-uglify');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-contrib-pug');
     grunt.loadNpmTasks('grunt-sass');
 
     // Default task(s).
