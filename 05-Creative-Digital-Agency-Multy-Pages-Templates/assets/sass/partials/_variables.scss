@@ -25,7 +25,6 @@ $open-sans-font: 'Open Sans', sans-serif;
 }
 body{
     background-color: $white-color;
-//position: relative;
 }
 /*===================
        Headers
@@ -90,14 +89,14 @@ span.main-header{
     font-family: $montserrat-font;
 }
 span.float-span {
-    width: 100px;
+    width: 95px;
     position: absolute;
     top: 18px;
     left: 20px;
     background-color: $white-color;
     text-transform: uppercase;
     font-size: 14px;
-    font-weight: lighter;
+    font-weight: bold;
     color: lighten($primary-color, 30%);
     -webkit-transition: all 0.25s ease-in-out;
     transition: all 0.25s ease-in-out;

@@ -116,3 +116,39 @@
         }
     }
 }
+
+////// NAVBAR RESPONSIVE //////
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {
+    #header {
+        padding: 10px 20px;
+        #menu {
+            #desktop-nav {
+                display: none;
+            }
+            #mobile-nav {
+                display: block;
+                .nav-icon {
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+    .header-active {
+        padding: 10px 20px !important;
+        .logo {
+            a {
+                font-size: 22px !important;
+            }
+        }
+        #menu {
+            padding: 0px !important;
+            .nav-icon {
+                margin-top: 25px !important;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 575px) {}

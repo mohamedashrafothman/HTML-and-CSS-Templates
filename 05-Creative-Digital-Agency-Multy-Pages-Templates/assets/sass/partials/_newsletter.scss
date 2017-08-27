@@ -16,6 +16,7 @@
             color: lighten($primary-color, 30%);
             margin: 20px 0px;
             font-weight: lighter;
+            font-family: $open-sans-font;
         }
         form{
             position: relative;
@@ -27,3 +28,10 @@
         }
     }
 }
+
+////// NEWSLETTER RESPONSIVE //////
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 575px) {}
