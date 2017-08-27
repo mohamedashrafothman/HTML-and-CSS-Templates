@@ -115,12 +115,36 @@ span.main-header {
   position: relative;
   font-family: "Montserrat", sans-serif; }
 
+span.float-span {
+  width: 100px;
+  position: absolute;
+  top: 18px;
+  left: 20px;
+  background-color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: lighter;
+  color: #aeaeb9;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+  z-index: 1; }
+
 img {
   width: 100%;
   vertical-align: middle;
   padding: 0px !important;
   -webkit-box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
   box-shadow: 0 1px 10px rgba(0, 0, 0, 0.15); }
+
+input[type="text"],
+input[type="email"],
+textarea {
+  border: 1px solid #aeaeb9;
+  color: #aeaeb9; }
+
+input[type="text"],
+input[type="email"] {
+  height: 56px; }
 
 /*===================
     Helper classes
@@ -192,7 +216,7 @@ img {
 ===================*/
 button {
   color: #fff;
-  padding: 15px 40px;
+  padding: 0px 40px !important;
   text-transform: uppercase;
   border: 0px;
   font-weight: bolder;
@@ -203,18 +227,18 @@ button {
 
 .main-btn {
   background-color: #7beec7; }
-  .main-btn a {
+  .main-btn span, .main-btn a {
     color: #fff; }
-    .main-btn a:hover {
+    .main-btn span:hover, .main-btn a:hover {
       color: #fff; }
   .main-btn:hover a {
     color: #fff; }
 
-.primary-btn {
+.white-btn {
   background-color: #fff; }
-  .primary-btn a {
+  .white-btn span, .white-btn a {
     color: #7beec7; }
-    .primary-btn a:hover {
+    .white-btn span:hover, .white-btn a:hover {
       color: #7beec7; }
 
 /* Underline Reveal */
@@ -427,7 +451,8 @@ button {
     margin-top: 100px !important; }
 
 #portfolio {
-  padding: 50px 0px 100px; }
+  padding: 50px 0px 50px;
+  min-height: 1000px; }
   #portfolio .categories .portfolio_filter {
     margin-top: 20px; }
     #portfolio .categories .portfolio_filter li {
@@ -503,6 +528,27 @@ button {
       opacity: 1;
       -webkit-transform: translateY(0);
       transform: translateY(0); }
+
+#newsletter {
+  background-color: #7beec7;
+  padding: 50px 0px; }
+  #newsletter #get-in-touch span {
+    color: #fff; }
+  #newsletter #get-in-touch button {
+    margin-top: 30px; }
+  #newsletter #newsletter-form {
+    background-color: #fff;
+    padding: 25px; }
+    #newsletter #newsletter-form p {
+      color: #aeaeb9;
+      margin: 20px 0px;
+      font-weight: lighter; }
+    #newsletter #newsletter-form form {
+      position: relative; }
+      #newsletter #newsletter-form form input[type="email"] {
+        border-right: 0px;
+        background-color: transparent;
+        z-index: 2; }
 
 @media only screen and (max-width: 768px) {
   #header {

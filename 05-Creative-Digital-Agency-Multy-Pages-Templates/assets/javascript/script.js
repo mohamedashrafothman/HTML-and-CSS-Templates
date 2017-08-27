@@ -34,7 +34,7 @@ $(document).ready(function(){
     });
 
 
-     /*
+    /*
        ===================== portfolio section =====================
    */   
     var $container = $('.portfolio_container');
@@ -56,8 +56,33 @@ $(document).ready(function(){
            });
            return false;
        });
-   }
+   };
 
+   /*
+       ===================== Float Span =====================
+   */ 
+   $("input, textarea").focus(function(){
+       $('.float-span').css({
+           "top":"-10px",
+           "color":"#7beec7",
+           "z-index":"3"
+       });
+   });
+   $("input, textarea").blur(function () {
+       if($(this).val() === ''){
+           $('.float-span').css({
+               "top": "20px",
+               "color": "#aeaeb9",
+               "z-index": "2"
+           });
+       } else {
+           $('.float-span').css({
+               "top": "-10px",
+               "color": "#7beec7",
+               "z-index": "3"
+           });
+       }
+   });
 
     /*
        ===================== Scroll Smothy =====================

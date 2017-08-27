@@ -29,7 +29,8 @@ html(lang='en')
                             | incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
                             | exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt
                             | ut labore.
-                        button.main-btn.hvr-btn-down.hvr-btn-main.float-right read more
+                        button.main-btn.hvr-btn-down.hvr-btn-main.float-right 
+                            a(href="#") read more   
         section#why-choose-us-sec
             .container
                 .row.section-title
@@ -53,7 +54,7 @@ html(lang='en')
                         | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                         | et dolore magna aliqua.
                 .row
-                    .col-md-3
+                    .col-md-3.col-sm-4.col-xs-12
                         span.main-header.h3 choose category
                         nav.categories
                             ul.portfolio_filter
@@ -71,7 +72,7 @@ html(lang='en')
                                     a.p(href='#', data-filter='.ads') advertising
                                 li
                                     a.p(href='#', data-filter='.fashion') fashion
-                    .col-md-9
+                    .col-md-9.col-sm-8.col-xs-12
                         .row.portfolio_container
                             include mixins/_portfolio-item.pug
                             +portfolio_item('photography','assets/images/portfolio-1.jpg','Iron Man','Photograpy')
@@ -83,6 +84,27 @@ html(lang='en')
                             +portfolio_item('ads graphics','assets/images/portfolio-7.jpg','Bat Man','Graphics')
                             +portfolio_item('web fashion graphics','assets/images/portfolio-8.jpg','Joker','web')
                             +portfolio_item('fashion logo','assets/images/portfolio-9.jpg','Iron Man','Logo')
+
+        section#newsletter
+            .container
+                .row
+                    .col-md-6.col-sm-12#get-in-touch
+                        span.h3 YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
+                        br
+                        button.white-btn.hvr-btn-down.hvr-btn-primary 
+                            a(href="#") get in touch
+
+                    .col-md-6.col-xs-12#newsletter-form
+                        h3 
+                            | STAY INFORMED WITH OUR NEWSLETTER
+                        p
+                            | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                        form(action="#" method="POST")
+                            span.float-span.align-center your email
+                            input(type="email" name="email" class="col-md-8 col-xs-8")
+                            button(type="submit" class="col-md-4 col-xs-4 main-btn hr-btn-down hvr-btn-primary")
+                                a(href="#") send
+                            
 
         //- all javascripts code and libs concatenated in this custom file
         script(src='assets/build/scripts.js', type='text/javascript')
