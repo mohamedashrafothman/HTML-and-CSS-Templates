@@ -1,0 +1,8 @@
+mixin portfolio_item(classes, image_src, span, em)
+    div(class=`col-md-4 ${classes}`)
+        a.portfolio-item(href='#')
+            img(src= image_src , alt='')
+            .portfolio_item_hover
+                .item_info
+                    span= span
+                    em= em

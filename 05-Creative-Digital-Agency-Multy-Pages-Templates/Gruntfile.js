@@ -22,7 +22,7 @@ module.exports = function (grunt) {
                     }
                 },
                 files: {
-                    'index.html': ['views/*.pug']
+                    'index.html': ['views/index.pug']
                 }
             }
         },

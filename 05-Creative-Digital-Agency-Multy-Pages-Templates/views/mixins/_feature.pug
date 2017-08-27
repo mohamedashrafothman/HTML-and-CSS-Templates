@@ -1,0 +1,7 @@
+mixin feature(icon_class, feature_name, list_items)
+    .feature.col-md-6
+        span(class= icon_class)
+        h4(class="feature-heading")= feature_name
+        ul.feature-items
+            each item in list_items
+                li(class="p")= item
