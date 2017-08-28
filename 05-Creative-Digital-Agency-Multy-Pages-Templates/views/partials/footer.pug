@@ -1,0 +1,35 @@
+footer#footer
+    .container
+        .row
+            .col-md-8.col-xs-12
+                .row
+                    nav#footer-nav
+                        ul
+                            li
+                                a(href="#") Home
+                            li
+                                a(href="#") About Us
+                            li
+                                a(href="#") Services
+                            li
+                                a(href="#") Portfolio
+                            li
+                                a(href="#") blog
+                            li
+                                a(href="#") contact us
+            .col-md-4.col-xs-12
+                .row.align-right
+                    p
+                        | Created by akhouad 2016. All Rights Reserved
+                    nav#footer-social
+                        ul
+                            include ../mixins/_footer-social.pug
+                            +footer-social("ion-social-facebook")
+                            +footer-social("ion-social-twitter")
+                            +footer-social("ion-social-youtube")
+                            +footer-social("ion-social-linkedin")
+                            +footer-social("ion-social-pinterest")
+                            +footer-social("ion-social-instagram")
+
+//- all javascripts code and libs concatenated in this custom file
+script(src='assets/build/scripts.js', type='text/javascript')

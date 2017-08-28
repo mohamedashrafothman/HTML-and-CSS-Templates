@@ -63,7 +63,10 @@ $(document).ready(function(){
    */ 
    $("input, textarea").focus(function(){
        $('.float-span').css({
-           "top":"-10px",
+           "top":"-8px",
+           "font-size": "12px",
+           "width":"85px",
+           "left":"10px",
            "color":"#7beec7",
            "z-index":"3"
        });
@@ -72,12 +75,18 @@ $(document).ready(function(){
        if($(this).val() === ''){
            $('.float-span').css({
                "top": "20px",
+               "font-size": "14px",
+               "width": "95px",
+               "left": "20px",
                "color": "#aeaeb9",
                "z-index": "2"
            });
        } else {
            $('.float-span').css({
-               "top": "-10px",
+               "top": "-8px",
+               "font-size":"12px",
+               "width": "85px",
+               "left": "10px",  
                "color": "#7beec7",
                "z-index": "3"
            });

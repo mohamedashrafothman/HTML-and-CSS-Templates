@@ -11,6 +11,7 @@
                 a {
                     text-transform: uppercase;
                     font-weight: 400;
+                    font-size: 14px;
                     color: $primary-color;
                     &:hover,
                     &:active,
@@ -53,6 +54,7 @@
         }
     }
     p{
-        margin-top: 20px;
+        padding-top: 15px;
+        font-size: 14px;
     }
 }
