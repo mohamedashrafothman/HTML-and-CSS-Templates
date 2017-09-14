@@ -556,6 +556,7 @@ button {
   #portfolio .categories .portfolio_filter {
     margin-top: 20px; }
     #portfolio .categories .portfolio_filter li {
+      display: block !important;
       margin-left: 30px;
       margin-bottom: 20px; }
       #portfolio .categories .portfolio_filter li a {

@@ -52,7 +52,7 @@ module.exports = function (grunt) {
         },
         watch: {
             sass: {
-                files: ['assets/sass/*.scss', 'assets/sass/partials/*.scss'],
+                files: ['assets/sass/**/*.scss'],
                 tasks: ['sass','concat', 'cssmin' ]
             },
             uglify: {
@@ -60,7 +60,7 @@ module.exports = function (grunt) {
                 tasks: ['concat' ,'uglify']
             },
             pug: {
-                files: ['views/*.pug', 'views/partials/*.pug'],
+                files: ['views/**/*.pug'],
                 tasks: ['pug']
             }
         }

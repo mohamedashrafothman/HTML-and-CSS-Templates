@@ -73,76 +73,21 @@ section#dream-team
                 | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
                 | et dolore magna aliqua.
         .row
-            .col-md-3.col-xs-12.team-member
-                a.portfolio-item.col-md-3.col-xs-12(href='#')
-                    img(src="/assets/images/team-member-1.jpg" , alt='')
-                    .portfolio_item_hover
-                        .item_info
-                            span John Doe
-                            br
-                            em Developer
-            .col-md-3.col-xs-12.team-member
-                a.portfolio-item.col-md-3.col-xs-12(href='#')
-                    img(src="/assets/images/team-member-2.jpg" , alt='')
-                    .portfolio_item_hover
-                        .item_info
-                            span John Doe
-                            br
-                            em Developer
-            .col-md-3.col-xs-12.team-member
-                a.portfolio-item.col-md-3.col-xs-12(href='#')
-                    img(src="/assets/images/team-member-3.jpg" , alt='')
-                    .portfolio_item_hover
-                        .item_info
-                            span John Doe
-                            br
-                            em Developer
-            .col-md-3.col-xs-12.team-member
-                a.portfolio-item.col-md-3.col-xs-12(href='#')
-                    img(src="/assets/images/team-member-4.jpg" , alt='')
-                    .portfolio_item_hover
-                        .item_info
-                            span John Doe
-                            br
-                            em Developer
-            .col-md-3.col-xs-12.team-member
-                a.portfolio-item.col-md-3.col-xs-12(href='#')
-                    img(src="/assets/images/team-member-5.jpg" , alt='')
-                    .portfolio_item_hover
-                        .item_info
-                            span John Doe
-                            br
-                            em Developer
-            .col-md-3.col-xs-12.team-member
-                a.portfolio-item.col-md-3.col-xs-12(href='#')
-                    img(src="/assets/images/team-member-6.jpg" , alt='')
-                    .portfolio_item_hover
-                        .item_info
-                            span John Doe
-                            br
-                            em Developer
-            .col-md-3.col-xs-12.team-member
-                a.portfolio-item.col-md-3.col-xs-12(href='#')
-                    img(src="/assets/images/team-member-7.jpg" , alt='')
-                    .portfolio_item_hover
-                        .item_info
-                            span John Doe
-                            br
-                            em Developer
-            .col-md-3.col-xs-12.team-member
-                a.portfolio-item.col-md-3.col-xs-12(href='#')
-                    img(src="/assets/images/team-member-8.jpg" , alt='')
-                    .portfolio_item_hover
-                        .item_info
-                            span John Doe
-                            br
-                            em Developer
-
+            include mixins/_team-member.pug
+            +team-member('team-member', 'team-member-1', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-2', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-3', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-4', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-5', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-6', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-7', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-8', 'John Doe', 'Developer')
+            
         .row.bar
             .col-md-12
                 p.col-md-9.col-xs-12
                     | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
-                button.col-md-2.col-md-offset-1.col-xs-12.main-btn.hvr-btn-down.hvr-btn-main.float-right 
+                button.col-md-2.col-md-offset-1.col-xs-12.col-xs-offset-12.main-btn.hvr-btn-down.hvr-btn-main.float-right 
                     a(href="#") Read more
 
 //- section#newsletter
