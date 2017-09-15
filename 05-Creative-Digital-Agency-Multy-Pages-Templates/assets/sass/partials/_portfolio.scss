@@ -1,0 +1,41 @@
+#portfolio{
+    padding: 50px 0px 50px;
+    min-height: 1000px;
+    .categories{ 
+        .portfolio_filter{
+            margin-top: 20px;
+            li{
+                display: block !important;
+                margin-left: 30px;
+                margin-bottom: 20px;
+                a{
+                    font-weight: bold;
+                    text-transform: uppercase;
+                }
+                .active-portfolio{
+                    margin-left: 0px !important;
+                    color: $white-color;
+                    padding: 5px 10px;
+                    background-color: $main-color;
+                    text-decoration: none;
+                } 
+                &:last-child{
+                    margin-bottom: 0px;
+                }
+            }
+        }
+    }
+    .portfolio_container{
+        .col-md-4{
+            padding: 2px 15px !important;
+        }
+        
+    }
+}
+
+////// PORTFOLIO RESPONSIVE //////
+@media only screen and (max-width: 992px) {}
+
+@media only screen and (max-width: 768px) {}
+
+@media only screen and (max-width: 575px) {}

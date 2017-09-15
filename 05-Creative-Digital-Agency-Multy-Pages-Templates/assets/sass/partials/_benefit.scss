@@ -1,0 +1,22 @@
+#benefits{
+    .benefit{
+        margin: 25px 0px;
+        padding: 0px 25px;
+    }
+    i.benefit-icon{
+        background-color: $main-color;
+        color: $white-color;
+        font-size: 28px;
+        display: inline-block;
+        width: 40px;
+        height: 40px;
+    }
+    span{
+        margin-left: 20px;
+        text-transform: uppercase;
+    }
+    p{
+        font-weight: lighter;
+        
+    }
+}

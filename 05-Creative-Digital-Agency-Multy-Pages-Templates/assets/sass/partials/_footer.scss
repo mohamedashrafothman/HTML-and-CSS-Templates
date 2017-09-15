@@ -1,0 +1,60 @@
+#footer{
+    background-color: $white-color;
+    color: $primary-color;
+    font-family: $open-sans-font;
+    padding: 50px 0px 25px 0px;
+    #footer-nav,
+    #footer-social{
+        ul{
+            li{
+                display: inline-block !important;
+                a {
+                    text-transform: uppercase;
+                    font-weight: 400;
+                    font-size: 14px;
+                    color: $primary-color;
+                    &:hover,
+                    &:active,
+                    &:focus {
+                        color: $main-color;
+                    }
+                }
+            }
+        }
+    }
+    #footer-nav{
+        ul{
+            li{
+                &:after{
+                    content:".";
+                    font-size: 20px;
+                    font-weight: bolder;
+                    margin: 0px 10px;
+                }
+                &:last-child{
+                    &:after{
+                        content: '';
+                    }
+                }
+            }
+        }
+    }
+
+    #footer-social{
+        ul{
+            li{
+                margin: 0px 10px;
+                a{
+                    font-size: 20px !important;
+                }
+                &:last-child{
+                    margin: 0px 0px 0px 10px;
+                }
+            }
+        }
+    }
+    p{
+        padding-top: 15px;
+        font-size: 14px;
+    }
+}

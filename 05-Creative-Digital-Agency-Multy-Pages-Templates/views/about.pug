@@ -1,0 +1,114 @@
+include partials/header.pug
+
+
+section#about-us-big-hero
+    .container
+        .row.align-center
+            h1 about us
+            .navegation
+                ul
+                    li
+                        a(href="index.html") Home
+                    li
+                        a(href="about.html") about us
+
+section#about-us-intro
+    .container
+        .row
+            .col-md-6.align-left
+                span.main-header.h3 about us
+                h6  We are awesome
+                p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+            .col-md-6.align-left
+                span.main-header.h3 What We Do
+                h6  Creative & Digital
+                p
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+
+section#benefits
+    .container
+        .row.section-title.align-center
+            span.main-header.h3 some benefits
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                | et dolore magna aliqua.
+        .row
+            .col-md-4.col-sm-6.benefit.align-left
+                i.benefit-icon.ion-iphone.align-center
+                span.h4 FULLY RESPONSIVE
+                p
+                    | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4.col-sm-6.benefit.align-left
+                i.benefit-icon.ion-ios-infinite-outline.align-center
+                span.h4 UNLIMITED OPTIONS
+                p
+                    | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4.col-sm-6.benefit.align-left
+                i.benefit-icon.ion-social-wordpress-outline.align-center
+                span.h4 WORDPRESS
+                p
+                    | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4.col-sm-6.benefit.align-left
+                i.benefit-icon.ion-ios-cart-outline.align-center
+                span.h4 e-commerce
+                p
+                    | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4.col-sm-6.benefit.align-left
+                i.benefit-icon.ion-ios-settings.align-center
+                span.h4 CUSTOMIZABLE DESIGN
+                p
+                    | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+            .col-md-4.col-sm-6.benefit.align-left
+                i.benefit-icon.ion-settings.align-center
+                span.h4 SUPPORT
+                p
+                    | Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. In eleifend suscipit enim, eu commodo neque molestie vitae.
+
+section#dream-team
+    .container
+        .row.section-title.align-center
+            span.main-header.h3 THE DREAM TEAM
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                | et dolore magna aliqua.
+        .row
+            include mixins/_team-member.pug
+            +team-member('team-member', 'team-member-1', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-2', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-3', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-4', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-5', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-6', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-7', 'John Doe', 'Developer')
+            +team-member('team-member', 'team-member-8', 'John Doe', 'Developer')
+            
+        .row.bar
+            .col-md-12
+                p.col-md-9.col-xs-12
+                    | Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                button.col-md-2.col-md-offset-1.col-xs-12.col-xs-offset-12.main-btn.hvr-btn-down.hvr-btn-main.float-right 
+                    a(href="#") Read more
+
+//- section#newsletter
+//-     .container
+//-         .row
+//-             .col-md-6.col-sm-12#get-in-touch
+//-                 span.h3 YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
+//-                 br
+//-                 button.white-btn.hvr-btn-down.hvr-btn-primary 
+//-                     a(href="#") get in touch
+
+//-             .col-md-6.col-xs-12#newsletter-form
+//-                 h3 
+//-                     | STAY INFORMED WITH OUR NEWSLETTER
+//-                 p
+//-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+//-                 form(action="#" method="POST")
+//-                     span.float-span.align-center your email
+//-                     input(type="email" name="email" class="col-md-8 col-xs-8")
+//-                     button(type="submit" class="col-md-4 col-xs-4 main-btn hvr-btn-down hvr-btn-primary")
+//-                         a(href="#") send
+
+
+include partials/footer.pug

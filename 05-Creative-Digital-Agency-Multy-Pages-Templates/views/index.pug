@@ -1,0 +1,97 @@
+
+include partials/header.pug
+
+section#bg-hero-sec.align-center
+    .container
+        #main-header.row.col-md-6.col-md-offset-3
+            h6 we’re
+            h1.big-borderd-title creative agency
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        #sec-section.row.align-left
+            img.col-md-5(src='assets/images/image-1.jpg', alt='image')
+            .col-md-6.col-md-offset-1
+                span.main-header.h3 HISTORY OF AGENCY
+                p
+                    | Porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora
+                    | incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum
+                    | exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi modi tempora incidunt
+                    | ut labore.
+                button.main-btn.hvr-btn-down.hvr-btn-main.float-right 
+                    a(href="#") read more   
+section#why-choose-us-sec
+    .container
+        .row.section-title
+            span.main-header.h3 HISTORY OF AGENCY
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+        .row
+            #features.align-left.col-md-6
+                include mixins/_feature.pug
+                +feature('ion-ios-infinite-outline', 'unlimited options', ['Branding', 'Design & Copywriting', 'Concept development', 'User Experince'])
+                +feature('ion-ios-shuffle', 'DESIGN & DEVELOPMENT', ['Information architecture', 'Interface design', 'Product Design', 'Integrated ad Companies'])
+                +feature('ion-ios-cart-outline', 'e-commerce', ['Prototyping', 'Technical Consulting', 'Web applications', 'Quality testing'])
+                +feature('ion-ios-settings', 'Customizable design', ['Information archticture', 'interface design', 'product design', 'integrated and company'])
+                
+            img.img-responsive.col-md-5.col-md-offset-1(src='assets/images/image-2.jpg', alt='image')
+section#portfolio
+    .container
+        .row.section-title.align-center
+            span.main-header.h3 our portfolio
+            p
+                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
+                | et dolore magna aliqua.
+        .row
+            .col-md-3.col-sm-4.col-xs-12
+                span.main-header.h3 choose category
+                nav.categories
+                    ul.portfolio_filter
+                        li
+                            a.p.active-portfolio(href='#', data-filter='*') all
+                        li
+                            a.p(href='#', data-filter='.photography') photography
+                        li
+                            a.p(href='#', data-filter='.web') webdesign
+                        li
+                            a.p(href='#', data-filter='.logo') logo
+                        li
+                            a.p(href='#', data-filter='.graphics') graphics
+                        li
+                            a.p(href='#', data-filter='.ads') advertising
+                        li
+                            a.p(href='#', data-filter='.fashion') fashion
+            .col-md-9.col-sm-8.col-xs-12
+                .row.portfolio_container
+                    include mixins/_portfolio-item.pug
+                    +portfolio_item('photography','assets/images/portfolio-1.jpg','Iron Man','Photograpy')
+                    +portfolio_item('fashio logo','assets/images/portfolio-2.jpg','Spider Man','Fashion')
+                    +portfolio_item('ads graphics','assets/images/portfolio-3.jpg','X Man','Graphics')
+                    +portfolio_item('fashion ads','assets/images/portfolio-4.jpg','Super Man','Ads')
+                    +portfolio_item('graphics ads','assets/images/portfolio-5.jpg','Spider Man','Ads')
+                    +portfolio_item('logo web photography','assets/images/portfolio-6.jpg','Cat Woman','Web')
+                    +portfolio_item('ads graphics','assets/images/portfolio-7.jpg','Bat Man','Graphics')
+                    +portfolio_item('web fashion graphics','assets/images/portfolio-8.jpg','Joker','web')
+                    +portfolio_item('fashion logo','assets/images/portfolio-9.jpg','Iron Man','Logo')
+
+section#newsletter
+    .container
+        .row
+            .col-md-6.col-sm-12#get-in-touch
+                span.h3 YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
+                br
+                button.white-btn.hvr-btn-down.hvr-btn-primary 
+                    a(href="#") get in touch
+
+            .col-md-6.col-xs-12#newsletter-form
+                h3 
+                    | STAY INFORMED WITH OUR NEWSLETTER
+                p
+                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                form(action="#" method="POST")
+                    span.float-span.align-center your email
+                    input(type="email" name="email" class="col-md-8 col-xs-8")
+                    button(type="submit" class="col-md-4 col-xs-4 main-btn hvr-btn-down hvr-btn-primary")
+                        a(href="#") send
+
+include partials/footer.pug
+

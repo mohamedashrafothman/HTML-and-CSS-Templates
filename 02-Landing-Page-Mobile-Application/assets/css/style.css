@@ -12,7 +12,6 @@
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
-  -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: 0;
 }
@@ -372,7 +371,6 @@ input[type="email"]:focus {
   background-image: url("../images/banner_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
-  -webkit-background-size: cover;
   background-size: cover;
   padding: 200px 0px 510px;
   overflow: hidden;
@@ -836,7 +834,6 @@ input[type="email"]:focus {
   width: 100%;
   opacity: 0;
   -webkit-transform: scale(0.95);
-  -ms-transform: scale(0.95);
   transform: scale(0.95);
   -webkit-transition: opacity 0.97s, -webkit-transform 0.97s;
   transition: opacity 0.97s, -webkit-transform 0.97s;
@@ -852,7 +849,6 @@ input[type="email"]:focus {
 #plan #price_tables .individual.active, #plan #price_tables .company.active {
   opacity: 1;
   -webkit-transform: scale(1);
-  -ms-transform: scale(1);
   transform: scale(1);
 }
 #plan #price_tables .individual.active .price-table, #plan #price_tables .company.active .price-table {
