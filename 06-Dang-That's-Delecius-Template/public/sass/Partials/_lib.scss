@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,300,400,400i,500,700,900');
+
+/*
+    Variables
+*/
+$black: #303030;
+$width: 800px;
+$purple: #262161;
+$yellow: #FFC40E;
+$pink: #EE7297;
+$green: #93FF00;
+$red: #E50714;
+$grey: lighten(grey, 40%);
+$shad: 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
+$grad: linear-gradient(90deg, #48ded4 0%, #a026bf 20%, #e82c75 60%, $yellow 85%, #48ded4 95%);
+$verticalGrad: linear-gradient(0, #48ded4 0%, #a026bf 20%, #e82c75 60%, $yellow 85%, #48ded4 95%);
+$roboto: 'Roboto', sans-serif;
+
+/*
+    Layouts
+*/
+*{
+    margin: 0;
+    padding: 0;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
+html{
+    font-size: 10px;
+}
+body{
+    font-size: 1.5rem;
+    background-color: #efefef;
+    color: $black;
+    font-family: $roboto;
+    &:before{
+        content: '';
+        height: 10px;
+        width: 100%;
+        background: $grad;
+        display: block;
+    }
+}
+
+/*
+    Typography
+*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+{
+    font-size: 5rem;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    letter-spacing: -1px;
+}
+
+a {
+    text-decoration: none;
+    color: $black;
+}
+
+p a {
+    border-bottom: 2px solid $yellow;
+}
+
+p {
+    line-height: 2;
+    font-size: 1.6rem;
+}
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid $grey;
+    &.input {
+        &--error {
+            border-color: red;
+        }
+    }
+}
+
+label {
+    padding: 10px 0;
+    display: block;
+}
+
+/*
+    Helper Classes
+*/
+.inner{
+    max-width: 900px;
+    margin: 0 auto;
+    @media all and (max-width:900px) {
+        padding: 2rem;
+    }
+}
+.title {
+    word-wrap: break-word;
+    position: relative;
+    z-index: 2;
+    margin: 0;
+    font-size: 40px;
+    z-index: 2;
+    line-height: 1.1;
+    -webkit-transform: skew(0, -3deg);
+    transform: skew(0, -3deg);
+    &--long {
+        font-size: 30px;
+    }
+    &:before {
+        content: '';
+        width: 50px;
+        left: 0;
+        top: 0;
+        height: 100%; // top:10%;
+        display: block;
+        position: absolute;
+        z-index: -1;
+        -webkit-transform: skew(-5deg);
+        transform: skew(-5deg)
+    }
+    line-height:1.1; // inline link inside
+    a {
+        border-bottom: 0;
+        $yellowa: rgba($yellow, 0.8);
+        background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $yellowa), color-stop(50%, $yellowa));
+        background-image: linear-gradient(to right, $yellowa 100%, $yellowa 50%);
+    }
+}
+.title--single {
+    max-width: 600px;
+    margin-top: -9rem;
+    font-size: 10rem;
+    text-align: center;
+}
+.form {
+    background: white;
+    padding: 2rem;
+    -webkit-box-shadow: $grad;
+    box-shadow: $grad;
+    &+.form {
+        margin-top: 4rem;
+    } // I know this isn't bem but meh
+    h2 {
+        margin: 0;
+        font-size: 2rem;
+        padding-bottom: 2rem;
+        margin-bottom: 2rem;
+        border-bottom: 1px solid $grey;
+    }
+}
