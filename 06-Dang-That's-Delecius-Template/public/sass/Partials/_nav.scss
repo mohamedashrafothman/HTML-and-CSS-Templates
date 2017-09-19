@@ -182,7 +182,7 @@
     }
     &__result {
         padding: 10px;
-        display: block;
+        display: none; /* turn it to block if you want to use */
         border-bottom: 1px solid #ececec;
         &--active {
             background: #f1f1f1;

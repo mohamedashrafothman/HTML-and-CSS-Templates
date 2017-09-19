@@ -79,11 +79,20 @@
             fill: white;
         }
         &--count {
-            sup{
+            position: relative;
+            span{
+                position: absolute;
                 color: white;
-                top: -2rem;
-                font-size: 1.5rem;
-                font-size: $roboto;
+                top: -0.5rem;
+                right: -1rem;
+                font-size: 1.7rem;
+                font-family: Roboto, sans-serif;
+                display: block;
+                width: 18px;
+                height: 18px;
+                background-color: $red;
+                text-align: center;
+                border-radius: 50%;
             }
         }
     }
@@ -103,13 +112,13 @@
         outline: 0;
         position: relative;
         &:after {
-            content: '♥️';
+            content: '❤';
             font-size: 20px;
             position: absolute;
             opacity: 0;
             top: -15px;
-            color: red;
-            font-size: 45px;
+            color: $red;
+            font-size: 40px;
         }
         svg {
             width: 25px;
@@ -117,7 +126,7 @@
         }
         &--hearted {
             svg {
-                fill: red;
+                fill: $red;
             }
         }
         &--float {
@@ -137,22 +146,22 @@
         opacity: 1;
     }
     20% {
-        left: 20px;
+        left: 10px;
     }
     40% {
-        left: -20px;
+        left: -10px;
     }
     60% {
-        left: 20px;
+        left: 10px;
     }
     80% {
-        left: -20px;
+        left: -10px;
     }
     100% {
         -webkit-transform: translateY(-400px);
                 transform: translateY(-400px);
         opacity: 0;
-        left: 20px;
+        left: 10px;
     }
 }
 
@@ -164,21 +173,21 @@
         opacity: 1;
     }
     20% {
-        left: 20px;
+        left: 10px;
     }
     40% {
-        left: -20px;
+        left: -10px;
     }
     60% {
-        left: 20px;
+        left: 10px;
     }
     80% {
-        left: -20px;
+        left: -10px;
     }
     100% {
         -webkit-transform: translateY(-400px);
                 transform: translateY(-400px);
         opacity: 0;
-        left: 20px;
+        left: 10px;
     }
 }

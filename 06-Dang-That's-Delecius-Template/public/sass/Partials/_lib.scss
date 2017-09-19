@@ -7,6 +7,7 @@ $black: #303030;
 $width: 800px;
 $purple: #262161;
 $yellow: #FFC40E;
+$yellowa: rgba($yellow, 0.8);
 $pink: #EE7297;
 $green: #93FF00;
 $red: #E50714;
@@ -104,7 +105,6 @@ label {
     z-index: 2;
     margin: 0;
     font-size: 40px;
-    z-index: 2;
     line-height: 1.1;
     -webkit-transform: skew(0, -3deg);
     transform: skew(0, -3deg);
@@ -123,10 +123,8 @@ label {
         -webkit-transform: skew(-5deg);
         transform: skew(-5deg)
     }
-    line-height:1.1; // inline link inside
     a {
         border-bottom: 0;
-        $yellowa: rgba($yellow, 0.8);
         background-image: -webkit-gradient(linear, left top, right top, color-stop(100%, $yellowa), color-stop(50%, $yellowa));
         background-image: linear-gradient(to right, $yellowa 100%, $yellowa 50%);
     }
@@ -152,4 +150,9 @@ label {
         margin-bottom: 2rem;
         border-bottom: 1px solid $grey;
     }
+}
+.avatar{
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
 }
