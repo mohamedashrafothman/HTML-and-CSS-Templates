@@ -152,10 +152,6 @@
             }
         }
     }
-    .heart-count:before {
-        content: '♥️';
-        margin-right: 1rem;
-    }
 }
 
 .search {
@@ -170,10 +166,11 @@
         width: 100%;
         top: 100%;
         -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-                box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
         z-index: 5;
     }
     &__input {
+        font-family: $roboto;
         font-size: 30px;
         background: none;
         color: white;
@@ -181,6 +178,7 @@
         border: 0;
     }
     &__result {
+        font-size: 30px;
         padding: 10px;
         display: none; /* turn it to block if you want to use */
         border-bottom: 1px solid #ececec;

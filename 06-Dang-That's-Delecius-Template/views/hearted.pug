@@ -1,19 +1,10 @@
 extends layout.pug
 
+include mixins/_pagination.pug
+
 block content
     .inner
-        h1.page--title Tags
-
-        ul.tags
-            li.tag
-                a.tag__link(href="#")
-                    span.tag__text Wifi
-                    span.tag__count 5
-            li.tag
-                a.tag__link(href="#")
-                    span.tag__text Open Late
-                    span.tag__count 20
-
+        h1.page--title Hearted Stores
         .stores
             .store
                 .store__hero
@@ -75,3 +66,4 @@ block content
                 .store__details
                     p
                         | Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus officiis vero facere quos odio praesentium. 
+        +pagination(1, 2, 3)

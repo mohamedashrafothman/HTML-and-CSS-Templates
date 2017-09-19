@@ -38,3 +38,11 @@
         }
     }
 }
+@media all and (max-width: 500px){
+        .pagination__prev,
+        .pagination__text,
+        .pagination__next {
+
+            padding: 3rem 5px 3rem 5px;
+        }
+}

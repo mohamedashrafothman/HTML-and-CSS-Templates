@@ -1,0 +1,10 @@
+extends layout.pug
+
+include mixins/_loginForm.pug
+include mixins/_forgotForm.pug
+
+block content
+    .inner
+        h1.page--title Login
+        +loginForm()
+        +forgotForm()
