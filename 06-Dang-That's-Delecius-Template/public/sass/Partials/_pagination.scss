@@ -22,7 +22,7 @@
     }
     &__prev{
         a:before {
-            content: "⬅";
+            content: "←";
             margin-right: 5px;
         }
     }
@@ -33,7 +33,7 @@
     }
     &__next{
         a:after{
-            content:"➡";
+            content:"→";
             margin-left: 5px;
         }
     }
