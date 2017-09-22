@@ -5,11 +5,40 @@
     list-style: none;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-    margin:0 0 3rem 0;
+    margin:0;
     padding: 0;
     .tag{
         display: block;
         margin-right: 2rem;
+        margin-bottom: 2rem;
+        &__choice{
+            margin-top: 3rem;
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -ms-flex-wrap: wrap;
+                flex-wrap: wrap;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            input {
+                width: auto;
+                right: -1.5rem;
+                margin-right: -1rem;
+                position: relative;
+                z-index: 2;
+                &+label {
+                    background: $grey;
+                    padding: 1rem 1rem 1rem 4rem;
+                }
+                &:checked+label {
+                    background: $yellow;
+                }
+            }
+        }
         &__link{
             display: -webkit-box;
             display: -ms-flexbox;
@@ -17,6 +46,7 @@
             background-color: $yellow;
             color: black;
             font-size: 16px;
+            text-transform: capitalize;
             padding-left: 2rem;
             -webkit-clip-path: polygon(10px 0%, 100% 1%, 100% 100%, 10px 100%, 0% 50%);
                     clip-path: polygon(10px 0%, 100% 1%, 100% 100%, 10px 100%, 0% 50%);

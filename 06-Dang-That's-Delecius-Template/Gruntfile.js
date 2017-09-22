@@ -27,7 +27,8 @@ module.exports = function (grunt) {
 					'login.html': ['views/login.pug'],
 					'register.html': ['views/register.pug'],
 					'hearted.html': ['views/hearted.pug'],
-					'account.html': ['views/account.pug']
+					'account.html': ['views/account.pug'],
+					'editStore.html': ['views/editStore.pug']
 				},
 			},
 		},
