@@ -769,7 +769,8 @@ label {
   background: none;
   border: 0;
   outline: 0;
-  position: relative; }
+  position: relative;
+  cursor: pointer; }
   .heart__button:after {
     content: '❤';
     font-size: 20px;
@@ -866,62 +867,63 @@ label {
     padding: 3rem 5px 3rem 5px; } }
 
 .tags {
+  margin: 2rem 0rem;
+  padding: 0;
+  list-style: none;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
+  margin-bottom: 2rem;
   -ms-flex-wrap: wrap;
-  flex-wrap: wrap;
-  margin: 0;
-  padding: 0; }
-  .tags .tag {
-    display: block;
-    margin-right: 2rem;
-    margin-bottom: 2rem; }
-    .tags .tag__choice {
-      margin-top: 3rem;
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-      -webkit-box-pack: center;
-      -ms-flex-pack: center;
-      justify-content: center;
-      -webkit-box-align: center;
-      -ms-flex-align: center;
-      align-items: center; }
-      .tags .tag__choice input {
-        width: auto;
-        right: -1.5rem;
-        margin-right: -1rem;
-        position: relative;
-        z-index: 2; }
-        .tags .tag__choice input + label {
-          background: #e6e6e6;
-          padding: 1rem 1rem 1rem 4rem; }
-        .tags .tag__choice input:checked + label {
-          background: #FFC40E; }
-    .tags .tag__link {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      background-color: #FFC40E;
-      color: black;
-      font-size: 16px;
-      text-transform: capitalize;
-      padding-left: 2rem;
-      -webkit-clip-path: polygon(10px 0%, 100% 1%, 100% 100%, 10px 100%, 0% 50%);
-      clip-path: polygon(10px 0%, 100% 1%, 100% 100%, 10px 100%, 0% 50%); }
-    .tags .tag__text {
-      padding: 1rem;
-      display: block; }
-    .tags .tag__count {
-      background: white;
-      padding: 1rem;
-      border-left: 3px solid rgba(0, 0, 0, 0.1);
-      margin-right: -1px;
-      background-clip: padding-box; }
+  flex-wrap: wrap; }
+
+.tag {
+  display: block;
+  margin-right: 1rem; }
+  .tag__choice {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+    .tag__choice input {
+      width: auto;
+      right: -1.5rem;
+      margin-right: -1rem;
+      position: relative;
+      z-index: 2; }
+      .tag__choice input + label {
+        background: #e6e6e6;
+        padding: 1rem 1rem 1rem 4rem; }
+      .tag__choice input:checked + label {
+        background: #FFC40E; }
+  .tag__link {
+    background: #FFC40E;
+    color: #303030;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-left: 10px;
+    -webkit-clip-path: polygon(10px 0%, 100% 1%, 100% 100%, 10px 100%, 0% 50%);
+    clip-path: polygon(10px 0%, 100% 1%, 100% 100%, 10px 100%, 0% 50%); }
+    .tag__link--active {
+      background: #827cd2; }
+      .tag__link--active .tag__text {
+        color: white; }
+  .tag__text {
+    padding: 1rem 1rem;
+    display: block; }
+  .tag__count {
+    padding: 1rem 1rem;
+    background: white;
+    border-left: 3px solid rgba(0, 0, 0, 0.1);
+    margin-right: -1px;
+    /* ugh */
+    background-clip: padding-box; }
 
 .form {
   background-color: white;
@@ -950,3 +952,255 @@ label {
     margin-top: 1rem;
     float: right;
     text-decoration: underline; }
+
+.table {
+  width: 100%; }
+  .table tr {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .table td {
+    -webkit-box-flex: 1;
+    -ms-flex: 1 1 25%;
+    flex: 1 1 25%;
+    text-align: center;
+    -ms-flex-item-align: center;
+    align-self: center;
+    padding: 5px; }
+  .table tr:nth-child(even) {
+    background: white; }
+  .table tr:nth-child(odd):not(:first-child) {
+    background: #f7f7f7; }
+  .table thead {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .table thead tr {
+      -webkit-box-flex: 1;
+      -ms-flex: 1 1 25%;
+      flex: 1 1 25%;
+      text-align: center;
+      -ms-flex-item-align: center;
+      align-self: center;
+      text-transform: capitalize;
+      background: #303030;
+      color: white; }
+
+.map {
+  padding: 20px;
+  background: white;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1), 0 5px 10px rgba(0, 0, 0, 0.05); }
+
+#map {
+  height: 500px; }
+
+.popup {
+  width: 300px; }
+  .popup img {
+    width: 100%; }
+
+.single__hero {
+  height: 500px;
+  position: relative;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0% 100%);
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0% 100%); }
+  .single__hero:before {
+    display: block;
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    right: 0;
+    background: linear-gradient(45deg, #05b3d6 0%, rgba(5, 179, 214, 0) 70%), linear-gradient(135deg, #0958ec 10%, rgba(9, 88, 236, 0) 80%), linear-gradient(225deg, #d209ec 10%, rgba(210, 9, 236, 0) 80%), linear-gradient(315deg, #05e129 100%, rgba(5, 225, 41, 0) 70%);
+    opacity: 0.6;
+    z-index: 1;
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0% 100%);
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 2vw), 0% 100%); }
+
+.single__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  position: absolute; }
+
+.single__details {
+  background: white;
+  position: relative;
+  padding: 3rem;
+  margin-top: -10rem;
+  -webkit-box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15);
+  box-shadow: 0 0 10px 2px rgba(0, 0, 0, 0.15); }
+
+.single__map {
+  width: calc(100% + 6rem);
+  max-width: none;
+  margin-top: -3rem;
+  margin-left: -3rem; }
+
+.single__location {
+  margin: 0;
+  margin-top: -3rem;
+  margin-right: -5rem;
+  background: #303030;
+  color: white;
+  display: inline-block;
+  float: right;
+  position: relative;
+  padding: 1rem; }
+  @media all and (max-width: 850px) {
+    .single__location {
+      margin-right: 0; } }
+
+.single__descrip {
+  margin: 3rem 0;
+  padding: 1rem; }
+  @media all and (max-width: 850px) {
+    .single__descrip {
+      margin-right: 0; } }
+
+/*
+  Reviewer Form
+ */
+.reviewer {
+  position: relative;
+  -webkit-box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 2rem; }
+  .reviewer__stars {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+    .reviewer__stars input {
+      display: none; }
+      .reviewer__stars input:checked ~ label {
+        color: #FFC40E; }
+      .reviewer__stars input + label {
+        font-size: 0;
+        /* These are in the opposite DOM order
+           re-order them to be visually in normal order
+           This is fine for accessibility because our labels have for()
+         */ }
+        .reviewer__stars input + label:before {
+          content: '★';
+          font-size: 2rem; }
+        .reviewer__stars input + label[for="star5"] {
+          -webkit-box-ordinal-group: 6;
+          -ms-flex-order: 5;
+          order: 5; }
+        .reviewer__stars input + label[for="star4"] {
+          -webkit-box-ordinal-group: 5;
+          -ms-flex-order: 4;
+          order: 4; }
+        .reviewer__stars input + label[for="star3"] {
+          -webkit-box-ordinal-group: 4;
+          -ms-flex-order: 3;
+          order: 3; }
+        .reviewer__stars input + label[for="star2"] {
+          -webkit-box-ordinal-group: 3;
+          -ms-flex-order: 2;
+          order: 2; }
+        .reviewer__stars input + label[for="star1"] {
+          -webkit-box-ordinal-group: 2;
+          -ms-flex-order: 1;
+          order: 1; }
+        .reviewer__stars input + label:hover,
+        .reviewer__stars input + label:hover ~ label {
+          color: #ffdd74; }
+  .reviewer textarea {
+    border: 0;
+    outline: 0;
+    font-size: 2rem;
+    padding: 2rem;
+    height: 200px; }
+  .reviewer__meta {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    border-top: 1px solid #e6e6e6; }
+    .reviewer__meta > * {
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1; }
+
+.review {
+  background: white;
+  border: 1px solid #e6e6e6;
+  border-bottom: 0;
+  border-bottom: 1px solid #e6e6e6;
+  margin-bottom: 2rem;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  padding-left: 5px; }
+  .review:before {
+    width: 5px;
+    left: 0;
+    content: '';
+    display: block;
+    background: linear-gradient(0, #48ded4 0%, #a026bf 20%, #e82c75 60%, #FFC40E 85%, #48ded4 95%);
+    position: absolute;
+    height: 100%;
+    background-attachment: fixed; }
+  .review__header {
+    border-bottom: 1px solid #e6e6e6;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .review__header > * {
+      border-right: 1px solid #e6e6e6;
+      padding: 0.2rem;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-flex: 1;
+      -ms-flex: 1;
+      flex: 1;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center; }
+      .review__header > *:last-child {
+        border-right: 0; }
+  .review__author {
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    padding-left: 2rem;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .review__author .avatar {
+      margin-right: 2rem; }
+  .review__time {
+    font-size: 1.2rem;
+    color: #999999; }
+  .review__stars {
+    color: #FFC40E; }
+  .review__body {
+    padding: 2rem; }
+  .review p {
+    white-space: pre-wrap; }

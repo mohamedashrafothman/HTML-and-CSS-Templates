@@ -34,8 +34,55 @@
       </nav>
     </header>
     <div class="content">
-      <div class="inner">
-        <h1 class="page--title">Stores</h1>
+      <div class="single">
+        <div class="single__hero"><img class="single__image" src="public/images/1.jpg">
+          <h2 class="title title--single"><a href="store.html">Zara</a></h2>
+        </div>
+      </div>
+      <div class="single__details inner"><img class="single__map" src="https://maps.googleapis.com/maps/api/staticmap?center=43.2618072,-79.8669744&amp;zoom=14&amp;size=800x150&amp;key=AIzaSyD9ycobB5RiavbXpJBo0Muz2komaqqvGv0&amp;markers=43.2618072,-79.8669744&amp;scale=2">
+        <p class="single__location">Mulberry Street Coffeehouse, James Street North, Hamilton, ON, Canada</p><br>
+        <p class="single__descrip">Chill cafe in the former lobby of an 1880s hotel serving coffee, sweets & panini, plus cocktails.</p>
+        <ul class="tags">
+          <li class="tag"><a class="tag__link" href="tags.html"><span class="tag__text"> Open late</span></a></li>
+          <li class="tag"><a class="tag__link" href="tags.html"><span class="tag__text"> wifi</span></a></li>
+          <li class="tag"><a class="tag__link" href="tags.html"><span class="tag__text"> free coffee</span></a></li>
+          <li class="tag"><a class="tag__link" href="tags.html"><span class="tag__text"> family frindly</span></a></li>
+          <li class="tag"><a class="tag__link" href="tags.html"><span class="tag__text"> sale</span></a></li>
+          <li class="tag"><a class="tag__link" href="tags.html"><span class="tag__text"> clothes</span></a></li>
+        </ul>
+        <form class="reviewer" action="store.html" method="POST">
+          <textarea name="text" placeholder="Did you try this place? Have something to say? Leave a review..."></textarea>
+          <div class="reviewer__meta">
+            <div class="reviewer__stars">
+              <input type="radio" required="required" id="star5" name="rating" value="5"/>
+              <label for="star5">5 Stars</label>
+              <input type="radio" required="required" id="star4" name="rating" value="4"/>
+              <label for="star4">4 Stars</label>
+              <input type="radio" required="required" id="star3" name="rating" value="3"/>
+              <label for="star3">3 Stars</label>
+              <input type="radio" required="required" id="star2" name="rating" value="2"/>
+              <label for="star2">2 Stars</label>
+              <input type="radio" required="required" id="star1" name="rating" value="1"/>
+              <label for="star1">1 Stars</label>
+            </div>
+          </div>
+          <input class="button" type="submit" value="Submit Review →"/>
+        </form>
+        <div class="reviews">
+          <div class="review">
+            <div class="review__header">
+              <div class="review__author"><img class="avatar" src="public/images/avatar.jpg"/>
+                <p>Debbie Downer</p>
+              </div>
+              <div class="review__stars" title="Rated 3 our of 5 stars">★★★☆☆
+              </div>
+              <time class="review__time">6 months ago</time>
+            </div>
+            <div class="review__body">
+              <p>The coffee was too hot!</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
     <script src="public/dist/min/scripts.min.js"></script>
