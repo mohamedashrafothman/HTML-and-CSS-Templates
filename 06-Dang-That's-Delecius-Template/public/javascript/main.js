@@ -32,4 +32,15 @@ $(document).ready(function(){
 			}
 		});
 
+	/*
+        ===================== Heart Effect =====================
+	*/
+	$('.heart__button').on('click', function(e){
+		e.preventDefault();
+		if ($(this).hasClass('heart__button--hearted')){
+			$(this).removeClass('heart__button--hearted heart__button--float');
+		} else {
+			$(this).addClass('heart__button--hearted heart__button--float');
+		}
+	});
 });
