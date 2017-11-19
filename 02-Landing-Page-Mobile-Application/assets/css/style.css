@@ -12,6 +12,7 @@
   padding: 0px;
   margin: 0px;
   -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
   box-sizing: border-box;
   outline: 0;
 }
@@ -371,6 +372,7 @@ input[type="email"]:focus {
   background-image: url("../images/banner_background.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  -webkit-background-size: cover;
   background-size: cover;
   padding: 200px 0px 510px;
   overflow: hidden;
@@ -516,16 +518,17 @@ input[type="email"]:focus {
 }
 #iphone-screens #images-showcase #images-list li {
   display: inline-block;
-  margin: 0px 10px;
+  margin: 0px 5px;
+  max-width: 50%;
 }
 #iphone-screens #images-showcase #images-list li img {
   max-width: 100%;
 }
 #iphone-screens #images-showcase #images-list li:first-child {
-  margin-left: -140px;
+  margin-left: -190px;
 }
 #iphone-screens #images-showcase #images-list li:last-child {
-  margin-right: -140px;
+  margin-right: -190px;
 }
 #iphone-screens #images-showcase #images-list li:nth-child(1), #iphone-screens #images-showcase #images-list li:nth-child(2), #iphone-screens #images-showcase #images-list li:nth-child(4), #iphone-screens #images-showcase #images-list li:nth-child(5) {
   -webkit-box-shadow: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
@@ -834,9 +837,10 @@ input[type="email"]:focus {
   width: 100%;
   opacity: 0;
   -webkit-transform: scale(0.95);
+  -ms-transform: scale(0.95);
   transform: scale(0.95);
-  -webkit-transition: opacity 0.97s, -webkit-transform 0.97s;
   transition: opacity 0.97s, -webkit-transform 0.97s;
+  -webkit-transition: opacity 0.97s, -webkit-transform 0.97s;
   transition: opacity 0.97s, transform 0.97s;
   -webkit-transition: opacity 0.97s, -webkit-transform 0.97s, -webkit-transform 0.97s;
   transition: opacity 0.97s, transform 0.97s, -webkit-transform 0.97s;
@@ -849,6 +853,7 @@ input[type="email"]:focus {
 #plan #price_tables .individual.active, #plan #price_tables .company.active {
   opacity: 1;
   -webkit-transform: scale(1);
+  -ms-transform: scale(1);
   transform: scale(1);
 }
 #plan #price_tables .individual.active .price-table, #plan #price_tables .company.active .price-table {

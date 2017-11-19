@@ -34,64 +34,9 @@ section#why-choose-us-sec
                 +feature('ion-ios-settings', 'Customizable design', ['Information archticture', 'interface design', 'product design', 'integrated and company'])
                 
             img.img-responsive.col-md-5.col-md-offset-1(src='assets/images/image-2.jpg', alt='image')
-section#portfolio
-    .container
-        .row.section-title.align-center
-            span.main-header.h3 our portfolio
-            p
-                | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
-                | et dolore magna aliqua.
-        .row
-            .col-md-3.col-sm-4.col-xs-12
-                span.main-header.h3 choose category
-                nav.categories
-                    ul.portfolio_filter
-                        li
-                            a.p.active-portfolio(href='#', data-filter='*') all
-                        li
-                            a.p(href='#', data-filter='.photography') photography
-                        li
-                            a.p(href='#', data-filter='.web') webdesign
-                        li
-                            a.p(href='#', data-filter='.logo') logo
-                        li
-                            a.p(href='#', data-filter='.graphics') graphics
-                        li
-                            a.p(href='#', data-filter='.ads') advertising
-                        li
-                            a.p(href='#', data-filter='.fashion') fashion
-            .col-md-9.col-sm-8.col-xs-12
-                .row.portfolio_container
-                    include mixins/_portfolio-item.pug
-                    +portfolio_item('photography','assets/images/portfolio-1.jpg','Iron Man','Photograpy')
-                    +portfolio_item('fashio logo','assets/images/portfolio-2.jpg','Spider Man','Fashion')
-                    +portfolio_item('ads graphics','assets/images/portfolio-3.jpg','X Man','Graphics')
-                    +portfolio_item('fashion ads','assets/images/portfolio-4.jpg','Super Man','Ads')
-                    +portfolio_item('graphics ads','assets/images/portfolio-5.jpg','Spider Man','Ads')
-                    +portfolio_item('logo web photography','assets/images/portfolio-6.jpg','Cat Woman','Web')
-                    +portfolio_item('ads graphics','assets/images/portfolio-7.jpg','Bat Man','Graphics')
-                    +portfolio_item('web fashion graphics','assets/images/portfolio-8.jpg','Joker','web')
-                    +portfolio_item('fashion logo','assets/images/portfolio-9.jpg','Iron Man','Logo')
+include partials/portfolio.pug
 
-section#newsletter
-    .container
-        .row
-            .col-md-6.col-sm-12#get-in-touch
-                span.h3 YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
-                br
-                button.white-btn.hvr-btn-down.hvr-btn-primary 
-                    a(href="#") get in touch
-
-            .col-md-6.col-xs-12#newsletter-form
-                h3 
-                    | STAY INFORMED WITH OUR NEWSLETTER
-                p
-                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                form(action="#" method="POST")
-                    span.float-span.align-center your email
-                    input(type="email" name="email" class="col-md-8 col-xs-8")
-                    button(type="submit" class="col-md-4 col-xs-4 main-btn hvr-btn-down hvr-btn-primary")
-                        a(href="#") send
+include partials/newsletter.pug
 
 include partials/footer.pug
 

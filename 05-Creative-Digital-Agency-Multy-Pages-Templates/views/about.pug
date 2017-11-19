@@ -3,14 +3,8 @@ include partials/header.pug
 
 section#about-us-big-hero
     .container
-        .row.align-center
-            h1 about us
-            .navegation
-                ul
-                    li
-                        a(href="index.html") Home
-                    li
-                        a(href="about.html") about us
+        include mixins/_big-hero-section.pug
+        +big-hero-section('about us', 'about.html', 'about')
 
 section#about-us-intro
     .container
@@ -90,25 +84,6 @@ section#dream-team
                 button.col-md-2.col-md-offset-1.col-xs-12.col-xs-offset-12.main-btn.hvr-btn-down.hvr-btn-main.float-right 
                     a(href="#") Read more
 
-//- section#newsletter
-//-     .container
-//-         .row
-//-             .col-md-6.col-sm-12#get-in-touch
-//-                 span.h3 YOU THINK WE'RE COOL ? LET'S WORK TOGETHER
-//-                 br
-//-                 button.white-btn.hvr-btn-down.hvr-btn-primary 
-//-                     a(href="#") get in touch
-
-//-             .col-md-6.col-xs-12#newsletter-form
-//-                 h3 
-//-                     | STAY INFORMED WITH OUR NEWSLETTER
-//-                 p
-//-                     | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-//-                 form(action="#" method="POST")
-//-                     span.float-span.align-center your email
-//-                     input(type="email" name="email" class="col-md-8 col-xs-8")
-//-                     button(type="submit" class="col-md-4 col-xs-4 main-btn hvr-btn-down hvr-btn-primary")
-//-                         a(href="#") send
-
+include partials/newsletter.pug
 
 include partials/footer.pug

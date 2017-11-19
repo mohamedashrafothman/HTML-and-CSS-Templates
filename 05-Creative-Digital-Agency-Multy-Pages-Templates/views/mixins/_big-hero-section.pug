@@ -1,0 +1,9 @@
+mixin big-hero-section(header, page_link, page_name)
+        .row.align-center
+            h1= header
+            .navegation
+                ul
+                    li
+                        a(href="index.html") Home
+                    li
+                        a(href=page_link) #{page_name}

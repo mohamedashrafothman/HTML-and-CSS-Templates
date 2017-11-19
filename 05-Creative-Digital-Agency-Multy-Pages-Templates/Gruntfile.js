@@ -23,7 +23,12 @@ module.exports = function (grunt) {
                 },
                 files: {
                     'index.html': ['views/index.pug'],
-                    'about.html': ['views/about.pug']
+                    'about.html': ['views/about.pug'],
+                    'portfolio-1.html': ['views/portfolio-1.pug'],
+                    'contact.html': ['views/contact.pug'],
+                    'single-project-1.html': ['views/single-project-1.pug'],
+                    'single-project-2.html': ['views/single-project-2.pug'],
+                    'services.html': ['views/services.pug'],
                 }
             }
         },
