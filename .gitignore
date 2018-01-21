@@ -2,3 +2,5 @@ node_modules/
 .DS_store
 *.log
 .idea
+variables.env
+variables.env.now
