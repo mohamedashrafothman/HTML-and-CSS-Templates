@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Color Hunt</title>
+    <link rel="icon" href="http://colorhunt.co/img/favicon.gif" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.linearicons.com/free/1.0.0/icon-font.min.css">
+    <link rel="stylesheet" href="./build/styles/style.min.css">
+  </head>
+  <body>
+    <div class="nav soft-shadow">
+      <div class="logo"><a href="/"><img src="./build/images/logo.png"><span>color hunt</span></a></div>
+      <div class="menu float-left">
+        <p class="left-menu">new<span class="lnr lnr-chevron-down"></span></p>
+        <ul class="secound-level1">
+          <li><a class="active" href="index.html">new</a></li>
+          <li><a href="hot.html">hot</a></li>
+          <li><a href="popular.html">popular</a></li>
+          <li><a href="random.html">random</a></li>
+        </ul>
+      </div>
+      <div class="menu float-right"><span class="right-menu lnr lnr-menu"></span>
+        <ul class="secound-level2">
+          <li><a class="active" href="index.html">plattes</a></li>
+          <li><a href="create.html">create</a></li>
+          <li><a href="likes.html">likes</a></li>
+          <li><a href="about.html">about</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="create_color">
+      <h1>create a color plate!</h1>
+      <form class="colorPlate" action="/create" method="POST">
+        <input id="colorOne" type="color" name="colorOne">
+        <input id="colorTwo" type="color" name="colorTwo">
+        <input id="colorThree" type="color" name="colorThree">
+        <input id="colorFour" type="color" name="colorFour">
+        <button type="submit">Done</button>
+      </form>
+    </div>
+    <script src="./build/scripts/script.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,123 @@
+.nav{
+	z-index: 99999;
+	background-color: $color_white;
+	padding: 10px 40px;
+	position: fixed;
+	width: 100%;
+	left: 0;
+	.logo{
+		position: relative;
+		img{
+			width: 25px;
+			height: 30px;
+			display: inline-block;
+		}
+		span{
+			position: absolute;
+			top: 8px;
+			margin:0 10px;
+			
+			color: $color_black;
+
+			font-family: $font-sourceSans;
+			font-weight: 600;
+			font-size: 16px;
+			text-transform: capitalize;
+		}
+	}
+	.menu{
+		.left-menu {
+			position: absolute;
+			top: 20px;
+			left: 180px;
+			font-size: 16px;
+			font-weight: 400;
+			font-family: $font-sourceSans;
+			color: $color_black;
+			text-transform: capitalize;
+			cursor: pointer;
+			span {
+				font-weight: 800;
+				margin-left: 5px;
+				margin-top: 2px;
+				font-size: 12px;
+			}
+		}
+		.right-menu{
+			position: absolute;
+			top: 15px;
+			right: 40px;
+			color: $color_black;
+			text-transform: capitalize;
+			cursor: pointer;
+			font-size: 20px;
+			font-weight: 1000;
+			margin-left: 5px;
+			margin-top: 2px;
+		}
+		.secound-level1 {
+			position: absolute;
+			top: 50px;
+			left: 150px;
+			display: none;
+			background-color: $color_white;
+			min-width: 150px;
+			text-align: center;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			li {
+				list-style: none;
+				margin: 30px 0px;
+				a {
+					text-decoration: none;
+					color: $color_black;
+					font-family: $font-sourceSans;
+					font-size: 16px;
+					font-weight: 600;
+					text-transform: capitalize;
+					transition: all 0.5s ease-in-out;
+					&:hover,
+					&:active {
+						color: darken($color_lightBlue, 10%);
+					}
+				}
+				.active {
+					color: darken($color_lightBlue, 10%);
+				}
+			}
+		}
+
+		.secound-level2 {
+			position: absolute;
+			top: 50px;
+			right: 10px;
+			display: none;
+			background-color: $color_white;
+			min-width: 150px;
+			text-align: center;
+			border-bottom-left-radius: 8px;
+			border-bottom-right-radius: 8px;
+			li {
+				list-style: none;
+				margin: 30px 0px;
+				a {
+					text-decoration: none;
+					color: $color_black;
+					font-family: $font-sourceSans;
+					font-size: 16px;
+					font-weight: 600;
+					text-transform: capitalize;
+					transition: all 0.5s ease-in-out;
+					&:hover,
+					&:active {
+						color: darken($color_lightBlue, 10%);
+					}
+				}
+				.active {
+					color: darken($color_lightBlue, 10%);
+				}
+			}
+		}
+	}
+
+}

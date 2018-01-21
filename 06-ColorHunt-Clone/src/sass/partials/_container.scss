@@ -1,0 +1,11 @@
+.container{
+	padding-top: 70px;
+	.main{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		margin-right: 235px;
+		@import './_card.scss';
+	}
+	@import './_side.scss';
+}
