@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700,700i,900|Roboto:100,300,400,400i,500,500i,700,900');
+
+/*=========================
+      Fonts
+=========================*/
+$PlayFireFont: 'Playfair Display', serif;
+$RobotoFont: 'Roboto', sans-serif;
+
+/*=========================
+      Colors
+=========================*/
+$black: #000;
+$yellow: rgb(247, 200, 115);
+$gray: #999999;
+$lightgray: #cccccc;
+$shadow: 0 1px 10px rgba(0, 0, 0, 0.15);
+$shadow_2: 8px 8px 20px 5px rgba(61, 61, 62, 0.1);
+$transition-1: all 0.5s ease-in-out;
+$transition-2: left 0.7s cubic-bezier(0.545, 0, 0.05, 1);
+
+
+/*=============================
+    Reset Styles
+=============================*/
+*{
+  padding: 0px;
+  margin: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: 0;
+}
+body{
+  font-family: $RobotoFont;
+  -webkit-font-smoothing: antialiased;
+}
+h1::-moz-selection,
+h2::-moz-selection,
+h3::-moz-selection,
+h4::-moz-selection,
+h5::-moz-selection,
+h6::-moz-selection,
+p::-moz-selection,
+a::-moz-selection,
+span::-moz-selection,
+img::-moz-selection,
+sup::-moz-selection  {
+    background: rgba(247, 200, 115,0.75);
+    color: #fff;
+}
+h1::selection,
+h2::selection,
+h3::selection,
+h4::selection,
+h5::selection,
+h6::selection,
+p::selection,
+a::selection,
+span::selection,
+img::selection,
+sup::selection  {
+    background: rgba(247, 200, 115,0.75);
+    color: #fff;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+}
+
+h1 {
+  font-size: 62px;
+  line-height: 72px;
+}
+
+h2 {
+  font-size: 52px;
+  line-height: 52px;
+  margin-bottom: 64px;
+}
+
+h3 {
+  font-size: 32px;
+  line-height: 38px;
+  font-weight: 300;
+  margin-bottom: 46px;
+}
+
+h4 {
+  font-size: 26px;
+  line-height: 34px;
+  font-weight: 300;
+  margin-bottom: 25px;
+}
+
+p.subtitle {
+  font-size: 12px;
+  letter-spacing: 0.1em;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+a {
+  text-decoration: underline;
+  outline: 0;
+  &:focus {
+    outline: none !important;
+  }
+}
+
+ul {
+  padding-left: 0px;
+}
+
+ul > li {
+  list-style: none;
+}
+
+/*=============================
+    Animateion
+=============================*/
+
+@-webkit-keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+
+  to {
+    opacity: 0;
+    -webkit-transform: translateY(-100px);
+            transform: translateY(-100px);
+  }
+}
+
+.fadeOutUp {
+  -webkit-animation-name: fadeOutUp;
+          animation-name: fadeOutUp;
+}
+
+
+
+/*=============================
+    Nav Bar
+=============================*/
+.header-active{
+  background-color: #fff !important;
+  padding: 20px 50px !important;
+  -webkit-box-shadow: $shadow;
+          box-shadow: $shadow;
+  #nav-icon{
+    top: 38% !important;
+  }
+}
+.open{
+  left: 0px !important;
+}
+
+.tag{
+  font-size: 18px;
+  color: $yellow;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+.article-heading{
+  font-family: $PlayFireFont;
+  font-size: 2.5em;
+  text-transform: capitalize;
+  padding: 0px 15px;
+  margin-bottom: 20px;
+  height: 150px;
+  color: $black;
+}
+.date{
+  letter-spacing: 2px;
+  color: $gray;
+  font-weight: 300;
+  font-size: 16px;
+  font-family: $RobotoFont;
+}

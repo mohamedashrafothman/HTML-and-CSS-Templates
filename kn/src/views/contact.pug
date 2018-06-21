@@ -1,0 +1,64 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark')
+	section#contact-header
+		.container
+			.row
+				h3#contact-header-title.col-12.mt-5.wow.fadeInUp(data-wow-duration="1.25s") contact us
+				#contact-header-branches.col-12.row
+					div.col-lg-4.col-12.text-center
+						h3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.5s") KSA
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") 201, Al-Rossais Building, Dhabab Street 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") Riyadh 11311, Saudi Arabia 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") T: +966.11.402.3350 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") F: +966.11.403.7172
+					div.col-lg-4.col-12.text-center
+						h3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.5s") uae
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") 51 Tower , Abraj Street 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") Business Bay Dubai, UAE 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") T: +971.44.214.368 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") F: +971.44.214.325
+					div.col-lg-4.col-12.text-center
+						h3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.5s") egypt
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") Free Zone ,Block K 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") Nasr City Cairo,Egypt 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") T: +20.2. 2671.8804 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") F: +20.2. 2671.8805
+				p#contact-header-website.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="1s") inquiries@kn-it.com - info@kn-it.com
+
+	section#contact-map
+		iframe(src='https://snazzymaps.com/embed/73551',style='border:none;')
+	section#contact-send-message
+		.container
+			.row
+				#contact-send-message-title.col-12
+					h1.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") send us a message
+				#contact-send-message-form.col-12
+					form.card.contaienr.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40" action="#")
+						.row
+							.col-lg-6.col-12
+								.form-label-group
+									input#contact-send-message-name.form-control.form-control-lg(type='text', placeholder='Name', required='')
+									label(for='contact-send-message-name') Name
+								.form-label-group
+									input#contact-send-message-email.form-control.form-control-lg(type='email', placeholder='Email', required='')
+									label(for='contact-send-message-email') Email
+								.form-label-group
+									input#contact-send-message-subject.form-control.form-control-lg(type='text', placeholder='Subject', required='')
+									label(for='contact-send-message-subject') Subject
+
+							.col-lg-6.col-12
+								.form-label-group
+									textarea#contact-send-message-notes.form-control.form-control-lg(rows="8" placeholder="Message" required)
+									label(for="contact-send-message-notes") Message
+							.col-12
+								button.btn.btn-lg.btn-primary.text-uppercase(type="submit") send message 
+
+	include ./partials/footerSec.pug
+
+						

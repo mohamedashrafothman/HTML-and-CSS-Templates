@@ -1,0 +1,209 @@
+#careers{
+	@include blured-header('../images/single-news-2.png');
+	&-content{
+		position: relative;
+		padding: 5rem 0 0rem 0;
+		@include curved-sec('../images/Curve-white.png');
+		text-align: left;
+		h2{
+			font-size: 3.1rem;
+			font-family: $font-oswald;
+			font-weight: 300;
+			color: $black;
+		}
+		p{
+			font-size: 1.7rem;
+			font-family: $font-roboto;
+			font-weight: lighter;
+			color: $gray-600;
+			margin: 0;
+			// padding-right: 10rem;
+		}
+		img{
+			margin-top: -4rem;
+			box-shadow: $box-shadow-lg;
+			border-radius: 2rem;
+			width: 100%;
+			@include media-breakpoint-down(md){
+				width: 75%;
+				display: block;
+				margin:4rem auto 0rem ;
+			}
+		}
+	}
+	&-departments{
+		margin-top: -5rem;
+		padding: 7.3rem 0 8.6rem 0;
+		background-color: $blue;
+		h2{
+			font-family: $font-oswald;
+			font-weight: 300;
+			font-size: 3.1rem;
+			color: $white;
+			margin-bottom: 1.2rem;
+		}
+		p{
+			font-family: $font-roboto;
+			font-weight: lighter;
+			font-size: 1.7rem;
+			color: $white;
+			padding-right: 2rem;
+			// line-height: 22;
+		}
+	}
+	&-vacancies{
+		padding: 12.1rem 0 0;
+		background-color: $gray-300;
+		&-title{
+			font-size: 4rem;
+			 font-family: $font-roboto;
+			 font-weight: bold;
+			 text-transform: uppercase;
+			 color: $blue;
+			 text-align: center;
+			 @include media-breakpoint-down(md){
+				 font-size: 2.8rem;
+			 }
+		}
+		&-content{
+			@include newsCard();
+			.modal{
+				&-content{
+					border-radius: 1rem;
+					box-shadow: none;
+					border: 0px;
+				}
+				&-header {
+					border-bottom: 0px;
+					h4 {
+						font-size: 3.1rem;
+						font-family: $font-oswald;
+						text-align: left;
+						color: $black;
+						font-weight: 300;
+					}
+					ul {
+						li {
+							list-style: none;
+							font-size: 1.5rem;
+							font-weight: 300;
+							text-align: left;
+							text-transform: capitalize;
+							color: $gray-600;
+							font-family: $font-roboto;
+							@include media-breakpoint-down(sm) {
+								font-size: 1.4rem;
+							}
+							&:not(:last-of-type) {
+								&::after {
+									content: '|';
+									height: 2px;
+									width: 1px;
+									color: $gray-600;
+									padding-left: 1.3rem;
+								}
+							}
+							a {
+								text-decoration: none;
+							}
+						}
+					}
+					.btn {
+						border-radius: 3rem;
+						font-size: 1.6rem;
+						padding: 1rem 4rem;
+						box-shadow: none;
+						min-width: 17.7rem !important;
+						&:first-of-type {
+							margin-right: 1.4rem;
+						}
+					}
+					@include media-breakpoint-down(md){
+						h4{
+							line-height: 1;
+						}
+						ul {
+							li{
+								font-size: 1.1rem;
+							}
+						}
+						.btn{
+							min-width: initial !important;
+						}
+					}
+				}
+				&-body{
+					padding: 1.5rem 2.5rem;
+					h6, p{
+						font-family: $font-roboto;
+					}
+					h6{
+						font-size: 1.5rem;
+						font-weight: bold;
+						color: $gray-600;
+						&:not(:first-of-type){
+							margin-top: 2rem;
+						}
+					}
+					p{
+						font-size: 1.5rem;
+						font-weight: 300;
+						color: $gray-600;
+						line-height: 1.8rem;
+					}
+				}
+			}
+		}
+	}
+	&-join-us{
+		padding: 12.1rem 0 12.1rem 0;
+		background-color: $gray-300;
+		&-title{
+			text-align: center;
+			h1{
+				font-size: 4rem;
+				font-family: $font-roboto;
+				font-weight: bold;
+				text-transform: uppercase;
+				color: $blue;
+				margin-bottom: 1.2rem;
+			}
+			p{
+				color: $gray-600;
+				font-family: $font-roboto;
+				font-weight: lighter;
+				font-size: 1.5rem;
+				width: 65%;
+				margin: 0 auto;
+			}
+		}
+		&-content{
+			margin-top: 2.6rem;
+			.card{
+				border-radius: 1rem;
+				border: 0px;
+				padding: 4.8rem 5.3rem;
+				button{
+					border-radius: 3rem;
+					box-shadow: none;
+					padding: 1.5rem 6.3rem;
+					cursor: pointer;
+					border: 0px;
+					font-size: 1.6rem;
+					font-weight: 500;
+				}
+				select{
+					height: 5rem;
+					box-shadow: none;
+					border-radius: 1rem;
+					&:focus{
+						border: 1px solid #ced4da;
+					}
+					option{
+						color: $gray-600;
+					}
+				}
+			}
+		}
+	}
+}

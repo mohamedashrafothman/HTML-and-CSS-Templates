@@ -1,0 +1,18 @@
+mixin nav(bg='transparent', position='absolute')
+	<!-- Navbar -->
+	//- takes two parameters based on pages, 
+	//- some pages needed nav's background to be dark and some nedded nav's position to be relative
+	nav(class=`navbar px-5 py-3 bg-${bg} position-${position}`)
+		a.navbar-logo(href="/")
+			img(src="../images/logo.png")
+		div.d-flex.flex-row.align-items-center(style="overflow: hidden;")
+			span.mr-4.navbar-search-icon.icon-magnifying
+			form.navbar-form.mr-4(action="")
+				div.navbar-form-clear.d-flex.justify-content-center.align-items-center
+					span.lnr.lnr-cross
+				.input-group
+					input.form-control.bg-transparent.border-right-0(type='text', placeholder="SEARCH", aria-describedby='search-icon')
+					.input-group-append
+						span#search-icon.input-group-text.bg-transparent.border-left-0.icon-magnifying
+							
+			span.navbar-icon.lnr.lnr-menu

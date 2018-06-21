@@ -1,0 +1,99 @@
+@mixin blured-header($img) {
+	.blured-header {
+		position: relative;
+		min-height: 300px;
+		overflow: hidden;
+		.container {
+			min-height: 250px;
+		}
+		.bg-blure {
+			position: absolute;
+			// padding: 9rem 0;
+			background: linear-gradient(to top, rgba(#000, 0.2), rgba(#000, 0.3)), url($img);
+			background-position: center 0px;
+			background-repeat: no-repeat;
+			background-size: cover;
+			color: $white;
+			font-family: $font-oswald;
+			left: -30px;
+			right: -30px;
+			top: -30px;
+			bottom: -30px;
+			-webkit-filter: blur(4px);
+			-moz-filter: blur(4px);
+			-o-filter: blur(4px);
+			-ms-filter: blur(4px);
+			filter: blur(4px);
+			z-index: 0;
+		}
+		&-container {
+			position: relative;
+			z-index: 3;
+			padding: 14rem 0 7rem 0;
+			color: $white;
+			line-height: 7.5;
+			h3, h4{
+				font-weight: lighter;
+				text-align: center;
+				text-transform: uppercase;
+				font-family: $font-oswald;	
+				font-weight: 300;
+			}
+			h3 {
+				font-size: 5.5rem;
+			}
+			h4{
+				font-size: 3.3rem;
+			}
+			p {
+				font-size: 1.5rem;
+				font-weight: lighter;
+				font-family: $font-roboto;
+				color: $white;
+				text-align: center;
+				font-family: $font-roboto;
+				line-height: 24px;
+				margin-bottom: 1.5rem;
+				width: 60%;
+				text-align: center;
+				margin-right: auto;
+				margin-left: auto;
+				@include media-breakpoint-down(md){
+					width: 95%;
+				}
+			}
+			ul {
+				width: 50%;
+				@include media-breakpoint-down(md) {
+					width: 100%;
+				}
+				li {
+					list-style: none;
+					font-size: 1.4rem;
+					font-weight: lighter;
+					text-align: center;
+					text-transform: capitalize;
+					color: $white;
+					@include media-breakpoint-down(sm) {
+						font-size: 1.2rem;
+					}
+					&:not(:last-of-type) {
+						&::after {
+							content: '|';
+							height: 2px;
+							width: 1px;
+							color: $white;
+							padding-left: 1rem;
+						}
+					}
+				}
+			}
+			@include media-breakpoint-down(md) {
+				padding: 13rem 0 3rem;
+				h3 {
+					font-size: 3.5rem;
+				}
+			}
+		}
+	}
+}

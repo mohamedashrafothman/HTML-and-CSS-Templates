@@ -1,0 +1,28 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark')
+	section#news-sec
+		.container
+			.row.justify-content-center
+				h1.pb-5.text-primary.text-uppercase.wow.fadeInUp#news-sec-title(data-wow-duration="1.25s") news & articles
+				#news-sec-content.col-12
+					.row
+						- var news = [{title: 'Join KN at Gartner Symposium ITxpo', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}, {title: 'KN introduces the latest innovation solutions', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}, {title: 'DFM Honors Three of KN Brokerage Firms', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}, {title: 'DFM Honors Three of KN Brokerage Firms', content:'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}];
+						each article, index in news
+							+news(index, `news-${index+1}.png`, 'col-12', 'single_news.html', article.title, article.content)
+				#news-sec-pagenation.mt-5
+					.row
+						nav(aria-label='...')
+							ul.pagination.pagination-lg
+								li.page-item.disabled
+									a.page-link.bg-transparent(href='#', tabindex='-1') 1
+								li.page-item.active
+									a.page-link.bg-transparent(href='#') 2
+								li.page-item
+									a.page-link.bg-transparent(href='#') 3
+
+	include ./partials/footerSec.pug

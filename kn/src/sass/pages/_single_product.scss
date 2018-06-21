@@ -1,0 +1,405 @@
+#single-product {
+	&-header {
+		padding: 8.3rem 0 30rem;
+		background-image: url('../../images/single-product-header.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		color: $white;
+		&-paragraph {
+			font-family: $font-roboto;
+			font-size: 1.5rem;
+			line-height: 1.8rem;
+			font-weight: 300;
+			width: 50%;
+			margin: 3rem auto;
+		}
+		&-big{
+			width: 50%;
+		}
+		a.scroll-down {
+			margin-top: 4rem;
+			color: $white;
+			background: url('https://www.nxworld.net/example/css-scroll-down-button/bg06.jpg') center center / cover no-repeat;
+			position: relative;
+			span {
+				position: absolute;
+				top: 0;
+				left: 50%;
+				width: 24px;
+				height: 24px;
+				margin-left: -12px;
+				border-left: 1px solid #fff;
+				border-bottom: 1px solid #fff;
+				-webkit-transform: rotate(-45deg);
+				transform: rotate(-45deg);
+				-webkit-animation: scrollDown 1.5s infinite;
+				animation: scrollDown 1.5s infinite;
+				box-sizing: border-box;
+			}
+			@-webkit-keyframes scrollDown {
+				0% {
+					-webkit-transform: rotate(-45deg) translate(0, 0);
+					opacity: 0;
+				}
+				50% {
+					opacity: 1;
+				}
+				100% {
+					-webkit-transform: rotate(-45deg) translate(-20px, 20px);
+					opacity: 0;
+				}
+			}
+			@keyframes scrollDown {
+				0% {
+					transform: rotate(-45deg) translate(0, 0);
+					opacity: 0;
+				}
+				50% {
+					opacity: 1;
+				}
+				100% {
+					transform: rotate(-45deg) translate(-20px, 20px);
+					opacity: 0;
+				}
+			}
+		}
+		@include media-breakpoint-down(md) {
+			padding: 4.3rem 0 30rem;
+
+			&-big{
+				width: 80%;
+				text-align: center;
+			}
+			&-paragraph {
+				width: 100%;
+			}
+
+		}
+	}
+	&-about-1{
+		@include curved-sec('../../images/Curve-gray.png');
+		background-color: $gray-300;
+		position: relative;
+		padding: 12rem 0 13.8rem;
+		&::before{
+			top: -24.5rem;
+		}
+		p{
+			font-size: 1.4rem;
+			color: $gray-600;
+			font-family: $font-roboto;
+			font-weight: 200;
+			text-align: left;
+			line-height: 2.2rem;
+			&:first-of-type{
+				margin-top: 4rem;
+			}
+			&:not(:last-of-type){
+				margin-bottom: 3rem;
+			}
+		}
+		@include media-breakpoint-down(md){
+			padding-bottom: 10rem;
+			.float-number{
+				top: -270px;
+				left: 3rem;
+			}
+			p{
+				&:first-of-type {
+					margin-top: -10rem;
+				}
+			}
+		}
+	}
+	&-about-2{
+		background-color: #143F64;
+		padding: 13.2rem 0;
+		position: relative;
+		&-content{
+			p {
+				font-size: 1.4rem;
+				color: $white;
+				font-family: $font-roboto;
+				font-weight: 200;
+				text-align: left;
+				line-height: 2.2rem;
+				&:first-of-type {
+					margin-top: -11rem;
+				}
+				&:not(:last-of-type) {
+					margin-bottom: 3rem;
+				}
+			}
+			div{
+				position: relative;
+				img{
+					position: absolute;
+					border-radius: 1rem;
+					&:first-of-type{
+						top: 0;
+						right: -7rem;
+						transform: translateX(-50%);
+					}
+					&:last-of-type{
+						top: 5rem;
+						left: -7rem;
+					}
+				}
+			}
+		}
+		@include media-breakpoint-down(md){
+			padding-bottom: 23rem;
+			.float-number{
+				top: -54rem;
+			}
+			&-content{
+				div {
+					img {
+						&:first-of-type {
+							top: 5rem;
+							right: -15rem;
+							transform: translateX(-50%);
+						}
+						&:last-of-type {
+							top: 10rem;
+							left: 0rem;
+						}
+					}
+				}
+			}
+		}
+		@include media-breakpoint-down(sm){
+			&-content{
+				div{
+					img{
+						width: 75%;
+					}
+				}
+			}
+		}
+	}
+	&-about-3{
+		background-color: $gray-300;
+		padding: 13.2rem 0;
+		// position: relative;
+		.float-number{
+			top: 0;
+			position: relative;
+		}
+		&-content {
+			p {
+				font-size: 1.4rem;
+				color: $gray-600;
+				font-family: $font-roboto;
+				font-weight: 200;
+				text-align: left;
+				line-height: 2.2rem;
+				&:first-of-type {
+					margin-top: 4rem;
+				}
+				&:not(:last-of-type) {
+					margin-bottom: 3rem;
+				}
+			}
+		}
+	}
+	&-features{
+		background-color: #143F64;
+		padding: 9.7rem 0;
+		&-title{
+			font-size: 4rem;
+			text-align: center;
+			font-family: $font-roboto;
+			font-weight: bold;
+			line-height: 4.7rem;
+			color: $white;
+			width: 100%;
+			text-transform: uppercase;
+			margin-bottom:10rem;
+		}
+		&-carousel {
+			.owl-stage-outer{
+				min-height: 100vh;
+				height: 100vh;
+				.owl-stage {
+					height: 100%;
+					.owl-item {
+						height: 100%;
+						.item {
+							height: 100%;
+							div{
+								min-height: 35rem;
+								i{
+									color: $white;
+									font-size: 6rem;
+									margin-bottom: 2.9rem;
+								}
+								h5{
+									font-family: $font-oswald;
+									font-weight: 200;
+									color: $white;
+									line-height: 2.3rem;
+									font-size: 1.9rem;
+								}
+								p{
+									font-family: $font-roboto;
+									font-weight: 200;
+									color: $white;
+									opacity: 0.5;
+									line-height: 2.2rem;
+									font-size: 1.4rem;
+								}
+							}
+						}
+					}
+				}
+			}
+			.owl-dots{
+				margin-top: 8rem;
+				button{
+					span{
+						width: 5rem !important;
+						height: 2px !important;
+					}
+				}
+			}
+		}
+	}
+
+	&-role{
+		padding: 10.5rem 0;
+		background-color: $gray-300;
+		&-title {
+			width: 50%;
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+			h1 {
+				color: #143F65;
+				font-family: $font-roboto;
+				font-weight: bold;
+				font-size: 4rem;
+				@include media-breakpoint-down(sm) {
+					font-size: 3rem;
+				}
+			}
+		}
+		&-carouselNav {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: 50%;
+			@include media-breakpoint-down(md) {
+				display: none;
+				width: 100%;
+			}
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				text-decoration: none;
+				border-bottom: 3px solid transparent;
+				padding-right: 0px;
+				padding-left: 0px;
+				&:hover, &.active {
+					border-bottom: 3px solid $blue;
+				}
+				.icon-text {
+					font-family: $font-oswald !important;
+					font-weight: 400;
+					font-size: 1.6rem;
+					text-transform: uppercase;
+					margin-top: 0.5rem;
+				}
+			}
+		}
+		&-carousel {
+			.owl-nav {
+				.owl-next,
+				.owl-prev {
+					position: absolute;
+					top: 10rem;
+					font-size: 50px;
+					color: $blue;
+					@include media-breakpoint-down(md) {
+						top: 50%;
+						transform: translateY(-50%);
+						font-size: 35px;
+					}
+					&:hover,
+					&:focus,
+					&:active {
+						background: transparent;
+						outline: none;
+					}
+				}
+				.owl-next {
+					right: -50px;
+					@include media-breakpoint-down(md) {
+						right: -10px;
+					}
+				}
+				.owl-prev {
+					left: -50px;
+					@include media-breakpoint-down(md) {
+						left: -10px;
+					}
+				}
+			}
+			.item {
+				.card {
+					width: 90%;
+					border-radius: 1rem;
+					@include media-breakpoint-down(md) {
+						max-width: 75%;
+					}
+					&-content {
+						h1 {
+							font-family: $font-oswald;
+							font-weight: 300;
+							text-transform: uppercase;
+							font-size: 3.1rem;
+							@include media-breakpoint-down(md) {
+								font-size: 2.5rem;
+							}
+						}
+						p {
+							font-family: $font-roboto;
+							font-weight: lighter;
+							color: #848484;
+							font-size: 1.5rem;
+							@include media-breakpoint-down(md) {
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	&-demo{
+		background-image: url('../../images/single-product-header.png');
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		padding: 18rem 0;
+		h1{
+			font-family: $font-oswald;
+			font-weight: 300;
+			font-size: 5.5rem;
+			color: $white;
+			line-height: 7.5rem;
+			margin-bottom: 2.8rem;
+		}
+		@include media-breakpoint-down(md){
+			h1{
+				text-align: center;
+				font-size: 4.5rem;
+				line-height: 5.5rem;
+			}
+		}
+	}
+}

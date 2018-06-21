@@ -1,0 +1,493 @@
+#main-sec{
+	background-image: url('../images/main-sect-bg.png');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 80rem !important;
+	.fp-tableCell{
+		display: flex !important;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+	&-intro{
+		margin-top: 8rem;
+		h1, h2{
+			font-family: $font-oswald;
+		}
+		h1{
+			font-size: 5.5rem;
+			font-weight: 300;
+			@include media-breakpoint-only(md){
+				font-size: 3.5rem;
+			}
+			@include media-breakpoint-down(sm) {
+				font-size: 3rem;
+				text-align: center;
+			}
+		}
+		h2{
+			font-size: 3.1rem;
+			font-weight: lighter;
+			text-align: center;
+			@include media-breakpoint-down(md) {
+				font-size: 2rem;
+			}
+			@include media-breakpoint-down(sm) {
+				font-size: 1.5rem;
+			}
+		}
+	}
+	&-btnGourp {
+		.btn{
+			border-radius: 2.5rem !important;
+			font-family: $font-oswald;
+			font-weight: normal;
+			font-size: 1.6rem;
+			@include media-breakpoint-down(md){
+				&:not(:first-of-type){
+					margin-top: 2rem;
+				}
+			}
+		}
+		@include media-breakpoint-down(md){
+			flex-direction: column !important;
+		}
+	}
+	&-carousel{
+		margin-top: 6rem;
+		width: 60% !important;
+		h2{
+			font-family: $font-oswald;
+			font-weight: lighter;
+			font-size: 3.1rem;
+		}
+		.owl-carousel{
+			position: relative;
+			.owl-nav{
+				.owl-next, .owl-prev{
+					position: absolute;
+					top:-1rem;
+					font-size: 5rem;
+					color: $white;
+					-webkit-animation-name: fadeInUp;
+					animation-name: fadeInUp;
+					&:hover, &:focus, &:active{
+						background: transparent;
+						outline: none;
+					}
+				}
+				.owl-next{
+					right: -7rem;
+				}
+				.owl-prev{
+					left: -7rem;
+				}
+			}
+		}
+		.owl-item{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
+	}
+}
+
+
+
+
+
+
+#product-showcase-sec{
+	height: 50rem !important;
+	display: flex;
+	@include media-breakpoint-down(md){
+		height: 30rem !important;
+	}
+	&-navCarousel{
+		margin-top: -20rem;
+	}
+	&-navCarousel{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		a{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			img{
+				height: auto;
+				@include media-breakpoint-down(md){
+					width: 100%;
+				}
+			}
+		}
+	}
+	&-carousel{
+		position: relative;
+		.owl-stage-outer{
+			margin-top: -6rem;
+		}
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				position: absolute;
+				top: 25%;
+				font-size: 5rem;
+				color: $white;
+				&:hover,
+				&:focus,
+				&:active {
+					background: transparent;
+					outline: none;
+				}
+			}
+			.owl-next {
+				right: -5rem;
+			}
+			.owl-prev {
+				left: -5rem;
+			}
+			@include media-breakpoint-down(md) {
+				.owl-next,
+				.owl-prev{
+					top: 10%;
+				}
+				.owl-next {
+					right: -8rem;
+				}
+
+				.owl-prev {
+					left: -8rem;
+				}
+			}
+		}
+		.item{
+			img{
+				width: initial;
+				@include media-breakpoint-down(md){
+					width: 100%;
+				}
+			}
+			&-content{
+				margin-top: 2rem;
+				p{
+					font-size: 1.5rem;
+					font-weight: lighter;
+					font-family: $font-roboto;
+					padding: 0 15rem;
+					@include media-breakpoint-only(md){
+						padding: 0 7.5rem;
+					}
+					@include media-breakpoint-down(sm){
+						padding: 0;
+					}
+				}
+				a{
+					font-family: $font-oswald;
+					font-weight: 500;
+					font-size: 1.6rem;
+					text-decoration: none;
+				}
+			}
+		}
+
+	}
+}
+
+
+
+#industries-sec{
+	.fp-tableCell{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-title{
+		h1{
+			font-family: $font-roboto;
+			font-size: 4rem;
+		}
+	}
+	&-carouselNav{
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		@include media-breakpoint-down(md){
+			display: none;
+		}
+		a {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			flex-direction: column;
+			text-decoration: none;
+			border-bottom: 3px solid transparent;
+			&:hover{
+				border-bottom: 3px solid $blue;
+			}
+			& span:first-child{
+				font-size: 6rem;
+			}
+			&.active{
+				border-bottom: 3px solid $blue;
+			}
+			.icon-text {
+				font-family: $font-oswald !important;
+				font-weight: 400;
+				font-size: 1.4rem;
+				text-transform: uppercase;
+				margin-top: 0.5rem;
+			}
+		}
+	}
+	&-carousel{
+		.owl-nav {
+			.owl-next,
+			.owl-prev {
+				position: absolute;
+				top: 50%;
+				transform: translateY(-50%);
+				font-size: 50px;
+				color: $blue;
+				@include media-breakpoint-down(md){
+					top: 50%;
+					transform: translateY(-50%);
+				}
+				&:hover,
+				&:focus,
+				&:active {
+					background: transparent;
+					outline: none;
+				}
+			}
+			.owl-next {
+				right: -5rem;
+				@include media-breakpoint-down(md){
+					right: -1rem;
+				}
+			}
+			.owl-prev {
+				left: -5rem;
+				@include media-breakpoint-down(md) {
+					left: -1rem;
+				}
+			}
+		}
+		.item{
+			.card{
+				width: 90%;
+				border-radius: 1rem;
+				@include media-breakpoint-down(md){
+					max-width: 75%;
+				}
+				&-icon{
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					@include media-breakpoint-down(md) {
+						justify-content: start;
+					}
+					&> span{
+						font-size: 16rem;
+						@include media-breakpoint-down(md) {
+							font-size: 8rem;
+						}
+					}
+				}
+				&-content{
+					h1{
+						font-family: $font-oswald;
+						font-weight: 300;
+						text-transform: uppercase;
+						font-size: 3.1rem;
+						@include media-breakpoint-down(sm){
+							font-size: 1.5rem;
+						}
+					}
+					p{
+						font-family: $font-roboto;
+						font-weight: lighter;
+						color: #848484;
+						font-size: 1.5rem;
+					}
+				}
+			}
+		}
+	}
+}
+
+
+
+
+
+#geeks-sec{
+	background: linear-gradient(to top, rgba(#0B7CA7, .6), rgba(#0B7CA7, .6)),
+	url('../images/alvaro-reyes-500044-unsplash.png');
+	background-position: center 0px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	span{
+		font-size: 8rem;
+	}
+	h1, h2 ,a {
+		font-family: $font-oswald;
+		text-align: center;
+	}
+	h1{
+		font-weight: 300;
+		font-size: 5.5rem;
+		@include media-breakpoint-only(md){
+			font-size: 4.3rem;
+		}
+		@include media-breakpoint-down(sm) {
+			font-size: 3.3rem;
+		}
+	}
+	h2{
+		font-weight: lighter;
+		font-size: 3.1rem;
+		@include media-breakpoint-only(md) {
+			font-size: 2.1rem;
+		}
+
+		@include media-breakpoint-down(sm) {
+			font-size: 1.6rem;
+		}
+	}
+	a{
+		font-size: 1.6rem;
+		border-radius: 3rem;
+		color: $white;
+		padding-right: 5rem;
+		padding-left: 5rem;
+		&:hover{
+			color: $blue;
+		}
+	}
+}
+
+#countries-sec{
+	.fp-tableCell {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	background-color: #15323C;
+	&-title{
+		font-family: $font-roboto;
+		font-size: 4rem;
+	}
+	&-slider-two{
+		.owl-item{
+			.item{
+				background-image: url('../images/map.png');
+				background-repeat: no-repeat;
+				background-size: contain;
+				background-position: center;
+			}
+			@include media-breakpoint-down(md) {
+				img {
+					width: 60% !important;
+					display: initial !important;
+				}
+			}
+		}
+	}
+	&-slider-one{
+		border-radius: 10px;
+		@include media-breakpoint-down(md){
+			min-height: 20rem;
+		}
+		.owl-stage-outer{
+			height: 85%;
+			.item{
+				padding: 1.5rem;
+				h2{
+					font-family: $font-oswald;
+					font-size: 4rem;
+					font-weight: lighter;
+				}
+				p{
+					font-size: 1.5rem;
+					font-family: $font-roboto;
+					font-weight: lighter;
+					color: $gray-600;
+					line-height: 24px;
+					text-align: left;
+				}
+			}
+		}
+		.owl-nav{
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			padding: 0 1.5rem;
+			@include media-breakpoint-down(md){
+				margin-top: -20px;
+			}
+			button{
+				span{
+					color: $blue;
+					font-size: 3rem;
+				}
+				&:hover, &:active, &:focus{
+					background: transparent;
+					outline: none;
+				}
+			}
+			// .owl-prev{
+			// 	margin-left: 1rem;
+			// }
+		}
+	}
+}
+
+#clients-sec{
+	.fp-tableCell {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+	&-title{
+		margin-bottom: 3rem;
+		width: 50%;
+		text-align: center;
+		@include media-breakpoint-only(md) {
+			width: 75%;
+			margin-bottom: 1rem;	
+		}
+		@include media-breakpoint-down(sm){
+			width: 100%;
+			margin-bottom: 0;	
+		}
+		h1{
+			font-size: 4rem;
+			font-family: $font-roboto;
+			font-weight: 500;
+		}
+		p{
+			font-family: $font-roboto;
+			color: #848484;
+			font-size: 1.5rem;
+			font-weight: lighter;
+		}
+	}
+	&-images{
+		img{
+			@include media-breakpoint-only(md) {
+				width: 75%;
+			}
+			@include media-breakpoint-down(sm){
+				width: 50%;
+			}
+		}
+	}
+}
+#footer-sec{
+	height: 25rem !important;
+	min-height: 25rem;
+	.fp-tableCell {
+		height: 25rem !important;
+	}
+}

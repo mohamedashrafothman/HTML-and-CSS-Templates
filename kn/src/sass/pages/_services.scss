@@ -1,0 +1,250 @@
+#services {
+	&-header{
+		@include blured-header('../images/news-1.png');
+	}
+	&-content{
+		position: relative;
+		padding-top: 7rem;
+		@include curved-sec('../images/Curve-blue.png');
+		background-color: $blue;
+	}
+	&-features{
+		min-height: 100vh;
+		padding-bottom: 3rem;
+		background-color: $gray-300;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		&-title{
+			width: 50%;
+			@include media-breakpoint-down(md){
+				width: 100%;
+			}
+			h1{
+				color: $blue;
+				font-family: $font-roboto;
+				font-weight: bold;
+				font-size: 4rem;
+				@include media-breakpoint-down(sm){
+					font-size: 3rem;
+				}
+			}
+			p{
+				color: $gray-600;
+				font-family: $font-roboto;
+				font-weight: 300;
+				font-size: 1.5rem;
+				@include media-breakpoint-down(sm) {
+					font-size: 1.5rem;
+				}
+			}
+		}
+		&-carouselNav {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include media-breakpoint-down(md) {
+				display: none;
+			}
+			a {
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				flex-direction: column;
+				text-decoration: none;
+				border-bottom: 3px solid transparent;
+				padding-right: 0px;
+				padding-left: 0px;
+				&.active {
+					border-bottom: 3px solid $blue;
+				}
+				&:hover {
+					border-bottom: 3px solid $blue;
+				}
+				.icon-text {
+					font-family: $font-oswald !important;
+					font-weight: 400;
+					font-size: 1.8rem;
+					text-transform: uppercase;
+					margin-top: 0.5rem;
+				}
+			}
+		}
+
+		&-carousel {
+			.owl-nav {
+				.owl-next,
+				.owl-prev {
+					position: absolute;
+					top: 10rem;
+					font-size: 50px;
+					color: $blue;
+					@include media-breakpoint-down(md) {
+						top: 50%;
+						transform: translateY(-50%);
+						font-size: 35px;
+					}
+					&:hover,
+					&:focus,
+					&:active {
+						background: transparent;
+						outline: none;
+					}
+				}
+				.owl-next {
+					right: -50px;
+					@include media-breakpoint-down(md) {
+						right: -10px;
+					}
+				}
+				.owl-prev {
+					left: -50px;
+					@include media-breakpoint-down(md) {
+						left: -10px;
+					}
+				}
+			}
+			.item {
+				.card {
+					width: 90%;
+					border-radius: 1rem;
+					@include media-breakpoint-down(md) {
+						max-width: 75%;
+					}
+					&-content {
+						h1 {
+							font-family: $font-oswald;
+							font-weight: 300;
+							text-transform: uppercase;
+							font-size: 3.1rem;
+							@include media-breakpoint-down(md){
+								font-size: 2.5rem;
+							}
+						}
+						p {
+							font-family: $font-roboto;
+							font-weight: lighter;
+							color: #848484;
+							font-size: 1.5rem;
+							@include media-breakpoint-down(md){
+								font-size: 1.5rem;
+							}
+						}
+					}
+				}
+			}
+		}
+
+	}
+}
+
+
+#single-service{
+	@include blured-header('../images/news-3.png');
+	&-content{
+		// padding: 3rem 0;
+		// margin-top: -4px;
+		position: relative;
+		padding: 10rem 0;
+		@include curved-sec('../images/Curve-white.png');
+		p{
+			font-family: $font-roboto;
+			font-size: 1.7rem;
+			font-weight: 300;
+			text-align: left;
+			line-height: 2.2rem;
+			color: $gray-600;
+			&:not(:last-of-type){
+				margin-bottom: 2rem;
+			}
+		}
+		img{
+			border-radius: 2rem;
+			// box-shadow: $box-shadow-lg;
+			width: 100%;
+			@include media-breakpoint-down(md){
+				display: block;
+				margin: 0 auto;
+			}
+		}
+
+	}
+	
+	&-nav{
+		background-color: $gray-300;
+		padding: 8.6rem 0 16rem;
+		.col-lg-4.col-12{
+			@include media-breakpoint-down(md){
+				padding: 0px !important;
+			}
+		}
+		.nav{
+			&-link{
+				padding: 1.717rem;
+				font-size: 2rem;
+				font-family: $font-oswald;
+				font-weight: 300;
+				color: $black;
+				text-transform: uppercase;
+				&.active{
+					background-color: $gray-300;
+					box-shadow: $box-shadow-lg;
+					border-radius: 1rem;
+					color: $blue;
+				}
+			}
+			@include media-breakpoint-down(md){
+				flex-direction: row  !important;
+				flex-wrap: nowrap !important;
+				overflow-x: scroll;
+				// margin-bottom: 2rem;
+				padding: 3rem 2rem;
+				&-link{
+					white-space: nowrap !important;
+					font-size: 1.5rem;
+					padding: 1.5rem;
+				}
+			}
+		}
+		.tab-content{
+			.tab-pane{
+				.card{
+					border: 0px;
+					box-shadow: $box-shadow-lg;
+					padding: 6.3rem 6rem;
+					border-radius: 1.5rem;
+					h1, p{
+						font-weight: 300;
+						text-align: left;
+					}
+					h1{
+						font-family: $font-oswald;
+						font-size: 3.1rem;
+						color: $black;
+						margin-bottom: 1.4rem;
+						text-transform: uppercase;
+					}
+					p{
+						font-family: $font-roboto;
+						font-size: 1.5rem;
+						color: $gray-600;
+						line-height: 1.8rem;
+					}
+					@include media-breakpoint-down(md){
+						padding: 3rem;
+						h1{
+							font-size: 2.5rem;
+						}
+						p{
+							font-size: 1.3rem;
+						}
+					}
+				}
+			}
+		}
+	
+	
+	
+	}
+
+}

@@ -1,0 +1,71 @@
+#footer{
+	background-color: #16323B;
+	position: relative;
+	padding-top: 3rem;
+	// margin-top: -4px;
+	@include curved-sec('../images/Curve-footer.png');
+	&-top{
+		p{
+			font-family: $font-roboto;
+			font-size: 1.2rem;
+			color: $white;
+			opacity: 0.5;
+			font-weight: 300;
+			margin-top: 1rem;
+		}
+		ul{
+			li{
+				list-style: none;
+				&:not(:last-of-type){
+					margin-right: 0.8rem;
+				}
+				a{
+					font-size: 2rem;
+					color: $white;
+					transition: all 0.5s ease-in-out;
+					opacity: 0.5;
+					&:hover{
+						opacity: 1;
+					}
+				}
+			}
+		}
+	}
+	&-middle{
+		background-color: #17292F;
+		.row{
+			@include media-breakpoint-up(lg) {
+				width: 50%;
+				margin: 0 auto;
+			}
+		}
+		img{
+			width: 9rem;
+			opacity: 0.5;
+		}
+		@include media-breakpoint-down(sm){
+			display: none;
+		}
+	}
+	&-bottom{
+		background-color: #152429;
+
+		.row{
+			@include media-breakpoint-only(xs) {
+				width: 75%;
+			}
+
+			@include media-breakpoint-up(sm) {
+				width: 50%;
+			}
+		}
+		p{
+			font-size: 1.1rem;
+			color: white;
+			opacity: 0.5;
+			font-weight: lighter;
+			width: 100%;
+			margin: 0;
+		}
+	}
+}

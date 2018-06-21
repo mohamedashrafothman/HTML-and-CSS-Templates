@@ -1,0 +1,36 @@
+// Mixins
+
+
+// mixins
+@import './mixins/_curve_sec.scss';
+@import './mixins/_news_card.scss';
+@import "./mixins/_page_blured_header.scss";
+@import "./mixins/_preloader.scss";
+
+
+// Partials
+@import './partials/_bootstrap.scss';
+@import url("https://fonts.googleapis.com/css?family=Oswald:200,300,400,500,600,700&subset=cyrillic,latin,latin-ext,vietnamese");
+@import url('https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i');
+@import './partials/_variables.scss';
+@import './partials/_animation.scss';
+@import './partials/_navbar.scss';
+@import './partials/_icons.scss';
+@import './partials/_footer.scss';
+@import "./partials/_service.scss";
+@import "./partials/_switcher.scss";
+@import "./partials/_floating_labels.scss";
+@import "./partials/_custom_input_file.scss";
+@import "./partials/_request_product.scss";
+
+
+// pages
+@import "./pages/_home.scss";
+@import "./pages/_news.scss";
+@import './pages/_services.scss';
+@import "./pages/_about.scss";
+@import "./pages/_careers.scss";
+@import "./pages/_contact.scss";
+@import "./pages/_product.scss";
+@import "./pages/_single_product.scss";
+@import "./pages/_search_result.scss";

@@ -1,0 +1,119 @@
+$font-oswald: 'Oswald',sans-serif;
+$font-roboto: 'Roboto',sans-serif;
+
+
+*, *::after, *::before{
+	padding: 0px;
+	margin: 0px;
+	box-sizing: border-box;
+}
+html{
+	font-size: 10px;
+}
+body{
+	font-size: 1rem;
+	font-family: $font-oswald;
+	background-color: $white;
+	overflow-x: hidden !important;
+}
+a{
+	text-decoration: none !important;
+}
+a.btn:active{
+	box-shadow: none !important;
+	background-color: transparent !important;
+}
+textarea{
+	resize: none;
+}
+.btn{
+	border-radius: 3rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	min-width: 25.7rem;
+	font-family: $font-oswald;
+	font-weight: 400;
+	line-height: 2.1rem;
+	font-size: 1.6rem;
+	&:focus {
+		box-shadow: none;
+	}
+}
+button{
+	outline: none;
+}
+#fp-nav {
+	border: 1px solid white;
+	border-radius: 15px;
+	@include media-breakpoint-down(md){
+		display: none;
+	}
+	ul{
+		li{
+			.fp-tooltip.right{
+				right: 35px !important;
+			}
+			a{
+				span{
+					border: 1px solid white;
+					width: 8px;
+					height: 8px;
+					margin: -3px 0 0 -4px;
+					background-color: transparent;
+				}
+				&.active{
+					span{
+						background-color: $white;
+					}
+				}
+			}
+		}
+	}
+}
+
+.fp-section.fp-table,
+.fp-slide.fp-table{
+	width: 100vw;
+}
+.Section-curve {
+	position: absolute;
+       z-index: 1;
+       right: -2;
+       bottom: -1px;
+       width: calc(100% + 1px);
+       height: auto;
+	   transform: rotate(0.01deg);
+	   @include media-breakpoint-only(md){
+		   transform: rotate(0.03deg);
+	   }
+	   @include media-breakpoint-only(sm) {
+	   	transform: rotate(0.04deg);
+	   }
+	   @include media-breakpoint-only(xs) {
+	   	transform: rotate(0.05deg);
+	   }
+}
+
+.float-number {
+	position: absolute;
+	top: -170px;
+	left: 0px;
+	width: 15.4rem;
+	height: 15.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 1rem;
+	&.blue{
+		background-color: #143F64 !important;
+		color: $white;
+	}
+	&.white{
+		background-color: $white;
+		color: #143F64 !important;
+	}
+	@include media-breakpoint-down(sm){
+		width: 12.4rem;
+		height: 12.4rem;
+	}
+}

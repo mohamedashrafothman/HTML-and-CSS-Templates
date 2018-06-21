@@ -1,0 +1,14 @@
+nav.navbar.px-5.py-3
+	a.navbar-logo(href="/")
+		img(src="./images/logo.png")
+	div.d-flex.flex-row.align-items-center
+		span.mr-4.navbar-search-icon.lnr.lnr-magnifier
+		form.navbar-form.d-none.mr-4(action="")
+			div.navbar-form-clear.d-flex.justify-content-center.align-items-center
+				span.lnr.lnr-cross
+			.input-group
+				input.form-control.bg-transparent.border-right-0(type='text', placeholder="SEARCH", aria-describedby='search-icon')
+				.input-group-append
+					span#search-icon.input-group-text.bg-transparent.border-left-0.lnr.lnr-magnifier
+						
+		span.navbar-icon.lnr.lnr-menu

@@ -1,0 +1,52 @@
+mixin news(index=0, img='', col='', link='', title='', content='')
+	div(class=col)
+		if img.length > 0
+			a.card.flex-lg-row.flex-sm-column.my-4.shadow-lg.h-md-250.wow.fadeInUp(href=`${link}` data-wow-offset=`50` data-wow-duration="1s" data-wow-delay="0.5s")
+				img.card-img-left.flex-auto.d-block(src=`../images/${img}`, alt='Card image cap')
+				.card-body.d-flex.flex-column.align-items-start.justify-content-between.p-0
+					div(class=(img.length > 0) ? 'd-flex flex-column justify-content-start align-items-start p-4 h-100' : 'd-flex flex-column justify-content-start align-items-start p-5 h-100')
+						h3.mb-4.text-dark= `${title}`
+						p= `${content}`
+					.card-footer.bg-primary.text-white.w-100.p-0
+						ul(class=(img.length > 0) ? 'd-flex flex-row align-items-center w-lg-75 w-md-100 h-100 py-3 m-0' : 'd-flex flex-row align-items-center w-lg-75 w-md-100 h-100 py-3 px-4 m-0')
+							li by Eman Taky
+							li property
+							li comments are closed
+							li 14 february, 2018
+		if img.length == 0
+			a.card.flex-lg-row.flex-sm-column.my-4.shadow-lg.h-md-250.wow.fadeInUp(href=`${link}` data-toggle="modal" data-target=`#news-${index+1}` data-wow-duration='1.25s' data-wow-offset="40")
+				.card-body.d-flex.flex-column.align-items-start.justify-content-between.p-0
+					div(class=(img.length > 0) ? 'd-flex flex-column justify-content-start align-items-start p-4 h-100' : 'd-flex flex-column justify-content-start align-items-start p-5 h-100')
+						h3.mb-4.text-dark= `${title}`
+						p= `${content}`
+					.card-footer.bg-primary.text-white.w-100.p-0
+						ul(class=(img.length > 0) ? 'd-flex flex-row align-items-center w-lg-75 w-md-100 h-100 py-3 m-0' : 'd-flex flex-row align-items-center w-lg-75 w-md-100 h-100 py-3 px-4 m-0')
+							li by Eman Taky
+							li property
+							li comments are closed
+							li 14 february, 2018
+			.modal.fade.bd-example-modal-lg(id=`news-${index+1}` tabindex='-1', role='dialog', aria-labelledby=`news-${index+1}Label`, aria-hidden='true')
+				.modal-dialog.modal-dialog-centered.modal-lg(role='document')
+					.modal-content
+						.modal-header
+							.container
+								.row.align-items-center
+									.col-lg-6.col-12
+										h4.modal-title(id=`news-${index+1}Label`)= `${title}`
+										ul.d-flex.flex-row.justify-content-start.align-items-center.h-25.my-3
+											li.pr-3 By Eman taky
+											li.pr-3 property
+											li.pr-3 14 February, 2018
+									.col-lg-6.col-12.d-flex.flex-row.align-items-center.justify-content-between
+										button.btn.btn-outline-primary(type='button', data-dismiss='modal') cancel
+										button.btn.btn-primary(type='button') apply now
+							
+						.modal-body
+							h6.text-capitalize about the job
+							p= `${content}`
+							h6.text-capitalize job requirements
+							p= `${content}`
+
+
+
+		//-  data-toggle="modal" data-target=`#news-${index+1}`

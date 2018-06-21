@@ -1,0 +1,104 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark')
+	section#careers
+		.blured-header
+			.bg-blure
+			.container
+				.row
+					.blured-header-container.col-12
+						h3.my-2.wow.fadeInUp(data-wow-duration="1.25s") BUILD YOU CAREER
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.25s") Discover the opportunity to join one of the greatest and responsible company In Middle East fosters the development of its entire people in every division. 
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.5s") Every day, we challenge employees to discover their potential through an experience exciting careers. Find out how our values and sustainable performance make KN the employer of choice.
+
+						h4.mt-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") What we do
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="1s") KN produce software application to enhance critical systems functionalities in high productive and financial industries, our professional team and capabilities helped us to fight in hard market and become one of the biggest names in Middle East.
+
+						h4.mt-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="1.25s") Student & Fresh Graduates
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="1.5s") Our unique position in IT field enables us to offer especial opportunities to exceptional people.
+						
+	section#careers-content
+		.container
+			.row
+				.col-lg-6.col-12
+					h2.wow.fadeInUp(data-wow-offset="40" data-wow-duration="1.25s") Why should I choose a KN career?
+					p.wow.fadeInUp(data-wow-offset="40" data-wow-duration="1.25s") We offer challenging opportunities that match your skills and help you reach maximum potential. 
+					p.wow.fadeInUp(data-wow-offset="40" data-wow-duration="1.25s") We promote based on performance and potential. We take our investment in you seriously because we believe that our future success depends on you. 
+					p.wow.fadeInUp(data-wow-offset="40" data-wow-duration="1.25s") We invest more time and resources in our training and development programs more than any other IT services company, as we understand the sudden change in technology so we keep up to date to accelerate with rapid updates
+				.col-lg-6.col-12
+					img.wow.slideInUp(src="../images/about-float-img.png" data-wow-duration="1.25s" data-wow-offset="40")
+	section#careers-departments
+		.container
+			.row
+				.col-lg-6.col-12.d-flex.flex-column.justify-content-end
+					h2.text-capitalize.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") Experts & Professionals
+					p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.25s") IT services based on the latest updated technology , KN customers uses the latest and advanced services and products in IT filed, including web, mobile, tablet applications and complete infrastructure solutions for banking, data warehouse and property applications, all of these fields are most important for expert professionals employees
+				.col-lg-6.col-12.d-flex.flex-column.justify-content-end
+					h2.text-capitalize.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") Training & Development
+					p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.25s") We believe that high quality training is our key to success, our ability to develop new solutions and new business is the ability of our team to enhance and develop their potential.
+	section#careers-vacancies
+		.container
+			.row.justify-content-center
+				h1.pb-5.wow.fadeInUp#careers-vacancies-title(data-wow-duration="1.25s" data-wow-offset="40") AVAILABLE VACANCIES
+				#careers-vacancies-content.col-12
+					.row
+						- var vacancies = [{title: 'Java Developer – Team Leader', content: 'About the Job Follow full software development life cycle (analysis, design, implementation, testing, documentation) Understand and verify the functional and business requirements of the software Ability to gather business requirements from appointed'}, {title: 'Android Developer', content:'About the Job Follow full software development life cycle (analysis, design, implementation, testing, documentation) Understand and verify the functional and business requirements of the software Ability to gather business requirements from appointed'}, {title: 'Junior Data Developer', content:'About the Job Follow full software development life cycle (analysis, design, implementation, testing, documentation) Understand and verify the functional and business requirements of the software Ability to gather business requirements from appointed'}, {title: '.Net Developer', content:'About the Job Follow full software development life cycle (analysis, design, implementation, testing, documentation) Understand and verify the functional and business requirements of the software Ability to gather business requirements from appointed'}, {title: 'Java Software Developer', content:'About the Job Follow full software development life cycle (analysis, design, implementation, testing, documentation) Understand and verify the functional and business requirements of the software Ability to gather business requirements from appointed'}, {title: 'Apple Developer', content:'About the Job Follow full software development life cycle (analysis, design, implementation, testing, documentation) Understand and verify the functional and business requirements of the software Ability to gather business requirements from appointed'}];
+						each vacancie, index in vacancies
+							+news(index, '', 'col-lg-6 col-12', '#', vacancie.title, vacancie.content)
+
+	section#careers-join-us
+		.container
+			.row.justify-content-center
+				#careers-join-us-title
+					h1.wow.fadeInUp(data-wow-offset="40" data-wow-duration="1.25s") join our team
+					p.wow.fadeInUp(data-wow-duration="1.5s" data-wow-offset="40") You must apply for a specific opening , review the job qualifications and apply simply on our web site or send your CV to jobs@kn-it.com.
+				#careers-join-us-content.col-12
+					form.card.col-lg-8.offset-lg-2.col-12.shadow-lg.wow.fadeInUp(action="#" method="GET" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.5s")
+						.row
+							.col-12.col-lg-6
+								.form-label-group
+									input#join-us-name.form-control.form-control-lg(type='text', placeholder='Name', required='')
+									label(for='join-us-name') Name
+								.form-label-group
+									input#join-us-phone.form-control.form-control-lg(type='text', placeholder='Phone', required='')
+									label(for='join-us-phone') phone
+								.form-label-group
+									input#join-us-email.form-control.form-control-lg(type='email', placeholder='Email', required='')
+									label(for='join-us-email') Email
+								.form-group
+									select.form-control.form-control-lg
+										option(disabled selected) position
+										option(value="1") 1
+										option(value="2") 2
+										option(value="3") 3
+
+							.col-12.col-lg-6
+								.form-label-group
+									textarea#join-us-notes.form-control.form-control-lg(rows="8" placeholder="Notes" required)
+									label(for="join-us-notes") Notes
+								.form-group
+									label.custom-file
+										.icon-choose-image
+											input#join-us-file.inputFile.custom-file-input(name='cv', type='file' onChange="showPreview(this,'#targetLayer');")
+										span.custom-file-control#join-us-file-output
+						.row.justify-content-center.mt-5
+							button.btn.btn-lg.btn-primary.text-uppercase(type="submit") send message 
+
+	include ./partials/footerSec.pug
+	script.
+		function showPreview(objFileInput, targetLayer2) {
+			var fullPath = document.getElementById('join-us-file').value;
+			if (fullPath) {
+				var startIndex = (fullPath.indexOf('\\') >= 0 ? fullPath.lastIndexOf('\\') : fullPath.lastIndexOf('/'));
+				var filename = fullPath.substring(startIndex);
+				if (filename.indexOf('\\') === 0 || filename.indexOf('/') === 0) {
+					filename = filename.substring(1);
+				}
+				document.getElementById('join-us-file-output').innerText = filename;
+			}
+		}
+		

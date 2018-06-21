@@ -1,0 +1,277 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark', 'relative')
+	section#single-product-header
+		.container
+			.row.flex-column.align-items-center.text-center
+				img.wow.fadeInUp#single-product-header-logo(src="../images/tradenet-logoW-lg.png" alt="product logo" data-wow-duration="1.25s")
+				p.wow.fadeInUp#single-product-header-paragraph(data-wow-duration="1.5s") TradeNet offers integrated, front, middle and back office functions. TradeNet is an extreme trading application.
+				img.shadow-lg.wow.fadeInUp#single-product-header-big(src="../images/single-product-showcase.png" alt="product showcase" data-wow-duration="1.75s")
+				a.scroll-down(href="#single-product-about-1")
+					span
+
+	section#single-product-about-1
+		.container
+			.row
+				.col-lg-5.col-12
+					#single-product-about-1-content
+						.float-number.blue.text-white.shadow-lg.text-center.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40")
+							h1 01
+						p.wow.fadeInUp(data-wow-duration="1.5s" data-wow-offset="40") TradeNet is characterized by an extremely secure and scalable architecture that can support hundred of thousands of orders in a single trading session. 
+						p.wow.fadeInUp(data-wow-duration="1.75s" data-wow-offset="40") Emerging Markets have different characteristics and requirements than those of developed ones. Therefore, systems that serve brokerage firms in Emerging Markets have to be specialized to deliver a better product fit and a closer match to the needs of these markets. Additionally, companies providing these solutions should be more geared towards Emerging Markets in order to give enough priority and attention to brokerage firms in these markets.
+				.col-lg-7.col-12.text-center
+					#single-product-about-1-img
+						img.shadow-lg.w-100.wow.fadeInUp(src="../images/single-product-showcase-1.png" alt="product showcase 1" data-wow-duration="1.25s" data-wow-offset="40")
+	
+	section#single-product-about-2
+		.container
+			.row
+				.col-lg-7.col-12.text-center
+					#single-product-about-2-img
+						img.shadow-lg.w-100.wow.fadeInUp(src="../images/single-product-showcase-2.png" alt="product showcase 1" data-wow-duration="1.25s" data-wow-offset="40")
+				.col-lg-5.col-12
+					#single-product-about-2-content
+						.float-number.white.text-white.shadow-lg.text-center.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40")
+							h1 02
+						p.wow.fadeInUp(data-wow-duration="1.5s" data-wow-offset="40") As a matter of fact, 100% of our business comes from Emerging Markets. This means the company, the people, and the product are specifically geared to serve Emerging Markets. 
+						p.wow.fadeInUp(data-wow-duration="1.75s" data-wow-offset="40") TradeNet platform offers the unique combination of a robust, reliable Equity Trading Management System and a wide variety of channels to access the brokerage service to satisfy the needs of basic, sophisticated, and mobile investors
+						div
+							img.shadow-lg(src="../images/5.png" alt="")
+							img.shadow-lg(src="../images/6.png" alt="")
+	
+	section#single-product-about-3
+		.container
+			.row
+				.col-lg-5.col-12
+					#single-product-about-3-content
+						.float-number.blue.text-white.shadow-lg.text-center.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40")
+							h1 03
+						p.wow.fadeInUp(data-wow-duration="1.5s" data-wow-offset="40") TradeNet is characterized by an extremely secure and scalable architecture that can support hundred of thousands of orders in a single trading session. Emerging Markets have different characteristics and requirements than those of developed ones. Therefore, systems that serve brokerage firms in Emerging Markets have to be specialized to deliver a better product fit and a closer match to the needs of these markets. Additionally, companies providing these solutions should be more geared towards Emerging Markets in order to give enough priority and attention to brokerage firms in these markets.
+				.col-lg-7.col-12.text-center
+					#single-product-about-3-img
+						img.shadow-lg.mt-5.w-100.wow.fadeInUp(src="../images/single-product-showcase-3.png" alt="product showcase 3" data-wow-duration="1.25s" data-wow-offset="40")
+
+	section#single-product-features
+		.container
+			.row
+				h1#single-product-features-title.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") features
+				.col-12
+					.owl-carousel.owl-theme.row#single-product-features-carousel
+						.item.d-flex.flex-column.align-items-center.justify-content-start
+							.row
+								div.d-flex.flex-column.h-50.text-center.px-lg-5
+									i.icon-choices
+									h5.my-4 Single, block or quick order entry
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+							.row
+								div.text-center.px-lg-5
+									i.icon-bar-chart
+									h5.my-4 Advanced Charting and Technical Analysis
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+
+						.item.d-flex.flex-column.align-items-center.justify-content-start
+							.row
+								div.d-flex.flex-column.h-50.text-center.px-lg-5
+									i.icon-correct
+									h5.my-4 Order approval and processing
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+							.row
+								div.text-center.px-lg-5
+									i.icon-development
+									h5.my-4 Multi-views, dynamic & static Market Watch
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+						.item.d-flex.flex-column.align-items-center.justify-content-start
+							.row
+								div.d-flex.flex-column.h-50.text-center.px-lg-5
+									i.icon-stopwatch
+									h5.my-4 Real-time trade blotter with multiple filters
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+							.row
+								div.text-center.px-lg-5
+									i.icon-browser
+									h5.my-4 Customized & flexible workspace with advanced docking
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+						.item.d-flex.flex-column.align-items-center.justify-content-start
+							.row
+								div.d-flex.flex-column.h-50.text-center.px-lg-5
+									i.icon-folder
+									h5.my-4 Level I and II market data, Time & Sales
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+							.row
+								div.text-center.px-lg-5
+									i.icon-line-chart
+									h5.my-4 Real-time reporting & valuation
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+
+						.item.d-flex.flex-column.align-items-center.justify-content-start
+							.row
+								div.d-flex.flex-column.h-50.text-center.px-lg-5
+									i.icon-choices
+									h5.my-4 Single, block or quick order entry
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+							.row
+								div.text-center.px-lg-5
+									i.icon-bar-chart
+									h5.my-4 Advanced Charting and Technical Analysis
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+
+						.item.d-flex.flex-column.align-items-center.justify-content-start
+							.row
+								div.d-flex.flex-column.h-50.text-center.px-lg-5
+									i.icon-correct
+									h5.my-4 Order approval and processing
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+							.row
+								div.text-center.px-lg-5
+									i.icon-development
+									h5.my-4 Multi-views, dynamic & static Market Watch
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+						.item.d-flex.flex-column.align-items-center.justify-content-start
+							.row
+								div.d-flex.flex-column.h-50.text-center.px-lg-5
+									i.icon-stopwatch
+									h5.my-4 Real-time trade blotter with multiple filters
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+							.row
+								div.text-center.px-lg-5
+									i.icon-browser
+									h5.my-4 Customized & flexible workspace with advanced docking
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+						.item.d-flex.flex-column.align-items-center.justify-content-start
+							.row
+								div.d-flex.flex-column.h-50.text-center.px-lg-5
+									i.icon-folder
+									h5.my-4 Level I and II market data, Time & Sales
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+							.row
+								div.text-center.px-lg-5
+									i.icon-line-chart
+									h5.my-4 Real-time reporting & valuation
+									p Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cupiditate excepturi architecto nam nihil dolore doloremque animi molestiae possimus quas. Architecto modi deleniti incidunt, dicta iure ut fugit laudantium mollitia expedita.
+
+
+	section#single-product-role
+		.container
+			.row.my-5
+				#single-product-role-title.mx-auto.text-center
+					h1.text-uppercase.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") WHAT’S YOUR ROLE ?
+			.row.my-2
+				.mx-auto.text-center#single-product-role-carouselNav
+					a.col-3.py-4(href="#role-one")
+						span.icon-text.text-dark ceo
+
+					a.col-3.py-4(href="#role-two")
+						span.icon-text.text-dark IT MANAGER
+						
+					a.col-3.py-4(href="#role-three")
+						span.icon-text.text-dark FINANCE MANAGER
+						
+					a.col-3.py-4(href="#role-four")
+						span.icon-text.text-dark OPERATION MANAGER
+					
+					a.col-3.py-4(href="#role-five")
+						span.icon-text.text-dark BROKAGE HEAD
+
+					a.col-3.py-4(href="#role-six")
+						span.icon-text.text-dark ACCOUNT MANAGER
+		
+
+				.col-12
+					.owl-carousel.owl-theme#single-product-role-carousel
+						.item(data-hash="role-one")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 ceo
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+						.item(data-hash="role-two")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 IT MANAGER
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+						.item(data-hash="role-three")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 FINANCE MANAGER
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+
+						.item(data-hash="role-four")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 OPERATION MANAGER
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+
+						.item(data-hash="role-five")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 BROKAGE HEAD
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+
+						.item(data-hash="role-six")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 ACCOUNT MANAGER
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+				
+	section#single-product-demo
+		.container
+			.row.flex-column.align-items-center.mx-auto
+				h1.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") READY TO USE TRADENET ?
+				a.btn.btn-primary.btn-lg.text-uppercase.wow.fadeInUp(href="#" data-toggle="modal" data-target="#request-product" data-wow-duration="1.5s" data-wow-offset="40") request a demo
+				#request-product.modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='request-productTitle', aria-hidden='true')
+					.modal-dialog.modal-dialog-centered.modal-lg(role='document')
+						.modal-content
+							.modal-header.flex-column.border-0
+								button.close(type='button', data-dismiss='modal', aria-label='Close')
+									span.lnr.lnr-cross(aria-hidden='true') 
+								h1#request-productTitle.text-center.w-100.modal-title request a demo
+							.modal-body.border-0
+								form.container(action="#")
+									.row
+										.col-lg-6.col-12.d-flex.flex-column.justify-content-around
+											.form-label-group
+												input#request-name.form-control.form-control-lg(type='text', placeholder='Name', required='')
+												label(for='request-name') Name
+											.form-label-group
+												input#request-phone.form-control.form-control-lg(type='text', placeholder='Phone', required='')
+												label(for='request-phone') Phone
+											.form-label-group
+												input#request-email.form-control.form-control-lg(type='email', placeholder='Email', required='')
+												label(for='request-phone') Email
+											.form-label-group
+												input#request-orgnization.form-control.form-control-lg(type='text', placeholder='Orgnization', required='')
+												label(for='request-orgnization') Orgnization
+										.col-lg-6.col-12.d-flex.flex-column.justify-content-around
+											.form-label-group
+												input#request-role.form-control.form-control-lg(type='text', placeholder='Role', required='')
+												label(for='request-role') Role
+											.form-group
+												select#request-product.form-control.form-control-lg
+													option(disabled selected) Select Product
+													option(value="1") 1
+													option(value="2") 2
+													option(value="3") 3
+											.form-label-group
+												textarea#request-notes.form-control.form-control-lg(rows="6" placeholder="Notes" required)
+												label(for="request-notes") Notes
+										
+							.modal-footer.border-0
+								button.btn.btn-primary.btn-lg.mx-auto.text-white(type='button') request a demo
+
+
+	include ./partials/footerSec.pug

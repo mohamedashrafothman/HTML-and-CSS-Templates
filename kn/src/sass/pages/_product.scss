@@ -1,0 +1,323 @@
+#product{
+	&-header{
+		background-image: url('../../images/product-header.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		min-height: 100vh;
+		position: relative;
+		&-side{
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: rgba(#105088, 0.75);
+			bottom: 0;
+			width: 40vw;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: flex-start;
+			align-items: flex-start;
+			padding: 3rem 7.6rem 0;
+			&-title {
+				font-size: 4.3rem;
+				font-family: $font-oswald;
+				font-weight: 300;
+				text-align: left;
+				line-height: 5.3rem;
+				color: $white;
+				&::after{
+					content: '';
+					width: 5rem;
+					height: 2px;
+					background-color: $gray-400;
+					margin: 2.5rem 0;
+					display: block;
+
+				}
+			}
+			p{
+				font-family: $font-roboto;
+				font-weight: 300;
+				font-size: 1.4rem;
+				text-align: left;
+				color: $white;
+				line-height: 2.2rem;
+				padding-right: 7rem;
+				margin-bottom: 22px;
+			}
+			&-btnGroup{
+				display: flex;
+				flex-direction: column;
+				align-items: flex-start;
+				justify-content: space-around;
+				min-height: 15rem;
+				button{
+					color: #105088;
+					font-weight: 500;
+				}
+				a{
+					font-weight: 500;					
+					&:hover{
+						color: #105088;
+					}
+				}
+			}
+			@include media-breakpoint-down(sm){
+				width: 100vw;
+			}
+		}
+		@include media-breakpoint-down(md){
+			height: 70rem;
+			&-side{
+				h1{
+					font-size: 3.5rem;
+				}
+				padding: 3rem 3rem 0;
+			}
+		}
+	}
+	&-deliver{
+		@include curved-sec('../images/Curve-black.png');
+		&::before{
+			height: auto;
+			top: -13rem;
+			left: -35px;
+			width: 104vw;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: cover;
+			@include media-breakpoint-down(sm){
+				top: -11rem;
+			}
+		}
+		background: linear-gradient(to top, rgba(#1B242C, 0.95), rgba(#1B242C, 0.95)),
+		url('../../images/buy-cash-coins.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+		padding: 12.2rem 0;
+		color: $white;
+		font-family: $font-oswald; 
+		position: relative;
+		h1, h3{
+			text-transform: uppercase;
+		}
+		h1{
+			font-size: 5.1rem;
+			font-weight: bold;
+			line-height: 5.5rem;
+		}
+		h3{
+			font-size: 4.1rem;
+			font-weight: 300;
+			line-height: 5.4rem;
+		}
+		h5{
+			font-size: 3.1rem;
+			font-weight: 300;
+		}
+	}
+	&-about{
+		background-color: $white;
+		padding: 8.6rem 0;
+		position: relative;
+		&-content{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			h1{
+				color: #143F64;
+				font-family: $font-oswald;
+				font-weight: 300;
+				padding-right: 5rem;
+				line-height: 4.4rem;
+				font-size: 3.5rem;
+				margin-bottom: 2.5rem;
+			}
+			p{
+				font-family: $font-roboto;
+				font-weight: 300;
+				font-size: 1.4rem;
+				line-height: 2.2rem;
+				padding-bottom: 2.5rem;
+				color: $gray-600;
+			}
+			a{
+				background-color: #143F64;
+				border-color: #143F64;
+				box-shadow: none;
+			}
+		}
+		&-img{
+			img{
+				position: absolute;
+				top: -15rem;
+				border-radius: 1.5rem;
+			}
+		}
+	}
+	&-features{
+		min-height: 41.1rem;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		div{
+			display: flex;
+			align-items: center;
+			flex: 0 1 25%;
+			justify-content: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: center;
+			h3{
+				color: $white;
+				font-family: $font-oswald;
+				font-weight: 300;
+				font-size: 2.9rem;
+				text-transform: uppercase;
+				text-align: center;
+				width: 50%;
+				margin: 0 auto;
+			}
+			&:nth-of-type(1){
+				background-image: linear-gradient(to top, rgba($black, 0.7), rgba($black, 0.7)), url('../../images/news-1.png');
+			}
+			&:nth-of-type(2) {
+				background-image: linear-gradient(to top, rgba($black, 0.7), rgba($black, 0.7)), url('../../images/news-2.png');
+			}
+			&:nth-of-type(3) {
+				background-image: linear-gradient(to top, rgba($black, 0.7), rgba($black, 0.7)), url('../../images/news-3.png');
+			}
+			&:nth-of-type(4) {
+				background-image: linear-gradient(to top, rgba($black, 0.7), rgba($black, 0.7)), url('../../images/news-4.png');
+			}
+		}
+		@include media-breakpoint-down(sm){
+			div{
+				flex: 0 1 50%; // flex-wrap: wrap;
+			}
+		}
+	}
+
+
+	&-users{
+		background: $white;
+		padding: 17rem 0;
+		&-title{
+			color: #143F64;
+			text-transform: uppercase;
+			font-family: $font-roboto;
+			font-weight: bold;
+			font-size: 4rem;
+			line-height: 4.7rem;
+		}
+		&-owl{
+			margin-top: 4rem;
+			.owl-stage{
+				height: 154px;
+			}
+			.owl-dots{
+				 .owl-dot{
+					 outline: none;
+					  span{
+						  width: 5rem !important;
+						  height: 2px !important;
+					  }
+
+					  &.active, &:hover{
+						  span{
+							  background: $blue;
+						  }
+					  }
+				 }
+			}
+		}
+	}
+
+	&-video{
+		background-image: url('../../images/company-seo.png');
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-position: center;
+		padding: 14.9rem 0;
+		.row {
+			width: 60%;
+			text-align: center;
+			@include media-breakpoint-down(sm) {
+				width: 100%;
+			}
+		}
+		h1{
+			color: $white;
+			font-family: $font-oswald;
+			font-weight: 300;
+			font-size: 4.3rem;
+			line-height: 5.3rem;
+
+		}
+		a{
+			margin-top: 3.2rem;
+			color: $white;
+			span{
+				font-size: 7rem;
+			}
+			p{
+				font-size: 2.5rem;
+				font-family: $font-oswald;
+				font-weight: 300;
+				line-height: 5.3rem;
+			}
+		}
+		@include media-breakpoint-down(md){
+			h1{
+				font-size: 3rem;
+				line-height: 4.3rem;
+			}
+		}
+	}
+
+
+
+
+	&-demo{
+		background-color: #143F64;
+		padding: 12.7rem 0 20rem;
+		.row{
+			width: 60%;
+			text-align: center;
+			@include media-breakpoint-down(sm){
+				width: 100%;
+			}
+		}
+		img{
+			margin: 1.36rem 0;
+		}
+		h1{
+			font-family: $font-oswald;
+			font-weight: 300;
+			color: $white;
+			font-size: 5.5rem;
+			line-height: 7.5rem;
+			padding: 0 3rem;
+		}
+		button{
+			margin-top: 4.7rem;
+		}
+
+
+		@include media-breakpoint-down(md){
+			h1{
+				font-size: 3.5rem;
+				line-height: 4.5rem;
+				padding: 0 1rem;
+				margin-bottom: 3rem;
+			}
+		}
+	}
+
+
+
+
+}

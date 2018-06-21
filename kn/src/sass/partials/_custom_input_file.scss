@@ -1,0 +1,57 @@
+.custom-file-control {
+	border-radius: 0;
+	background-color: transparent;
+	border: none;
+	border-bottom: 1px solid rgba(#fff, 0.5);
+	font-size: 1.25rem;
+	font-family: $font-roboto;
+	padding-left: 0;
+	color: #fff;
+	&::placeholder {
+		color: rgba(#fff, 0.5);
+	}
+}
+
+.custom-file {
+	width: 100%;
+	.custom-file-control {
+		border: none;
+		display: flex;
+		align-items: center;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		color: $gray-600;
+		font-weight: 300;
+		font-size: 1.2rem;
+		font-style: italic;
+		&:before {
+			content: 'Choose file';
+			position: relative;
+			padding: 0;
+			color: $blue;
+			background-color: transparent;
+			border-radius: 0;
+			border: none;
+			height: auto;
+			right: initial;
+			top: initial;
+			bottom: initial;
+			font-family: $font-roboto;
+			font-weight: 400;
+			font-size: 1.6rem;
+			font-style: normal;
+		}
+		&:after {
+			content: 'ATTACH CV';
+			font-family: $font-roboto;
+			font-weight: 300;
+			font-size: 1.3rem;
+			color: $gray-600;
+			font-style: normal;
+		}
+	}
+}
+
+.custom-file-input:focus~.custom-file-control {
+	box-shadow: none;
+}

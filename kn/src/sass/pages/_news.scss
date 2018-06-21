@@ -1,0 +1,151 @@
+#news-sec {
+	background-color: $gray-300;
+	padding-top: 15rem;
+	padding-bottom: 15rem;
+	position: relative;
+	margin-bottom: -1.5rem;
+	&-title {
+		font-family: $font-oswald;
+		font-weight: 300;
+		font-size: 5.5rem;
+		@include media-breakpoint-down(md){
+			font-size: 3.5rem;
+			text-align: center;
+		}
+	}
+	&-pagenation {
+		.page-link {
+			font-size: 2.1rem;
+		}
+		.page-item.active .page-link {
+			z-index: 1;
+			color: $blue;
+			background-color: transparent;
+			border-color: transparent;
+			box-shadow: $box-shadow;
+			border-radius: 0.5rem;
+		}
+	}
+	@include newsCard();
+}
+
+#single-news {
+	&-header{
+		@include blured-header('../images/single-news-2.png');
+	}
+	&-content {
+		// padding: 3rem 0;
+		// margin-top: -4px;
+		position: relative;
+		padding-top: 3rem;
+		@include curved-sec('../images/Curve-white.png');
+		&-title {
+			h1 {
+				color: $blue;
+				font-size: 4rem;
+				text-align: left;
+				font-family: $font-roboto;
+				font-weight: 600;
+				@include media-breakpoint-down(sm) {
+					font-size: 3rem
+				}
+			}
+			ul {
+				li {
+					list-style: none;
+					font-size: 1.8rem;
+					font-weight: lighter;
+					text-align: left;
+					text-transform: capitalize;
+					color: #838383;
+					font-family: $font-roboto;
+					@include media-breakpoint-down(sm) {
+						font-size: 1.3rem;
+					}
+					&:not(:last-of-type) {
+						&::after {
+							content: '|';
+							height: 2px;
+							width: 1px;
+							color: #848484;
+							padding-left: 1.3rem;
+						}
+					}
+					a {
+						text-decoration: none;
+					}
+				}
+			}
+		}
+		&-main {
+			p {
+				color: #848484;
+				font-family: $font-roboto;
+				font-weight: 200;
+				font-size: 1.6rem;
+			}
+		}
+		&-side {
+			p {
+				color: $black;
+				font-size: 1.9rem;
+				font-family: $font-oswald;
+				font-weight: 300;
+			}
+			ul {
+				@include media-breakpoint-up(lg) {
+					width: 75%;
+				}
+				@include media-breakpoint-down(md) {
+					width: 50%;
+				}
+				li {
+					list-style: none;
+					transition: $transition-base;
+					a {
+						color: #848484;
+						text-decoration: none;
+						font-size: 2rem;
+						width: 100%;
+						display: block;
+						i {
+							width: 25px;
+							height: 25px; // font-size: 3rem;
+						}
+						span {
+							font-weight: lighter; // font-size: 1.8rem;
+						}
+					}
+					&:hover {
+						background: $white;
+						box-shadow: $box-shadow;
+						border-radius: 0.4rem;
+						.link-fb {
+							color: #3b5998;
+						}
+						.link-tw {
+							color: #00aced;
+						}
+						.link-gp {
+							color: #dd4b39;
+						}
+						.link-li {
+							color: #007bb6;
+						}
+					}
+				}
+			}
+		}
+	}
+	&-more {
+		background-color: #E8E8E8;
+		padding-bottom: 15rem;
+		padding-top: 8rem;
+		.title {
+			font-family: $font-roboto;
+			font-weight: bolder;
+			font-size: 4rem;
+		}
+		@include newsCard();
+	}
+}

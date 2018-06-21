@@ -1,0 +1,397 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+
+block content
+	include ./partials/fullScreenMenu.pug
+	#fullpage
+		+nav()
+		<!-- main section -->
+		.section#main-sec
+			.d-flex.flex-column.justify-content-center.align-items-center#main-sec-intro
+				h1.text-white.text-uppercase.wow.fadeInUp( data-wow-duration="1.25s") productizing is a way of life
+				h2.text-white.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.25s") we invent it, design it, build it, and test it
+				.d-flex.flex-lg-row.justify-content-between.align-items-center.mt-5#main-sec-btnGourp
+					a.btn.btn-primary.btn-lg.text-uppercase.px-5.py-3.mx-3.wow.fadeInUp(href="#" data-wow-duration="1.25s" data-wow-delay="0.5s") about knowledge 
+					a.btn.btn-outline-light.btn-lg.text-uppercase.px-5.py-3.mx-3.wow.fadeInUp(href="#" data-toggle="modal" data-target="#request-product" data-wow-duration="1.25s" data-wow-delay="0.75s") request a product
+			#request-product.modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='request-productTitle', aria-hidden='true')
+				.modal-dialog.modal-dialog-centered.modal-lg(role='document')
+					.modal-content
+						.modal-header.flex-column.border-0
+							button.close(type='button', data-dismiss='modal', aria-label='Close')
+								span.lnr.lnr-cross(aria-hidden='true') 
+							h1#request-productTitle.text-center.w-100.modal-title request a demo
+						.modal-body.border-0
+							form.container(action="#")
+								.row
+									.col-lg-6.col-12.d-flex.flex-column.justify-content-around
+										.form-label-group
+											input#request-name.form-control.form-control-lg(type='text', placeholder='Name', required='')
+											label(for='request-name') Name
+										.form-label-group
+											input#request-phone.form-control.form-control-lg(type='text', placeholder='Phone', required='')
+											label(for='request-phone') Phone
+										.form-label-group
+											input#request-email.form-control.form-control-lg(type='email', placeholder='Email', required='')
+											label(for='request-phone') Email
+										.form-label-group
+											input#request-orgnization.form-control.form-control-lg(type='text', placeholder='Orgnization', required='')
+											label(for='request-orgnization') Orgnization
+									.col-lg-6.col-12.d-flex.flex-column.justify-content-around
+										.form-label-group
+											input#request-role.form-control.form-control-lg(type='text', placeholder='Role', required='')
+											label(for='request-role') Role
+										.form-group
+											select#request-product.form-control.form-control-lg
+												option(disabled selected) Select Product
+												option(value="1") 1
+												option(value="2") 2
+												option(value="3") 3
+										.form-label-group
+											textarea#request-notes.form-control.form-control-lg(rows="6" placeholder="Notes" required)
+											label(for="request-notes") Notes
+									
+						.modal-footer.border-0
+							button.btn.btn-primary.btn-lg.mx-auto(type='button') request a demo
+
+
+			.mx-auto#main-sec-carousel
+				h2.text-white.text-uppercase.text-center.mb-4.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="1s") who's using our products
+				.owl-carousel.owl-theme.wow.fadeInUp#main-sec-owl(data-wow-duration="1.25s" data-wow-delay="1.25s")
+					.item
+						img(src="./images/home-slider-1.png")
+					.item
+						img(src="./images/home-slider-2.png")
+					.item
+						img(src="./images/home-slider-3.png")
+					.item
+						img(src="./images/home-slider-4.png")
+					.item
+						img(src="./images/home-slider-5.png")
+					.item
+						img(src="./images/home-slider-6.png")
+			
+
+			svg.Section-curve(viewbox='0 0 100 5')
+				path(fill='#00ADEE', d='M100,0 L100,5 L-2.42861287e-17,5 L-1.11022302e-16,0 C-1.11022302e-16,0 25,5 50,5 C75,5 100,0 100,0 Z')
+		<!-- End main section -->
+
+		<!-- Product showcase section -->
+		.section#product-showcase-sec
+			.container
+				.row.justify-content-center
+					#product-showcase-sec-navCarousel
+						.container
+							.row
+								a.col-3.text-center.wow.fadeInUp(href="#showcase-one" data-wow-duration="1.25s" data-wow-offset="40")
+									img(src="./images/tradenet-logoW.png")
+								a.col-3.text-center.wow.fadeInUp(href="#showcase-two" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.25")
+									img(src="./images/Group 400.png")
+								a.col-3.text-center.wow.fadeInUp(href="#showcase-three" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.5")
+									img(src="./images/property-2W.png")
+								a.col-3.text-center.wow.fadeInUp(href="#showcase-four" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.75")
+									img(src="./images/Group 401.png")
+				.row.w-75.mx-auto.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="1s")
+					.owl-carousel.owl-theme#product-showcase-sec-carousel
+						.item(data-hash="showcase-one")
+							.d-flex.flex-column
+								.w-lg-75.mx-auto
+									img.shadow-lg(src="./images/screenshot.png")
+								.w-lg-75.mx-auto.text-center.item-content
+									p.text-white Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae natus doloribus animi blanditiis expedita.
+									a.text-white(href="#") +More
+						.item(data-hash="showcase-two")
+							.d-flex.flex-column
+								.w-lg-75.mx-auto
+									img.shadow-lg(src="./images/screenshot.png")
+								.w-lg-75.mx-auto.text-center.item-content
+									p.text-white Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae natus doloribus animi blanditiis expedita.
+									a.text-white(href="#") +More
+						.item(data-hash="showcase-three")
+							.d-flex.flex-column
+								.w-lg-75.mx-auto
+									img.shadow-lg(src="./images/screenshot.png")
+								.w-lg-75.mx-auto.text-center.item-content
+									p.text-white Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae natus doloribus animi blanditiis expedita.
+									a.text-white(href="#") +More
+						.item(data-hash="showcase-four")
+							.d-flex.flex-column
+								.w-lg-75.mx-auto
+									img.shadow-lg(src="./images/screenshot.png")
+								.w-lg-75.mx-auto.text-center.item-content
+									p.text-white Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto beatae natus doloribus animi blanditiis expedita.
+									a.text-white(href="#") +More
+		<!-- End Product showcase section -->
+		
+		
+		<!-- industries section -->
+		.section#industries-sec
+			.container
+				.row.my-2
+					.col-12#industries-sec-title
+						h1.text-primary.text-center.text-uppercase.font-weight-bold.mt-5.wow.fadeInUp( data-wow-offset="40" data-wow-duration="1.25s") INDUSTRIES
+				.row.my-2.wow.fadeIn(data-wow-offset="40" data-wow-duration="1.25s" data-wow-delay="0.5s")
+					.col-8.offset-2.text-center#industries-sec-carouselNav
+						a.col-3.py-5.active(href="#industries-one")
+							//- .active 
+							span.icon-building
+								span.path1
+								span.path2
+								span.path3
+								span.path4
+								span.path5
+								span.path6
+								span.path7
+								span.path8
+								span.path9
+								span.path10
+								span.path11
+								span.path12
+								span.path13
+								span.path14
+								span.path15
+								span.path16
+								span.path17
+								span.path18
+								span.path19
+								span.path20
+								span.path21
+								span.path22
+								span.path23
+								span.path24
+								span.path25
+								span.path26
+								span.path27
+								span.path28
+								span.path29
+								span.path30
+								span.path31
+								span.path32
+								span.path33
+								span.path34
+								span.path35
+								span.path36
+								span.path37
+							span.icon-text.text-dark REAL ESTATE
+						a.col-3.py-5(href="#industries-two")
+							span.icon-pen
+								span.path1
+								span.path2
+								span.path3
+								span.path4
+								span.path5
+								span.path6
+								span.path7
+								span.path8
+							span.icon-text.text-dark GOVERNMENTAL
+							
+						a.col-3.py-5(href="#industries-three")
+							span.icon-house
+								span.path1
+								span.path2
+								span.path3
+								span.path4
+								span.path5
+								span.path6
+								span.path7
+								span.path8
+								span.path9
+								span.path10
+								span.path11
+								span.path12
+								span.path13
+								span.path14
+								span.path15
+							span.icon-text.text-dark BANKING
+							
+						a.col-3.py-5(href="#industries-four")
+							span.icon-signal
+								span.path1
+								span.path2
+								span.path3
+								span.path4
+								span.path5
+								span.path6
+								span.path7
+								span.path8
+								span.path9
+
+							span.icon-text.text-dark TELECOMMUNICATION
+							
+					.col-12
+						.owl-carousel.owl-theme#industries-sec-carousel
+							.item(data-hash="industries-one")
+								.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-5.px-2.mb-5
+									.card-icon.col-lg-4.col-12
+										span.icon-building
+											span.path1
+											span.path2
+											span.path3
+											span.path4
+											span.path5
+											span.path6
+											span.path7
+											span.path8
+											span.path9
+											span.path10
+											span.path11
+											span.path12
+											span.path13
+											span.path14
+											span.path15
+											span.path16
+											span.path17
+											span.path18
+											span.path19
+											span.path20
+											span.path21
+											span.path22
+											span.path23
+											span.path24
+											span.path25
+											span.path26
+											span.path27
+											span.path28
+											span.path29
+											span.path30
+											span.path31
+											span.path32
+											span.path33
+											span.path34
+											span.path35
+											span.path36
+											span.path37
+									.card-content.col-lg-8.col-md-12.d-flex.flex-column.align-items-start.justify-content-around.py-5
+										h1 real state
+										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus! Consequuntur quod possimus eos!
+							.item(data-hash="industries-two")
+								.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-5.px-2.mb-5
+									.card-icon.col-lg-4.col-md-12
+										span.icon-pen
+											span.path1
+											span.path2
+											span.path3
+											span.path4
+											span.path5
+											span.path6
+											span.path7
+											span.path8
+
+									.card-content.col-lg-8.col-md-12.d-flex.flex-column.align-items-start.justify-content-around.py-5
+										h1 GOVERNMENTAL
+										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus! Consequuntur quod possimus eos!
+							.item(data-hash="industries-three")
+								.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-5.px-2.mb-5
+									.card-icon.col-lg-4.col-md-12
+										span.icon-house
+											span.path1
+											span.path2
+											span.path3
+											span.path4
+											span.path5
+											span.path6
+											span.path7
+											span.path8
+											span.path9
+											span.path10
+											span.path11
+											span.path12
+											span.path13
+											span.path14
+											span.path15
+									.card-content.col-lg-8.col-md-12.d-flex.flex-column.align-items-start.justify-content-around.py-5
+										h1 BANKING
+										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus! Consequuntur quod possimus eos!
+							.item(data-hash="industries-four")
+								.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-5.px-2.mb-5
+									.card-icon.col-lg-4.col-md-12
+										span.icon-signal
+											span.path1
+											span.path2
+											span.path3
+											span.path4
+											span.path5
+											span.path6
+											span.path7
+											span.path8
+											span.path9
+
+									.card-content.col-lg-8.col-md-12.d-flex.flex-column.align-items-start.justify-content-around.py-5
+										h1 TELECOMMUNICATION
+										p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus! Consequuntur quod possimus eos!
+		<!-- End Industries section -->
+		
+		<!-- Geeks section -->		
+		.section#geeks-sec
+			.container.h-100
+				.row.h-100.justify-content-center.align-items-center.flex-column
+					span.icon-programmer.py-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40")
+					h1.text-white.text-uppercase.wow.fadeInUp(data-wow-offset="40" data-wow-duration="1.25s" data-wow-delay="0.25s" ) WE APPRECIATE GEEKS
+					h2.text-white.text-capitalize.wow.fadeInUp(data-wow-offset="40" data-wow-duration="1.25s" data-wow-delay="0.5s") if you are one, join us now
+					a.btn.btn-outline-light.btn-lg.text-uppercase.mt-5.py-3.px-5.wow.fadeInUp(href="#" data-wow-offset="40" data-wow-duration="1.25s" data-wow-delay="0.75s") apply now
+		<!-- End Geeks section -->		
+		
+		<!-- Countries Carousel section -->
+		.section#countries-sec
+			.container
+				.row.h-100
+					.col-12.mb-4
+						h1#countries-sec-title.text-white.text-uppercase.font-weight-bold.wow.fadeInUp( data-wow-offset="40" data-wow-duration="1.25s") countries
+					.col-lg-3.offset-lg-0.col-sm-8.offset-sm-2.col-8.offset-2.owl-carousel.owl-theme.bg-white.shadow-lg.wow.fadeIn#countries-sec-slider-one(data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.25s")
+						.item
+							.d-flex.flex-column.align-items-start.justify-content-center
+								h2.text-primary.text-uppercase egypt
+								p.text-gray Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit tenetur nobis reiciendis veritatis. Quam, ad.
+						.item
+							.d-flex.flex-column.align-items-start.justify-content-center
+								h2.text-primary.text-uppercase uae
+								p.text-gray Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit tenetur nobis reiciendis veritatis. Quam, ad.
+						.item
+							.d-flex.flex-column.align-items-start.justify-content-center
+								h2.text-primary.text-uppercase ksa
+								p.text-gray Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit tenetur nobis reiciendis veritatis. Quam, ad.
+					.col-lg-9.col-sm-12.owl-carousel.owl-theme.h-100#countries-sec-slider-two
+						.item.text-center
+							img(src="./images/Egypt.png")
+						.item.text-center
+							img(src="./images/KSA.png")
+						.item.text-center
+							img(src="./images/UAE.png")
+		<!-- End Countries Carousel section -->
+
+		<!-- Clients section -->		
+		.section#clients-sec
+			.container
+				.row.justify-content-center.align-items-center.mx-auto#clients-sec-title
+					h1.text-primary.text-uppercase.wow.fadeInUp( data-wow-offset="40" data-wow-duration="1.25s") our clients
+					p.text-center.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.25s") Our customers are our heart , KN has a clear strategy to maintain its customers satisfaction , we expect to exceed your dreams through our professional products and services
+				.row#clients-sec-images
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-1.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.5s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-2.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.75s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-3.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="1s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-4.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="1.25s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-5.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="1.5s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-6.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="1.75s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-7.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="2s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-8.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="2.25s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-9.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="2.5s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-10.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="2.75s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-11.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="3s")
+					.col-6.col-md-3.col-lg-2.my-md-3.text-center
+						img.wow.fadeInUp(src="./images/client-12.png" data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="3.25s")
+		<!-- End Clients section -->		
+
+		<!-- Footer section -->				
+		.section#footer-sec
+			include ./partials/footerSec.pug
+		<!-- End Footer section -->

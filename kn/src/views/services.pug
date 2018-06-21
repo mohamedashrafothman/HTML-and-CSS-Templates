@@ -1,0 +1,98 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark')
+	section#services-header
+		.blured-header
+			.bg-blure
+			.container
+				.row
+					.blured-header-container.col-12
+						h3.text-uppercase.text-center.my-2.wow.fadeInUp(data-wow-duration="1.25s") we provide
+	section#services-content
+		.container
+			.row
+				.services.col-12
+					a.row.service.py-4.px-2.wow.fadeInUp(href="single_service.html" data-wow-offset="40" data-wow-duration="1.25s")
+						.service-description.col-lg-10.col-12
+							h1.text-uppercase application modernization
+							p Most large enterprises have aging applications that surround its core systems. These applications are typically difficult to integrate, modify and maintain.
+						.service-icon.col-lg-2.col-12
+							span.icon-application
+					a.row.service.py-4.px-2.wow.fadeInUp(href="single_service.html" data-wow-offset="40" data-wow-duration="1.25s" )
+						.service-description.col-lg-10.col-12
+							h1.text-uppercase MISSION CRITICAL APPLICATION DEVELOPMENT
+							p Designing, developing and testing mission critical applications that act like off the shelf products is an extremely demanding set of processes. We master them.
+						.service-icon.col-lg-2.col-12
+							span.icon-web-app
+					a.row.service.py-4.px-2.wow.fadeInUp(href="single_service.html" data-wow-offset="40" data-wow-duration="1.25s")
+						.service-description.col-lg-10.col-12
+							h1.text-uppercase ENTERPRISE MOBILITY
+							p Most large enterprises have aging applications that surround its core systems. These applications are typically difficult to integrate, modify and maintain.
+						.service-icon.col-lg-2.col-12
+							span.icon-mobile
+					a.row.service.py-4.px-2.wow.fadeInUp(href="single_service.html" data-wow-offset="40" data-wow-duration="1.25s" )
+						.service-description.col-lg-10.col-12
+							h1.text-uppercase SYSTEMS AND DATA INTEGRATION
+							p This service is offered customized in accordance to specific customer needs. We deploy our vast experience successfully building interfaces based on leading integration technologies from IBM, Oracle and Microsoft
+						.service-icon.col-lg-2.col-12
+							span.icon-data
+	section#services-features
+		.container
+			.row.my-5
+				#services-features-title.mx-auto.text-center
+					h1.text-uppercase.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") features services
+					p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") KN implementation services are structured to smoothly, quickly and efficiently deploy KN solutions, while mitigating risk and managing the impact to your business and operations environment.
+			.row.my-2.wow.fadeIn(data-wow-duration="1.25s" data-wow-offset="40" data-wow-delay="0.25s")
+				.col-10.offset-1.text-center#services-features-carouselNav
+					a.col-3.py-4(href="#industries-one")
+						span.icon-text.text-dark Project management
+
+					a.col-3.py-4(href="#industries-two")
+						span.icon-text.text-dark INSTALLATION & CONFIGURATION
+						
+					a.col-3.py-4(href="#industries-three")
+						span.icon-text.text-dark INTEGRATION SERVICES
+						
+					a.col-3.py-4(href="#industries-four")
+						span.icon-text.text-dark DATA MIGRATION
+						
+				.col-12
+					.owl-carousel.owl-theme#services-features-carousel
+						.item(data-hash="industries-one")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 PROJECT MANAGEMENT
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+						.item(data-hash="industries-two")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 INSTALLATION & CONFIGURATION
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+						.item(data-hash="industries-three")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 INTEGRATION SERVICES
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+
+						.item(data-hash="industries-four")
+							.card.shadow.row.d-flex.flex-lg-row.flex-md-column.mx-auto.py-sm-5.p-lg-5.mb-5
+								
+								.card-content.col-12.d-flex.flex-column.align-items-start.justify-content-around.py-3
+									h1 DATA MIGRATION
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+									p Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam quod alias aliquid porro a maiores. Illo quae distinctio voluptates quasi iusto magni recusandae soluta deleniti voluptatibus!
+
+	include ./partials/footerSec.pug
+	

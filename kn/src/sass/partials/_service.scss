@@ -1,0 +1,73 @@
+.services{
+	.service{
+		border-top: 1px solid $white;
+		background-color: transparent;
+		transition: all 0.5s ease-in-out;
+		text-decoration: none;
+		min-height: 14rem;
+		&-description{
+			display: flex;
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+			h1,
+			p {
+				color: $white;
+				transition: all 0.5s ease-in-out;
+			}
+			
+			h1 {
+				font-family: $font-oswald;
+				font-weight: 200;
+				font-size: 3.1rem;
+				@include media-breakpoint-down(sm){
+					font-size: 2.8rem;
+				}
+			}
+
+			p {
+				font-weight: lighter;
+				font-size: 1.4rem;
+				font-family: $font-roboto;
+				visibility: visible;
+				@include media-breakpoint-down(sm){
+					font-size: 2rem;
+				}
+			}
+		}
+		&-icon{
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			@include media-breakpoint-down(md){
+				justify-content: left;
+			}
+			span[class^="icon-"]{
+				font-size: 6rem;
+				transform: all 0.5s ease-in-out;
+			}
+		}
+		&:last-of-type {
+			border-bottom: 1px solid $white;
+			margin-bottom: 7rem;
+		}
+
+		&:hover{
+			background-color: $white;
+			transform: scale(1.1, 1.1);
+			border-radius: 1.2rem;
+			box-shadow: $box-shadow;
+			h1,
+			p,
+			span[class^="icon-"]::before {
+				color: $black;
+			}
+			h1{
+				margin-bottom: -5rem;
+			}
+			p{
+				opacity: 0;
+			}
+		}
+	}
+}

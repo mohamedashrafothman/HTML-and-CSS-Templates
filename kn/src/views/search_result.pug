@@ -1,0 +1,36 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark')
+	section#search-results
+		.container
+			.row.justify-content-center
+				h1#search-results-title.text-primary.font-weight-light.wow.fadeInUp(data-wow-duration="1.25s") Search for “Lorem ipsum”
+			.row.mt-5
+				#search-results-content
+					a.card.shadow-lg.wow.fadeInUp( href="#" data-wow-offset=`40` data-wow-duration="1.25s")
+						h2.card-title Search result number 1
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+					a.card.shadow-lg.wow.fadeInUp( href="#" data-wow-offset=`40` data-wow-duration="1.25s")
+						h2.card-title Search result number 2
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+					a.card.shadow-lg.wow.fadeInUp( href="#" data-wow-offset=`40` data-wow-duration="1.25s")
+						h2.card-title Search result number 3
+						p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+				#search-results-pagenation.w-100.d-flex.flex-row.justify-content-center
+					nav.wow.fadeInUp(aria-label='...' data-wow-duration="1.25s" data-wow-offset="40")
+						ul.pagination.pagination-lg
+							li.page-item.disabled
+								a.page-link.bg-transparent(href='#', tabindex='-1') 1
+							li.page-item.active
+								a.page-link.bg-transparent(href='#') 2
+							li.page-item
+								a.page-link.bg-transparent(href='#') 3
+
+	include ./partials/footerSec.pug

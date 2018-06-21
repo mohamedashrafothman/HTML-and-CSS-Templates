@@ -1,0 +1,154 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark')
+	section#about-header
+		.blured-header
+			.bg-blure
+			.container
+				.row
+					.blured-header-container.col-12
+						h3.text-uppercase.text-center.my-2.wow.fadeInUp(data-wow-duration="1.25s") what is kn?
+						p.mx-auto.wow.fadeInUp(data-wow-duration="1.25s" data-wow-dalay="0.25s") KN productizes mission critical solutions. Productizing is a way of life for us. Even when the software is designed for use by a single customer, like in custom applications, we architect it, design it, build it, and test it like we would any product. 
+						p.mx-auto.wow.fadeInUp(data-wow-duration="1.5s" data-wow-dalay="0.5s") This provides the customer with a user experience, an architecture, security assurance and software performance that matches the highest of industry standards in software creation. 
+						p.mx-auto.wow.fadeInUp(data-wow-duration="1.75s" data-wow-dalay="0.75s") The value of our approach becomes evident in the maintainability of the software we produce, effectively addressing one of the most challenging aspects of custom software development.
+	section#about-main-sec
+		.container
+			.row
+				.col-lg-6.col-12#about-main-sec-content
+					h1.text-uppercase.wow.fadeInUp(data-wow-offset="60" data-wow-duration="1.25s") CERTAINTY IS HIGHER WITH US
+					p.text-justify.wow.fadeInUp(data-wow-duration="1.25s" data-wow-dalay="0.5s" data-wow-offset="60") because we leverage our own mission critical engine to build custom software. This is the same engine we use to build our own mission critical products like TradeNet and nYouBank. Not only is the engine said to be mission critical, but is also tested in the most demanding production environments. 
+					p.text-justify.wow.fadeInUp(data-wow-duration="1.5s" data-wow-dalay="0.75s" data-wow-offset="60") Productizing custom software also provides a much wider reference than a single customer’s set of requirement does. It ensures the inclusion of latest industry trends, offering of other ready applications, and general requirements from multiple sources. This results in a more robust output that is sustainable and future proof.
+				.col-lg-6.col-12.text-center#about-main-sec-img
+					img.wow.fadeInRight(src="../images/about-side-icons.png" data-wow-offset="60" data-wow-duration="1.75s")
+	section#about-custom-software
+		.container
+			.row
+				.col-lg-6.col-12.p-0#about-custom-software-img
+					img.wow.fadeInLeft(src="../images/about-float-img.png" data-wow-duration="1.75s" data-wow-offset="60")
+				.col-lg-6.col-12#about-custom-software-content
+					h1.text-uppercase.wow.fadeInUp(data-wow-offset="60" data-wow-duration="1.25s") BUILDING CUSTOM SOFTWARE
+					p.text-justify.wow.fadeInUp(data-wow-duration="1.5s" data-wow-dalay="0.25s" data-wow-offset="60") like a product emphasizes the need for the produced software to co-exist and to be able to expand in response to potential future requirement. To satisfy these needs, the software is built using industry open standards for integration and is built on a parameter-based configuration platform. 
+					p.text-justify.wow.fadeInUp(data-wow-duration="1.75s" data-wow-dalay="0.5s" data-wow-offset="60") The software we build is, by default, portable on mobile and tablets as the platforms of the future. Additionally, integration with social media and optimization for effective internet presence is built into our thought process and delivery capability.
+
+	section#about-clients
+		.container
+			.row.justify-content-center.align-items-center.mx-auto
+				.toggle-container.cf
+					.switch-toggles
+						.clients clients
+						.partner partners
+			.position-relative
+				.about-clients
+					.row.justify-content-center.align-items-center.mx-auto#about-clients-title
+						h1.text-primary.text-uppercase our clients
+						p.text-center Our customers are our heart , KN has a clear strategy to maintain its customers satisfaction , we expect to exceed your dreams through our professional products and services
+					.row#about-clients-images
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (1).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (2).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (3).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (4).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (5).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (6).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (7).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (8).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (9).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (10).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (11).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (12).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (13).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (14).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (15).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (16).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (17).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (18).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (19).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (20).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (21).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (22).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (23).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (24).png", alt="")
+
+				.about-partners
+					.row.justify-content-center.align-items-center.mx-auto#about-clients-title
+						h1.text-primary.text-uppercase our Partners
+						p.text-center Our customers are our heart , KN has a clear strategy to maintain its customers satisfaction , we expect to exceed your dreams through our professional products and services
+					.row#about-clients-images
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (1).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (2).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (3).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (4).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (5).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (6).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (7).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (8).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (9).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (10).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (11).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (12).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (13).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (14).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (15).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (16).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (17).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (18).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (19).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (20).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (21).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (22).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (23).png", alt="")
+						.col-6.col-md-3.col-lg-2.my-md-3.text-center
+							img(src="./images/client (24).png", alt="")
+
+	include ./partials/footerSec.pug
+	

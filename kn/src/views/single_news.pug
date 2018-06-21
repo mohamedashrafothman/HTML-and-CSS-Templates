@@ -1,0 +1,66 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark')
+	section#single-news-header
+		.blured-header
+			.bg-blure
+			.container
+				.row
+					.blured-header-container.col-12
+						h3.text-uppercase.text-center.my-2.wow.fadeInUp(data-wow-duration="1.25s") news
+						ul.d-flex.flex-row.justify-content-center.align-items-center.h-25.my-1.mx-auto
+							li.mr-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.25s") home
+							li.mr-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.5s") news
+							li.mr-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") DFM Honored Three of KN Brokerage firms
+	section#single-news-content
+		.container
+			.row
+				.col-12
+					#single-news-content-title
+						h1.wow.fadeInUp(data-wow-duration="1.25s") DFM Honors Three of KN Brokerage Firms for Introduction of Trading via Smart Phone Applications
+						ul.d-flex.flex-row.justify-content-start.align-items-center.h-25.my-3
+							li.pr-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.25s") By Eman taky
+							li.pr-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.5s") property
+							li.pr-3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-delay="0.75s") 14 February, 2018
+			.row
+				.col-lg-8.col-12
+					main#single-news-content-main.py-4
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="20") Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi omnis. Architecto cum magnam, eveniet ea sequi beatae saepe cupiditate cumque facere odio. Animi, ratione?
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="20") Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi omnis. Architecto cum magnam, eveniet ea sequi beatae saepe cupiditate cumque facere odio. Animi, ratione?
+						p.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="20") Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium, animi omnis. Architecto cum magnam, eveniet ea sequi beatae saepe cupiditate cumque facere odio. Animi, ratione?
+				.col-lg-4.col-12
+					#single-news-content-side.d-flex.flex-column.align-items-start.py-4
+						p.text-uppercase.h5 share
+						ul.d-flex.flex-column.align-items-stretch
+							li.text-capitalize.my-1.py-1.px-2.wow.fadeInUp(data-wow-offset="20" data-wow-duration="1.25s" data-wow-delay="0.25s")
+								a.link-fb(href="#")
+									i.fab.fa-facebook-f
+									span.ml-4 facebook
+							li.text-capitalize.my-1.py-1.px-2.wow.fadeInUp(data-wow-offset="20" data-wow-duration="1.25s" data-wow-delay="0.5s")
+								a.link-tw(href="#")
+									i.fab.fa-twitter
+									span.ml-4 twitter
+							li.text-capitalize.my-1.py-1.px-2.wow.fadeInUp(data-wow-offset="20" data-wow-duration="1.25s" data-wow-delay="0.75s")
+								a.link-gp(href="#")
+									i.fab.fa-google-plus-g
+									span.ml-4 google plus
+							li.text-capitalize.my-1.py-1.px-2.wow.fadeInUp(data-wow-offset="20" data-wow-duration="1.25s" data-wow-delay="1s")
+								a.link-li(href="#")
+									i.fab.fa-linkedin-in
+									span.ml-4 linked in
+
+	section#single-news-more
+		.container
+			.row.justify-content-center
+				h1.pb-5.text-primary.text-uppercase.title.wow.fadeIn(data-wow-offset="20" data-wow-duration="1.25s") MORE ARTICLES
+				- var news = [{title: 'Join KN at Gartner Symposium ITxpo', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'},{title: 'Join KN at Gartner Symposium ITxpo', content: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.'}];
+					each article, index in news
+						+news(index, `news-${index+1}.png`, 'col-12', 'single_news.html', article.title, article.content)
+						
+
+	include ./partials/footerSec.pug

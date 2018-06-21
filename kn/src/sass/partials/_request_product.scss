@@ -1,0 +1,53 @@
+#request-product {
+	.modal-content {
+		border-radius: 1rem;
+		box-shadow: none;
+	}
+	.modal-header {
+		.close {
+			padding: 2rem;
+			.lnr-cross {
+				font-size: 3rem;
+			}
+		}
+		h1 {
+			color: $blue;
+			font-family: $font-roboto;
+			font-weight: bold;
+			line-height: 4.7rem;
+			font-size: 4rem;
+			text-transform: uppercase;
+		}
+	}
+	.modal-body {
+		padding: 5.1rem 0 0;
+		form {
+			width: 75%;
+			select {
+				height: 5rem;
+				box-shadow: none;
+				border-radius: 1rem;
+				&:focus {
+					border: 1px solid #ced4da;
+				}
+				option {
+					color: $gray-600;
+				}
+			}
+			@include media-breakpoint-down(md) {
+				width: 100%;
+			}
+		}
+	}
+	.modal-footer {
+		padding: 5.1rem 0;
+		.btn-primary {
+			font-size: 1.6rem;
+			font-family: $font-oswald;
+			font-weight: 400;
+			text-transform: uppercase;
+			border-radius: 3rem;
+			padding: 1rem 5.7rem;
+		}
+	}
+}

@@ -1,0 +1,140 @@
+extends index-layout.pug
+include ./mixins/_nav.pug
+include ./mixins/_news_card.pug
+
+block content
+	include ./partials/fullScreenMenu.pug
+	+nav('dark', 'relative')
+	section#product-header
+		#product-header-side
+			img.wow.fadeInUp(src="../images/tradenet-logoW-lg.png" alt="product logo" data-wow-duration="1.25s")
+			h1.wow.fadeInUp#product-header-side-title(data-wow-duration="1.25s") THE INTELLIGENT EQUITY TRADING PLATFORM
+			p.wow.fadeInUp(data-wow-duration="1.25s") Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veniam earum consequatur aperiam ab a voluptas dolor.
+			div#product-header-side-btnGroup
+				a.btn.btn-light.btn-lg.text-uppercase.bg-white.wow.fadeInUp(data-wow-duration="1.25s" href="#" data-toggle="modal" data-target="#request-product") request a demo
+				a.btn.btn-outline-light.btn-lg.text-uppercase.wow.fadeInUp(data-wow-duration="1.25s" href="single_product.html") know mote about tradent
+				
+	//- section#product-deliver
+	//- 	.container
+	//- 		.row.flex-column.align-items-center.justify-content-center
+	//- 			h1 we deliver
+	//- 			h3 a better solution
+	//- 			h5 fits the needs of today market
+	section#product-about
+		.container
+			.row
+				.col-lg-5.col-12#product-about-content
+					h1.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") The people, and the product are specifically geared to serve Emerging Markets.
+					p.wow.fadeInUp(data-wow-duration="1.5s" data-wow-offset="40") Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+					a.btn.btn-primary.btn-lg.wow.fadeInUp(href="single_product.html" data-wow-duration="1.75s" data-wow-offset="40") KNOW MORE ABOUT TRADENET
+
+				.col-lg-6.offset-lg-1.col-12.d-none.d-lg-block#product-about-img
+					img.shadow-lg.wow.fadeInUp(src="../images/product-about-img.png" data-wow-duration="1.25s" data-wow-offset="40")
+	section#product-features
+		div
+			h3.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") ADVANCED INTERNET TRADING
+		div
+			h3.wow.fadeInUp(data-wow-duration="1.5s" data-wow-offset="40") TRADES & DEALERS WORKSTATION
+		div
+			h3.wow.fadeInUp(data-wow-duration="1.75s" data-wow-offset="40") MOBILE & TABLET FRIENDLY
+		div
+			h3.wow.fadeInUp(data-wow-duration="2s" data-wow-offset="40") RISK MANAGEMENT & BACK OFFICE
+
+	section#product-users
+		.container
+			.row
+				h1.col-12.text-center.wow.fadeInUp#product-users-title(data-wow-duration="1.25s" data-wow-offset="40") WHO’S USING TRADENET
+				.owl-carousel.owl-theme#product-users-owl
+					.item
+						img(src="../images/client-1.png", alt="")
+					.item
+						img(src="../images/client-2.png", alt="")
+					.item
+						img(src="../images/client-3.png", alt="")
+					.item
+						img(src="../images/client-4.png", alt="")
+					.item
+						img(src="../images/client-5.png", alt="")
+					.item
+						img(src="../images/client-6.png", alt="")
+					.item
+						img(src="../images/client-7.png", alt="")
+					.item
+						img(src="../images/client-8.png", alt="")
+					.item
+						img(src="../images/client-9.png", alt="")
+					.item
+						img(src="../images/client-10.png", alt="")
+					.item
+						img(src="../images/client-11.png", alt="")
+					.item
+						img(src="../images/client-12.png", alt="")
+				
+
+	section#product-video
+		.container
+			.row.flex-column.align-items-center.mx-auto
+				h1.wow.fadeInUp(data-wow-duration="1.25s" data-wow-offset="40") KN President Mr.Mohammad Attiya’s Interview to World Finance Magazine
+				a.wow.fadeInUp(href="#" data-wow-duration="1.5s" data-wow-offset="40" data-toggle="modal" data-target="#playVideoModal")
+					span.icon-play-button
+					p.wow.fadeInUp(data-wow-duration="1.75s" data-wow-offset="40") play video
+			#playVideoModal.modal.fade(tabindex='-1', role='dialog', aria-labelledby='playVideoModalLabel', aria-hidden='true')
+				.modal-dialog.modal-dialog-centered(role='document')
+					.modal-content
+						.modal-body.p-0
+							iframe.w-100.h-100#cartoonVideo(src='https://www.youtube.com/embed/fJ9rUzIMcZQ', frameborder='0', allowfullscreen='')
+
+
+	section#product-demo
+		.container
+			.row.flex-column.align-items-center.mx-auto
+				img.wow.fadeInUp(src="../images/tradenet-logoW-lg.png", alt="" data-wow-duration="1.25s" data-wow-offset="40")
+				h1.wow.fadeInUp(data-wow-duration="1.5s" data-wow-offset="40") TRY THE INTELLIGENT EQUITY TRADING PLATFORM
+				a.btn.btn-primary.btn-lg.text-uppercase.wow.fadeInUp(href="#" data-toggle="modal" data-target="#request-product" data-wow-duration="1.75s" data-wow-offset="40") request a demo
+	
+	#request-product.modal.fade.bd-example-modal-lg(tabindex='-1', role='dialog', aria-labelledby='request-productTitle', aria-hidden='true')
+		.modal-dialog.modal-dialog-centered.modal-lg(role='document')
+			.modal-content
+				.modal-header.flex-column.border-0
+					button.close(type='button', data-dismiss='modal', aria-label='Close')
+						span.lnr.lnr-cross(aria-hidden='true') 
+					h1#request-productTitle.text-center.w-100.modal-title request a demo
+				.modal-body.border-0
+					form.container(action="#")
+						.row
+							.col-lg-6.col-12.d-flex.flex-column.justify-content-around
+								.form-label-group
+									input#request-name.form-control.form-control-lg(type='text', placeholder='Name', required='')
+									label(for='request-name') Name
+								.form-label-group
+									input#request-phone.form-control.form-control-lg(type='text', placeholder='Phone', required='')
+									label(for='request-phone') Phone
+								.form-label-group
+									input#request-email.form-control.form-control-lg(type='email', placeholder='Email', required='')
+									label(for='request-phone') Email
+								.form-label-group
+									input#request-orgnization.form-control.form-control-lg(type='text', placeholder='Orgnization', required='')
+									label(for='request-orgnization') Orgnization
+							.col-lg-6.col-12.d-flex.flex-column.justify-content-around
+								.form-label-group
+									input#request-role.form-control.form-control-lg(type='text', placeholder='Role', required='')
+									label(for='request-role') Role
+								.form-group
+									select#request-product.form-control.form-control-lg
+										option(disabled selected) Select Product
+										option(value="1") 1
+										option(value="2") 2
+										option(value="3") 3
+								.form-label-group
+									textarea#request-notes.form-control.form-control-lg(rows="6" placeholder="Notes" required)
+									label(for="request-notes") Notes
+							
+				.modal-footer.border-0
+					button.btn.btn-primary.btn-lg.mx-auto.text-white(type='button') request a demo
+
+	
+	
+	
+	
+	
+	include ./partials/footerSec.pug
