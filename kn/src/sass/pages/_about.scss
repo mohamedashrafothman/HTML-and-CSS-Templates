@@ -53,6 +53,10 @@
 				}
 			}
 		}
+		@media screen and (max-height: 600px) {
+			height: 100% !important;
+			padding: 35rem 0 40rem;
+		}
 	}
 	&-custom-software{
 		position: relative;
@@ -124,6 +128,10 @@
 					font-size: 1.5rem;
 				}
 			}
+		}
+		@media screen and (max-height: 600px) {
+			height: 50rem !important;
+			padding-top: 0;
 		}
 	}
 	&-clients{

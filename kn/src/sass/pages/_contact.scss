@@ -58,7 +58,8 @@
 			z-index: 4;
 		}
 		@include media-breakpoint-down(md){
-			height: 120vh;
+			height: 100%;
+
 			&-title{
 				font-size: 4rem;
 			}

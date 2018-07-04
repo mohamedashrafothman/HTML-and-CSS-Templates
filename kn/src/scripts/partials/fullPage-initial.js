@@ -9,6 +9,9 @@ module.exports = function fullPage(){
 		loopBottom: true,
 		autoScrolling: false,
 		navigationPosition: 'right',
+		responsiveHeight: 500,
+		responsiveSlides: true
+		// fixedElements: '#main-sec'
 		// navigationTooltips: ['First', 'Second', 'Third', '4th', '5th', '6th', 'footer']
 	});
 

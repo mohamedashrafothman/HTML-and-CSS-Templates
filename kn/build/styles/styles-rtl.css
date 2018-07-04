@@ -1,0 +1,858 @@
+@import url('https://fonts.googleapis.com/css?family=Cairo:200,300,400,600,700,900');
+/* .preloader {
+	right: 0;
+	right: initial !important;
+} */
+body{
+	font-family: Cairo, sans-serif;
+}
+
+#industries-sec-title h1, 
+#clients-sec-title h1, 
+#about-main-sec-content h1,
+#about-clients-title h1{
+	letter-spacing: -1px;
+}
+
+
+.overlay-menu-products-single .product-name {
+	font-family: Cairo, sans-serif;
+}
+
+.overlay-menu-products-single .product-content-list li,
+.overlay-menu-products-single .product-content-single-name {
+	font-family: Cairo, sans-serif;
+	text-align: right;
+}
+
+.overlay-menu-products-single .product-content-single-items li a {
+	font-family: Cairo, sans-serif;
+}
+
+.overlay-menu-products-single .product-back,
+.overlay-menu-products-single .product-back-2 {
+	font-family: CAiro, sans-serif;
+	text-align: left;
+}
+
+.overlay-menu-products-single .product-back span,
+.overlay-menu-products-single .product-back-2 span {
+	margin-left: .7rem;
+	margin-right: 0;
+}
+
+.navbar-form .input-group>.input-group-append>.input-group-text {
+	border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+.Section-curve {
+	left: -2;
+	right: initial;
+}
+
+.float-number {
+	left: initial;
+	right: 0;
+}
+
+.navbar {
+	left: initial;
+	right: 0;
+}
+
+.navbar-form {
+	right: 0;
+}
+
+.navbar-form-clear {
+	margin-right: initial;
+	margin-left: 1rem;
+}
+
+.navbar-form input {
+	border-top-right-radius: 20px !important;
+	border-bottom-right-radius: 20px !important;
+	border-top-left-radius: initial !important;
+	border-bottom-left-radius: initial !important
+}
+
+.navbar-form span {
+	border-top-left-radius: 20px;
+	border-bottom-left-radius: 20px;
+	border-top-right-radius: initial;
+	border-bottom-right-radius: initial;
+}
+
+.overlay-menu-close {
+	right: initial;
+	left: 5rem;
+}
+
+#footer-top p {
+	font-family: Cairo, sans-serif;
+}
+
+.services .service-description h1 {
+	font-family: Cairo, sans-serif;
+}
+
+.services .service-description p {
+	font-family: Cairo, sans-serif;
+}
+
+.toggle-container .switch-toggles .clients{
+    left: 0;
+    right: initial;
+    position: absolute;
+    top: 5px;
+}
+.bg-dark {
+    background-color: #152429 !important;
+}
+.custom-file .custom-file-control:before,
+.custom-file-control {
+	font-family: Cairo, sans-serif
+}
+
+.form-label-group input::-webkit-input-placeholder,
+.form-label-group textarea::-webkit-input-placeholder {
+	font-family: Cairo, sans-serif;
+}
+
+.form-label-group input:-ms-input-placeholder,
+.form-label-group textarea:-ms-input-placeholder {
+	font-family: Cairo, sans-serif;
+}
+
+.form-label-group input::-ms-input-placeholder,
+.form-label-group textarea::-ms-input-placeholder {
+	font-family: Cairo, sans-serif;
+}
+
+.form-label-group input::placeholder,
+.form-label-group textarea::placeholder {
+	font-family: Cairo, sans-serif;
+}
+
+.form-label-group input:not(:placeholder-shown),
+.form-label-group textarea:not(:placeholder-shown) {
+	font-family: Cairo, sans-serif;
+}
+
+.form-label-group input:not(:placeholder-shown)~label,
+.form-label-group textarea:not(:placeholder-shown)~label {
+	text-align: right;
+	font-family: Cairo, sans-serif;
+}
+
+.custom-file .custom-file-control:after {
+	content: 'أضف ملف تعريف';
+	font-family: Cairo, sans-serif;
+}
+
+#request-product .modal-header h1 {
+	font-family: Cairo, sans-serif;
+}
+
+#main-sec-btnGourp .btn,
+#main-sec-carousel h2,
+#main-sec-intro h1,
+#main-sec-intro h2,
+#request-product .modal-footer .btn-primary {
+	font-family: Cairo, sans-serif
+}
+
+#product-showcase-sec-carousel .item-content p {
+	font-family: Cairo, sans-serif;
+}
+
+#product-showcase-sec-carousel .item-content a {
+	font-family: Cairo, sans-serif;
+}
+
+#industries-sec-title h1 {
+	font-family: Cairo, sans-serif;
+}
+
+#industries-sec-carouselNav a .icon-text {
+	font-family: Cairo, sans-serif !important;
+}
+
+#industries-sec-carousel .item .card {
+	width: 90%;
+	border-radius: 1rem
+}
+
+#industries-sec-carousel .item .card-content p {
+	font-family: Cairo, sans-serif;
+}
+
+#geeks-sec a,
+#geeks-sec h1,
+#geeks-sec h2 {
+	font-family: Cairo, sans-serif;
+}
+
+#countries-sec .lnr-chevron-left:before {
+	content: "\e876" !important;
+}
+
+#countries-sec .lnr-chevron-right:before {
+	content: "\e875" !important;
+}
+
+#countries-sec-title {
+	font-family: Cairo, sans-serif;
+}
+
+#countries-sec-slider-one .owl-stage-outer .item h2 {
+	font-family: Cairo, sans-serif;
+}
+
+#clients-sec-title h1,
+#clients-sec-title p,
+#countries-sec-slider-one .owl-stage-outer .item p {
+	font-family: Cairo, sans-serif
+}
+
+#countries-sec-slider-one .owl-stage-outer .item p {
+	text-align: right
+}
+
+#news-sec .card-body h3,
+#news-sec-title {
+	font-family: Cairo, sans-serif;
+}
+
+#news-sec .card-img-left {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	border-top-left-radius: initial;
+	border-bottom-left-radius: initial;
+}
+
+@media (max-width:991.98px) {
+	#news-sec .card-img-left {
+		border-bottom-right-radius: 0;
+		border-top-left-radius: 1rem;
+		border-bottom-left-radius: initial;
+		border-top-right-radius: initial;
+	}
+}
+
+#news-sec .card-body {
+	border-radius: 0;
+}
+
+#news-sec .card-body p {
+	font-family: Cairo, sans-serif;
+}
+
+#news-sec .card-footer {
+	border-radius: 0;
+	border: 0
+}
+
+#news-sec .card-footer ul li {
+	font-family: Cairo, sans-serif;
+	margin-right: 1.5rem;
+	margin-left: 0;
+}
+
+@media (max-width:767.98px) {
+	#news-sec .card-footer ul li {
+		margin-right: .5rem;
+		margin-left: 0;
+	}
+}
+
+#news-sec .card-footer ul li:not(:last-of-type)::after {
+	margin-right: 1rem;
+	margin-left: 0;
+}
+
+@media (max-width:767.98px) {
+	#news-sec .card-footer ul li:not(:last-of-type)::after {
+		margin-right: .5rem;
+		margin-left: 0;
+	}
+}
+
+#single-news-header .blured-header .bg-blure {
+	font-family: Cairo, sans-serif;
+}
+
+#single-news-header .blured-header-container {
+	padding: 14rem 0 7rem;
+}
+
+#single-news-header .blured-header-container h3,
+#single-news-header .blured-header-container h4 {
+	font-family: Cairo, sans-serif;
+}
+
+#single-news-header .blured-header-container p {
+	font-family: Cairo, sans-serif;
+}
+
+@media (max-width:991.98px) {
+	#news-sec .card-footer {
+		border-bottom-right-radius: 1rem
+	}
+}
+
+#single-news-content-title h1,
+#single-news-content-title ul li {
+	text-align: right;
+	font-family: Cairo, sans-serif
+}
+
+#single-news-header .blured-header-container ul li:not(:last-of-type)::after {
+	padding-right: 1rem;
+	padding-left: 0;
+}
+
+#single-news-content-title ul li:not(:last-of-type)::after {
+	padding-right: 1.3rem;
+	padding-left: 0;
+}
+
+#single-news-content-main p {
+	font-family: Cairo, sans-serif;
+}
+
+#single-news-content-side p {
+	font-family: Cairo, sans-serif;
+}
+
+#single-news-more .title {
+	font-family: Cairo, sans-serif;
+}
+
+#single-news-more .card-img-left {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+}
+
+@media (max-width:991.98px) {
+	#single-news-more .card-img-left {
+		border-bottom-right-radius: 0;
+		border-top-left-radius: 1rem;
+	}
+}
+#single-news-more .card-body{
+	border-radius: 0;
+}
+
+#single-news-more .card-body h3 {
+	font-family: Cairo, sans-serif;
+}
+
+@media (max-width:991.98px) {
+	#single-news-more .card-body {
+		border-top-left-radius: 0
+	}
+}
+
+#single-news-more .card-body p {
+	font-family: Cairo, sans-serif;
+}
+#single-news-more .card-footer{
+	border-radius: 0;
+}
+
+#single-news-more .card-footer ul li {
+	font-family: Cairo, sans-serif;
+}
+
+@media (max-width:767.98px) {
+	#single-news-more .card-footer ul li {
+		margin-right: .5rem
+	}
+}
+
+#single-news-more .card-footer ul li:not(:last-of-type)::after {
+	margin-right: 1rem
+}
+
+@media (max-width:767.98px) {
+	#single-news-more .card-footer ul li:not(:last-of-type)::after {
+		margin-right: .5rem
+	}
+}
+
+#services-header .blured-header .bg-blure {
+	font-family: Cairo, sans-serif;
+}
+
+#services-header .blured-header-container h3,
+#services-header .blured-header-container h4 {
+	font-family: Cairo, sans-serif;
+}
+
+#services-features-title h1,
+#services-features-title p,
+#services-header .blured-header-container p {
+	font-family: Cairo, sans-serif
+}
+
+@media (max-width:991.98px) {
+	#single-news-more .card-footer {
+		border-bottom-right-radius: 1rem
+	}
+}
+
+#services-header .blured-header-container ul li:not(:last-of-type)::after {
+	padding-right: 1rem
+}
+
+#services-features-carouselNav a .icon-text {
+	font-family: Cairo, sans-serif !important;
+}
+
+#services-features-carousel .item .card-content h1 {
+	font-family: Cairo, sans-serif;
+}
+
+#services-features-carousel .item .card-content p {
+	font-family: Cairo, sans-serif;
+}
+
+#single-service .blured-header .bg-blure {
+	font-family: Cairo, sans-serif;
+}
+
+#single-service .blured-header-container h3,
+#single-service .blured-header-container h4 {
+	font-family: Cairo, sans-serif;
+}
+
+#single-service .blured-header-container p {
+	font-family: Cairo, sans-serif;
+}
+
+#single-service-content p,
+#single-service-nav .tab-content .tab-pane .card h1,
+#single-service-nav .tab-content .tab-pane .card p {
+	text-align: right;
+}
+
+#single-service-nav .nav-link,
+#single-service-nav .tab-content .tab-pane .card h1 {
+	font-family: Cairo, sans-serif
+}
+
+#single-service .blured-header-container ul li:not(:last-of-type)::after {
+	padding-right: 1rem
+}
+
+#single-service-content p {
+	font-family: Cairo, sans-serif;
+}
+
+#single-service-nav .tab-content .tab-pane .card p {
+	font-family: Cairo, sans-serif;
+}
+
+#about-header .blured-header-container h3,
+#about-header .blured-header-container h4 {
+	font-family: Cairo, sans-serif;
+}
+
+#about-header .blured-header-container p {
+	font-family: Cairo, sans-serif;
+}
+
+#about-header .blured-header-container ul li:not(:last-of-type)::after {
+	padding-right: 1rem
+}
+
+#about-main-sec-content h1 {
+	font-family: Cairo, sans-serif;
+}
+
+#about-main-sec-content p {
+	font-family: Cairo, sans-serif;
+}
+
+#about-custom-software-content h1 {
+	font-family: Cairo, sans-serif;
+	text-align: right
+}
+
+#about-clients-title h1,
+#about-clients-title p,
+#about-custom-software-content p {
+	font-family: Cairo, sans-serif
+}
+
+#careers .blured-header .bg-blure {
+	font-family: Cairo, sans-serif;
+}
+
+#careers .blured-header-container h3,
+#careers .blured-header-container h4 {
+	font-family: Cairo, sans-serif;
+}
+
+#careers .blured-header-container p {
+	font-family: Cairo, sans-serif;
+}
+
+#careers .blured-header-container ul li:not(:last-of-type)::after {
+	padding-right: 1rem
+}
+
+#careers-content {
+	text-align: right
+}
+
+#careers-content p {
+	font-family: Cairo, sans-serif;
+}
+
+#careers-departments h2 {
+	font-family: Cairo, sans-serif;
+}
+
+#careers-departments p,
+#careers-vacancies-title {
+	font-family: Cairo, sans-serif
+}
+
+#careers-departments p {
+	padding-left: 2rem;
+	padding-right: 0;
+}
+
+#careers-vacancies-content .card-img-left {
+	border-top-right-radius: 1rem;
+	border-bottom-right-radius: 1rem;
+	border-top-left-radius: initial;
+	border-bottom-left-radius: initial;
+}
+
+@media (max-width:991.98px) {
+	#careers-vacancies-content .card-img-left {
+		border-bottom-left-radius: initial;
+		border-top-right-radius: initial;
+		border-bottom-right-radius: 0;
+		border-top-left-radius: 1rem;
+	}
+}
+
+@media (max-width:991.98px) {
+	#careers-vacancies-content .card-body {
+		border-top-left-radius: 0;
+		border-top-right-radius: initial;
+	}
+}
+
+#careers-vacancies-content .card-body p {
+	font-family: Cairo, sans-serif;
+}
+
+@media (max-width:991.98px) {
+	#careers-vacancies-content .card-footer {
+		border-bottom-right-radius: 1rem;
+		border-bottom-left-radius: initial
+	}
+}
+
+#careers-vacancies-content .card-footer ul li {
+	font-family: Cairo, sans-serif;
+}
+
+@media (max-width:767.98px) {
+	#careers-vacancies-content .card-footer ul li {
+		margin-right: .5rem
+	}
+}
+
+#careers-vacancies-content .card-footer ul li:not(:last-of-type)::after {
+	margin-right: 1rem;
+	margin-left: 0px;
+}
+
+#careers-vacancies-content .modal-header h4 {
+	font-family: Cairo, sans-serif;
+}
+
+#careers-join-us-title h1,
+#careers-join-us-title p,
+#careers-vacancies-content .modal-body h6,
+#careers-vacancies-content .modal-body p,
+#careers-vacancies-content .modal-header ul li {
+	font-family: Cairo, sans-serif
+}
+
+@media (max-width:767.98px) {
+	#careers-vacancies-content .card-footer ul li:not(:last-of-type)::after {
+		margin-right: .5rem;
+		margin-left: 0px
+	}
+}
+
+#careers-vacancies-content .modal-header ul li:not(:last-of-type)::after {
+	padding-right: 1.3rem
+}
+
+#careers-vacancies-content .modal-header .btn:first-of-type {
+	margin-left: 1.4rem;
+	margin-right: 0px;
+}
+#product-header-side{
+	right: 0;
+	left: initial;
+}
+
+#contact-header-branches h3,
+#contact-header-title,
+#product-header-side-title {
+	font-family: Cairo, sans-serif
+}
+
+#contact-header-branches p,
+#contact-header-website,
+#contact-send-message-title h1 {
+	font-family: Cairo, sans-serif
+}
+
+#contact-send-message-form .card button[type=submit] {
+	font-family: Cairo, sans-serif;
+}
+
+#product-header-side-title {
+	font-family: Cairo, sans-serif;
+	text-align: right;
+}
+
+#product-header-side p {
+	font-family: Cairo, sans-serif;
+	text-align: right;
+	padding-right: 0;
+	padding-left: 7rem;
+}
+
+#product-about-content h1,
+#product-deliver {
+	font-family: Cairo, sans-serif
+}
+
+#product-about-content h1 {
+	padding-left: 5rem;
+	padding-right: 0;
+}
+
+#product-about-content p {
+	font-family: Cairo, sans-serif;
+}
+
+#product-features div h3 {
+	font-family: Cairo, sans-serif;
+}
+
+#product-users-title {
+	font-family: Cairo, sans-serif;
+}
+
+#product-demo h1,
+#product-video a p,
+#product-video h1 {
+	font-family: Cairo, sans-serif
+}
+
+#single-product-header-paragraph {
+	font-family: Cairo, sans-serif;
+}
+
+#single-product-about-1 p,
+#single-product-about-3-content p {
+	text-align: right;
+	font-family: Cairo, sans-serif
+}
+
+#single-product-header a.scroll-down span {
+	right: 50%;
+	margin-right: -12px;
+}
+
+@media (max-width:991.98px) {
+	#single-product-about-1 .float-number {
+		right: 3rem
+	}
+}
+
+#single-product-about-2-content p {
+	font-family: Cairo, sans-serif;
+	text-align: right;
+}
+
+#single-product-about-2-content div img:first-of-type {
+	left: -7rem;
+}
+
+#single-product-about-2-content div img:last-of-type {
+	right: -7rem
+}
+
+@media (max-width:991.98px) {
+	#single-product-about-2-content div img:first-of-type {
+		left: -15rem;
+	}
+	#single-product-about-2-content div img:last-of-type {
+		right: 0
+	}
+}
+
+#single-product-features-title {
+	font-family: Cairo, sans-serif;
+}
+
+#single-product-features-carousel .owl-stage-outer .owl-stage .owl-item .item div h5 {
+	font-family: Cairo, sans-serif;
+}
+
+#single-product-features-carousel .owl-stage-outer .owl-stage .owl-item .item div p {
+	font-family: Cairo, sans-serif;
+}
+
+#single-product-role-title h1 {
+	font-family: Cairo, sans-serif;
+}
+
+#single-product-role-carouselNav a .icon-text {
+	font-family: Cairo, sans-serif !important;
+}
+
+#single-product-role-carousel .owl-nav .owl-next {
+	left: -50px
+}
+
+#single-product-role-carousel .owl-nav .owl-prev {
+	right: -50px
+}
+
+@media (max-width:991.98px) {
+	#single-product-role-carousel .owl-nav .owl-next {
+		left: -10px
+	}
+	#single-product-role-carousel .owl-nav .owl-prev {
+		right: -10px
+	}
+}
+
+#single-product-role-carousel .item .card-content h1 {
+	font-family: Cairo, sans-serif;
+}
+
+#single-product-role-carousel .item .card-content p {
+	font-family: Cairo, sans-serif;
+}
+
+#search-results-content .card h2,
+#search-results-title,
+#single-product-demo h1 {
+	font-family: Cairo, sans-serif
+}
+
+#search-results-content .card p {
+	font-family: Cairo, sans-serif;
+}
+a.btn:active {
+	box-shadow: none !important;
+	background-color: transparent !important;
+}
+
+textarea {
+	resize: none;
+}
+
+.btn {
+	border-radius: 3rem;
+	padding-top: 1.5rem;
+	padding-bottom: 1.5rem;
+	min-width: 25.7rem;
+	font-family: Cairo;
+	font-weight: 400;
+	line-height: 2.1rem;
+	font-size: 1.6rem;
+}
+.btn:focus {
+	box-shadow: none;
+}
+.fp-section.fp-table,
+.fp-slide.fp-table {
+	width: 100vw;
+}
+
+.Section-curve {
+	position: absolute;
+	z-index: 1;
+	right: initial;
+	left: -2;
+	bottom: -1px;
+	width: calc(100% + 1px);
+	height: auto;
+	transform: rotate(0.01deg);
+}
+.float-number {
+	top: -170px;
+	right: 0;
+	left: initial;
+}
+
+.offset-lg-1 {
+	margin-right: 8.333333%;
+	margin-left: 0;}
+
+.modal-header ul li{
+	text-align: right !important;
+}
+.modal-header ul li:after{
+	padding-left: 0px !important;
+}
+.modal-title{
+	text-align: right !important;
+}
+
+#careers-vacancies-content .card-body h3{
+	font-family: Cairo, sans-serif;
+}
+
+#request-productTitle{
+	text-align: center !important;
+}
+
+#industries-sec-carousel .item .card-content h1{
+	font-family: Cairo, sans-serif;
+}
+
+.icon-product-3 .path5:before {
+	margin-right: -1.638671875em !important;
+	margin-left: 0px !important;
+	float: left;
+}
+.icon-building .path37:before {
+	margin-right: -1em !important;
+	margin-left: 0px !important;
+	float: left;
+}
+.icon-pen .path8:before {
+	margin-right: -1em !important;
+	margin-left: 0px !important;
+	float: left;
+}
+.icon-house .path15:before {
+	margin-right: -1em !important;
+	margin-left: 0px !important;
+	float: left;
+}
+.icon-signal .path9:before {
+	margin-right: -1em !important;
+	margin-left: 0px !important;
+	float: left;
+}
+

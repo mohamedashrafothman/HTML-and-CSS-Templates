@@ -89,7 +89,8 @@ gulp.task('images', function () {
 gulp.task('default', ['pug', 'sass', 'js', 'fonts', 'images'], function () {
 	browserSync.init({
 		server: './build',
-		open  : false
+		open  : false,
+		port: 8888
 	});
 
 	gulp.watch('src/views/**/*.pug', ['pug']);

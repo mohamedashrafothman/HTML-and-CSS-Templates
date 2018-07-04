@@ -1,3 +1,5 @@
+
+
 #main-sec{
 	background-image: url('../images/main-sect-bg.png');
 	background-position: center;
@@ -9,6 +11,7 @@
 		flex-direction: column;
 		align-items: center;
 		justify-content: center;
+		min-height: 45rem !important;
 	}
 	&-intro{
 		margin-top: 8rem;
@@ -100,6 +103,7 @@
 
 #product-showcase-sec{
 	height: 50rem !important;
+	min-height: 40rem !important;
 	display: flex;
 	@include media-breakpoint-down(md){
 		height: 30rem !important;
@@ -198,6 +202,7 @@
 
 
 #industries-sec{
+	min-height: 50rem;
 	.fp-tableCell{
 		display: flex;
 		align-items: center;
@@ -315,6 +320,9 @@
 			}
 		}
 	}
+	@media screen and (max-height: 600px) {
+		padding: 8rem 0;
+	}
 }
 
 
@@ -327,6 +335,7 @@
 	background-position: center 0px;
 	background-repeat: no-repeat;
 	background-size: cover;
+	min-height: 45rem;
 	span{
 		font-size: 8rem;
 	}
@@ -368,10 +377,12 @@
 }
 
 #countries-sec{
+	min-height: 50rem;
 	.fp-tableCell {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: 100% !important;
 	}
 	background-color: #15323C;
 	&-title{
@@ -441,6 +452,9 @@
 			// }
 		}
 	}
+	@media screen and (max-height: 600px){
+		padding: 8rem 0;
+	}
 }
 
 #clients-sec{
@@ -482,6 +496,9 @@
 				width: 50%;
 			}
 		}
+	}
+	@media screen and (max-height: 600px) {
+		padding: 15rem 0;
 	}
 }
 #footer-sec{
