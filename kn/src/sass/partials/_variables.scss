@@ -46,7 +46,7 @@ button{
 	border: 1px solid white;
 	border-radius: 15px;
 	@include media-breakpoint-down(md){
-		display: none;
+		display: none !important;
 	}
 	ul{
 		li{
@@ -80,7 +80,7 @@ button{
        z-index: 1;
        right: -2;
        bottom: -1px;
-       width: calc(100% + 1px);
+       width: 100%;
        height: auto;
 	   transform: rotate(0.01deg);
 	   @include media-breakpoint-only(md){

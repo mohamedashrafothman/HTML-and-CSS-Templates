@@ -1,7 +1,7 @@
 @mixin curved-sec($img){
 	&::before{
 		content: '';
-		width: 100vw;
+		width: 100%;
 		position: absolute;
 		min-height: 20.7rem;
 		max-height: 25.5rem;

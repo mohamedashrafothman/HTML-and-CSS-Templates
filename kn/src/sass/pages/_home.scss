@@ -12,9 +12,10 @@
 		align-items: center;
 		justify-content: center;
 		min-height: 45rem !important;
+		height: initial !important;
 	}
 	&-intro{
-		margin-top: 8rem;
+		margin-top: 14rem;
 		h1, h2{
 			font-family: $font-oswald;
 		}
@@ -79,6 +80,10 @@
 						background: transparent;
 						outline: none;
 					}
+					@include media-breakpoint-down(sm){
+						font-size: 3rem;
+						top: 2rem;
+					}
 				}
 				.owl-next{
 					right: -7rem;
@@ -106,7 +111,10 @@
 	min-height: 40rem !important;
 	display: flex;
 	@include media-breakpoint-down(md){
-		height: 30rem !important;
+		height: initial !important;
+	}
+	.fp-tableCell{
+		height: initial !important;
 	}
 	&-navCarousel{
 		margin-top: -20rem;
@@ -121,8 +129,9 @@
 			justify-content: center;
 			img{
 				height: auto;
+				// width: 100%;
 				@include media-breakpoint-down(md){
-					width: 100%;
+					width: 50px !important;
 				}
 			}
 		}
@@ -156,13 +165,14 @@
 				.owl-next,
 				.owl-prev{
 					top: 10%;
+					font-size: 3rem;
 				}
 				.owl-next {
-					right: -8rem;
+					right: -5rem;
 				}
 
 				.owl-prev {
-					left: -8rem;
+					left: -5rem;
 				}
 			}
 		}
@@ -207,6 +217,7 @@
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: 100% !important;
 	}
 	&-title{
 		h1{
@@ -270,12 +281,16 @@
 				right: -5rem;
 				@include media-breakpoint-down(md){
 					right: -1rem;
+					font-size: 3rem;
+
 				}
 			}
 			.owl-prev {
 				left: -5rem;
 				@include media-breakpoint-down(md) {
 					left: -1rem;
+					font-size: 3rem;
+
 				}
 			}
 		}
@@ -320,9 +335,9 @@
 			}
 		}
 	}
-	@media screen and (max-height: 600px) {
-		padding: 8rem 0;
-	}
+	// @media screen and (max-height: 600px) {
+	// 	padding: 8rem 0;
+	// }
 }
 
 
@@ -377,17 +392,30 @@
 }
 
 #countries-sec{
-	min-height: 50rem;
+	min-height: 100vh;
+	height: initial !important;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// height: 100vh !important;
 	.fp-tableCell {
 		display: flex;
 		align-items: center;
 		justify-content: center;
 		height: 100% !important;
+		padding: 5rem 0;
+		@include media-breakpoint-down(sm){
+			padding: 3rem 0;
+		}
 	}
 	background-color: #15323C;
 	&-title{
 		font-family: $font-roboto;
 		font-size: 4rem;
+		@include media-breakpoint-down(sm){
+			padding: 0 4rem;
+			font-size: 3rem;
+		}
 	}
 	&-slider-two{
 		.owl-item{
@@ -426,6 +454,7 @@
 					color: $gray-600;
 					line-height: 24px;
 					text-align: left;
+					margin-bottom: 5rem;
 				}
 			}
 		}
@@ -434,9 +463,15 @@
 			align-items: center;
 			justify-content: space-between;
 			padding: 0 1.5rem;
-			@include media-breakpoint-down(md){
-				margin-top: -20px;
-			}
+			position: absolute;
+			width: 100%;
+			text-align: center;
+			left: 0;
+			bottom: 16px;
+
+			// @include media-breakpoint-down(md){
+			// 	margin-top: 10px;
+			// }
 			button{
 				span{
 					color: $blue;
@@ -452,16 +487,24 @@
 			// }
 		}
 	}
-	@media screen and (max-height: 600px){
-		padding: 8rem 0;
-	}
+	// @media screen and (max-height: 600px){
+	// 	padding: 8rem 0;
+	// }
 }
 
 #clients-sec{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	// height: initial !important;
+	@include media-breakpoint-down(sm){
+		padding: 5rem 0 ;
+	}
 	.fp-tableCell {
 		display: flex;
 		align-items: center;
 		justify-content: center;
+		height: initial !important;
 	}
 	&-title{
 		margin-bottom: 3rem;
@@ -498,7 +541,7 @@
 		}
 	}
 	@media screen and (max-height: 600px) {
-		padding: 15rem 0;
+		padding: 6rem 0;
 	}
 }
 #footer-sec{

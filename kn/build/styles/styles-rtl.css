@@ -14,6 +14,13 @@ body{
 	letter-spacing: -1px;
 }
 
+.text-primary{
+	color: #00ADEE !important;
+}
+.bg-primary, .btn-primary{
+	background-color: #00ADEE !important;
+	color: #fff; 
+}
 
 .overlay-menu-products-single .product-name {
 	font-family: Cairo, sans-serif;
